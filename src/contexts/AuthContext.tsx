@@ -1,8 +1,10 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 // ── Passcode config ────────────────────────────────────────────────────
-// Change this to your desired passcode. It lives only in the browser.
-const PASSCODE = 'deutsch2026';
+// ── Passcode config ────────────────────────────────────────────────────
+// Set VITE_APP_PASSCODE in your .env file (local) or GitHub Actions secret (CI).
+// It is NEVER hardcoded here so it won't appear in git history or commit messages.
+const PASSCODE = import.meta.env.VITE_APP_PASSCODE as string;
 const SESSION_KEY = 'deutsch_session_ts';
 const SESSION_TTL_MS = 12 * 60 * 60 * 1000; // 12 hours
 
