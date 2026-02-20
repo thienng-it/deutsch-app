@@ -34,6 +34,7 @@ jobs:
         run: npm run build
         env:
           VITE_APP_PASSCODE: ${{ secrets.VITE_APP_PASSCODE }}
+          VITE_GOOGLE_API_KEY: ${{ secrets.VITE_GOOGLE_API_KEY }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

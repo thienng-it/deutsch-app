@@ -1,85 +1,103 @@
-import { useEffect, useRef, useState } from 'react';
-import { materialsApi } from '../api/content';
-import type { MaterialNode } from '../types';
+import { useEffect, useState, useRef } from 'react';
+import {
+  buildDriveTree,
+  getAudioFilesInFolder,
+  DRIVE_ROOT_FOLDER_ID,
+  type DriveNode,
+} from '../api/googleDrive';
 
-
-
+// ── Folder tree (left panel) ──────────────────────────────────────────
 function FolderTree({
   nodes,
   onSelectFolder,
   selected,
+  depth = 0,
 }: {
-  nodes: MaterialNode[];
-  onSelectFolder: (path: string) => void;
+  nodes: DriveNode[];
+  onSelectFolder: (id: string) => void;
   selected: string;
+  depth?: number;
 }) {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const folders = nodes.filter(n => n.type === 'folder');
+  if (folders.length === 0) return null;
 
   return (
     <ul className="space-y-0.5">
-      {nodes.map(node => {
-        if (node.type === 'folder') {
-          const isOpen = expanded[node.path];
-          const hasAudio = (node.children ?? []).some(c => c.type === 'audio' || c.type === 'folder');
-          if (!hasAudio) return null;
-          return (
-            <li key={node.path}>
-              <button
-                onClick={() => {
-                  setExpanded(p => ({ ...p, [node.path]: !p[node.path] }));
-                  onSelectFolder(node.path);
-                }}
-                className={`w-full text-left flex items-center gap-2 px-2 py-1.5 rounded text-sm hover:bg-gray-800 transition-colors ${selected === node.path ? 'bg-gray-800 text-white' : 'text-gray-400'
-                  }`}
-              >
-                <span className="text-xs">{isOpen ? '▼' : '▶'}</span>
-                <span>📁</span>
-                <span className="truncate">{node.name}</span>
-              </button>
-              {isOpen && node.children && (
-                <div className="ml-4 border-l border-gray-800 pl-2 mt-0.5">
-                  <FolderTree nodes={node.children} onSelectFolder={onSelectFolder} selected={selected} />
-                </div>
-              )}
-            </li>
-          );
-        }
-        return null;
+      {folders.map(node => {
+        const isOpen = expanded[node.id];
+        return (
+          <li key={node.id}>
+            <button
+              onClick={() => {
+                setExpanded(p => ({ ...p, [node.id]: !p[node.id] }));
+                onSelectFolder(node.id);
+              }}
+              className={`w-full text-left flex items-center gap-2 px-2 py-1.5 rounded text-sm
+                hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors
+                ${selected === node.id
+                  ? 'bg-red-600/10 text-red-400 font-medium'
+                  : 'text-gray-600 dark:text-gray-400'}`}
+            >
+              <span className="text-[10px] w-2">{isOpen ? '▼' : '▶'}</span>
+              <span>📁</span>
+              <span className="truncate flex-1">{node.name}</span>
+            </button>
+            {isOpen && node.children && (
+              <div className={`ml-4 border-l border-gray-200 dark:border-gray-800 pl-2 mt-0.5`}>
+                <FolderTree
+                  nodes={node.children}
+                  onSelectFolder={onSelectFolder}
+                  selected={selected}
+                  depth={depth + 1}
+                />
+              </div>
+            )}
+          </li>
+        );
       })}
     </ul>
   );
 }
 
+// ── Listening page ────────────────────────────────────────────────────
 export default function ListeningPage() {
-  const [tree, setTree] = useState<MaterialNode[]>([]);
-  const [selectedFolder, setSelectedFolder] = useState('');
-  const [audioFiles, setAudioFiles] = useState<{ name: string; url: string }[]>([]);
+  const [tree, setTree] = useState<DriveNode[]>([]);
+  const [selectedId, setSelectedId] = useState('');
+  const [audioFiles, setAudioFiles] = useState<{ name: string; url: string; id: string }[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [loadingFiles, setLoadingFiles] = useState(false);
   const [wantPlay, setWantPlay] = useState(false);
+  const [error, setError] = useState('');
   const audioRef = useRef<HTMLAudioElement>(null);
 
+  // Load folder tree once
   useEffect(() => {
-    materialsApi.getTree()
-      .then(d => setTree(d.tree ?? []))
+    buildDriveTree(DRIVE_ROOT_FOLDER_ID, 0, 2)
+      .then(setTree)
+      .catch(() => setError('Could not load materials from Google Drive. Check your API key.'))
       .finally(() => setLoading(false));
   }, []);
 
+  // Load audio files when a folder is selected
   useEffect(() => {
-    if (!selectedFolder) return;
-    materialsApi.getAudioFiles(selectedFolder)
-      .then(d => {
-        setAudioFiles(d.files ?? []);
-        setCurrentIdx(0);
-        setPlaying(false);
-        setWantPlay(false);
-        setProgress(0);
-        setDuration(0);
-      });
-  }, [selectedFolder]);
+    if (!selectedId) return;
+    setLoadingFiles(true);
+    setAudioFiles([]);
+    setCurrentIdx(0);
+    setPlaying(false);
+    setWantPlay(false);
+    setProgress(0);
+    setDuration(0);
+    getAudioFilesInFolder(selectedId)
+      .then(files => setAudioFiles(files))
+      .catch(() => setAudioFiles([]))
+      .finally(() => setLoadingFiles(false));
+  }, [selectedId]);
 
   // Reload audio element when track changes
   useEffect(() => {
@@ -91,7 +109,7 @@ export default function ListeningPage() {
     if (wantPlay) {
       el.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
     }
-  }, [currentIdx, audioFiles]);
+  }, [currentIdx, audioFiles, wantPlay]);
 
   const current = audioFiles[currentIdx] ?? null;
 
@@ -118,45 +136,58 @@ export default function ListeningPage() {
     isNaN(s) ? '0:00' : `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
   return (
-    <div className="animate-fade-in">
-      <h1 className="text-2xl font-bold text-white mb-1">🎧 Listening Practice</h1>
-      <p className="text-gray-400 text-sm mb-6">Browse textbook audio from your Materials library</p>
+    <div className="animate-fade-in space-y-4">
+      <div>
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">🎧 Listening Practice</h1>
+        <p className="text-gray-500 text-sm mt-1">Browse audio from your Google Drive materials</p>
+      </div>
 
-      <div className="grid lg:grid-cols-3 gap-6 h-[calc(100vh-200px)]">
+      {error && (
+        <div className="card border-red-600/40 bg-red-900/10 text-red-400 text-sm">{error}</div>
+      )}
+
+      <div className="grid lg:grid-cols-3 gap-4" style={{ minHeight: 'calc(100vh - 220px)' }}>
         {/* Folder tree */}
-        <div className="card overflow-y-auto">
-          <h2 className="text-sm font-semibold text-gray-300 mb-3">📁 Select a Book / CD</h2>
+        <div className="card overflow-y-auto max-h-[60vh] lg:max-h-none">
+          <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">📁 Browse Folders</h2>
           {loading ? (
-            <p className="text-gray-500 text-sm">Loading materials…</p>
+            <div className="text-center py-6">
+              <div className="text-2xl animate-spin">⏳</div>
+              <p className="text-gray-500 text-xs mt-2">Loading from Google Drive…</p>
+            </div>
           ) : (
-            <FolderTree nodes={tree} onSelectFolder={setSelectedFolder} selected={selectedFolder} />
+            <FolderTree nodes={tree} onSelectFolder={setSelectedId} selected={selectedId} />
           )}
         </div>
 
-        {/* Audio list + player */}
-        <div className="lg:col-span-2 flex flex-col gap-4">
-          {/* Player */}
+        {/* Player + track list */}
+        <div className="lg:col-span-2 flex flex-col gap-3">
+          {/* Player card */}
           {current && (
-            <div className="card bg-gradient-to-br from-gray-900 to-gray-800">
+            <div className="card bg-gradient-to-br from-gray-900 to-gray-800 border-gray-700">
               <p className="text-xs text-gray-500 mb-1">Now Playing</p>
-              <p className="font-semibold text-white truncate">{current.name.replace(/\.\w+$/, '')}</p>
+              <p className="font-semibold text-white truncate text-sm sm:text-base">
+                {current.name.replace(/\.\w+$/, '')}
+              </p>
 
               <audio
                 ref={audioRef}
                 src={current.url}
+                crossOrigin="anonymous"
                 onTimeUpdate={() => {
                   const el = audioRef.current;
                   if (el) setProgress((el.currentTime / el.duration) * 100 || 0);
                 }}
                 onLoadedMetadata={() => { if (audioRef.current) setDuration(audioRef.current.duration); }}
                 onEnded={() => {
-                  if (currentIdx < audioFiles.length - 1) { goToTrack(currentIdx + 1, true); }
+                  if (currentIdx < audioFiles.length - 1) goToTrack(currentIdx + 1, true);
                   else { setPlaying(false); setWantPlay(false); }
                 }}
               />
 
-              <div className="mt-4 space-y-2">
-                <input type="range" min="0" max="100" value={progress} onChange={seek} className="w-full accent-red-500 cursor-pointer" />
+              <div className="mt-4 space-y-1">
+                <input type="range" min="0" max="100" value={progress} onChange={seek}
+                  className="w-full accent-red-500 cursor-pointer h-1" />
                 <div className="flex justify-between text-xs text-gray-500">
                   <span>{fmt((progress / 100) * duration)}</span>
                   <span>{fmt(duration)}</span>
@@ -164,38 +195,54 @@ export default function ListeningPage() {
               </div>
 
               <div className="flex items-center justify-center gap-4 mt-4">
-                <button onClick={() => goToTrack(Math.max(0, currentIdx - 1), playing)} className="btn-ghost p-2 rounded-full" disabled={currentIdx === 0}>⏮</button>
+                <button onClick={() => goToTrack(Math.max(0, currentIdx - 1), playing)}
+                  className="btn-ghost p-2 rounded-full text-lg" disabled={currentIdx === 0}>⏮</button>
                 <button onClick={togglePlay} className="btn-primary rounded-full w-12 h-12 text-xl">
                   {playing ? '⏸' : '▶'}
                 </button>
-                <button onClick={() => goToTrack(Math.min(audioFiles.length - 1, currentIdx + 1), playing)} className="btn-ghost p-2 rounded-full" disabled={currentIdx === audioFiles.length - 1}>⏭</button>
+                <button onClick={() => goToTrack(Math.min(audioFiles.length - 1, currentIdx + 1), playing)}
+                  className="btn-ghost p-2 rounded-full text-lg" disabled={currentIdx === audioFiles.length - 1}>⏭</button>
               </div>
             </div>
           )}
 
-          {!selectedFolder ? (
-            <div className="flex-1 flex items-center justify-center text-gray-600 text-center">
+          {/* Track list */}
+          {!selectedId ? (
+            <div className="flex-1 flex items-center justify-center text-gray-500 text-center py-16">
               <div>
                 <div className="text-5xl mb-3">🎵</div>
-                <p>Select a folder from the left to browse audio files</p>
+                <p className="text-sm">Select a folder to browse audio files</p>
+              </div>
+            </div>
+          ) : loadingFiles ? (
+            <div className="flex-1 flex items-center justify-center py-12">
+              <div className="text-center">
+                <div className="text-3xl animate-spin">⏳</div>
+                <p className="text-gray-500 text-xs mt-2">Loading tracks…</p>
               </div>
             </div>
           ) : audioFiles.length === 0 ? (
-            <div className="flex-1 flex items-center justify-center text-gray-500">No audio files in this folder</div>
+            <div className="flex-1 flex items-center justify-center text-gray-500 py-12 text-sm">
+              No audio files in this folder
+            </div>
           ) : (
-            <div className="card flex-1 overflow-y-auto">
-              <p className="text-sm font-semibold text-gray-300 mb-3">{audioFiles.length} tracks</p>
+            <div className="card flex-1 overflow-y-auto max-h-[50vh] lg:max-h-none">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+                {audioFiles.length} tracks
+              </p>
               <ul className="space-y-1">
                 {audioFiles.map((f, i) => (
-                  <li key={f.url}>
+                  <li key={f.id}>
                     <button
                       onClick={() => goToTrack(i, true)}
-                      className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${i === currentIdx ? 'bg-red-600/20 text-red-400 border border-red-600/30' : 'text-gray-400 hover:bg-gray-800 hover:text-gray-200'
-                        }`}
+                      className={`w-full text-left flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors
+                        ${i === currentIdx
+                          ? 'bg-red-600/20 text-red-400 border border-red-600/30'
+                          : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-gray-200'}`}
                     >
-                      <span className="text-xs w-6 text-center text-gray-600">{i + 1}</span>
+                      <span className="text-xs w-5 text-center text-gray-500 shrink-0">{i + 1}</span>
                       <span className="flex-1 truncate">{f.name.replace(/\.\w+$/, '')}</span>
-                      {i === currentIdx && playing && <span className="text-xs">▶</span>}
+                      {i === currentIdx && playing && <span className="text-xs shrink-0">▶</span>}
                     </button>
                   </li>
                 ))}
