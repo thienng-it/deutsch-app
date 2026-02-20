@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 
 // ── Passcode config ────────────────────────────────────────────────────
 // Change this to your desired passcode. It lives only in the browser.
-const PASSCODE = 'deutsch2024';
+const PASSCODE = 'deutsch2026';
 const SESSION_KEY = 'deutsch_session_ts';
 const SESSION_TTL_MS = 12 * 60 * 60 * 1000; // 12 hours
 
