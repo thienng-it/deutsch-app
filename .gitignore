@@ -13,7 +13,7 @@ dist/
 build/
 
 # Database
-data/
+/data/
 *.db
 *.db-journal
 
