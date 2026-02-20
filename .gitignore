@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Build outputs
+dist/
+build/
+
+# Database
+data/
+*.db
+*.db-journal
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp files
+temp/
+tmp/
+
+# Large binary/audio materials (not for version control)
+Materials/
+
+# Extracted text files from PDFs
+a1_kursbuch_text.txt
+
+# PDF extraction scripts (dev tools)
+extract_pdf.cjs
+extract_pdf.js
+extract_pdf.py

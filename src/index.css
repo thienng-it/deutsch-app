@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --german-black: #000000;
+    --german-red:   #DD0000;
+    --german-gold:  #FFCE00;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply font-sans antialiased;
+    min-height: 100vh;
+    background-color: #f9fafb; /* light: gray-50  */
+    color:            #111827; /* light: gray-900  */
+  }
+  html.dark body {
+    background-color: #030712; /* dark: gray-950   */
+    color:            #f3f4f6; /* dark: gray-100   */
+  }
+}
+
+@layer components {
+  /* ── Buttons ─────────────────────────────────────────── */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg
+           font-semibold text-sm transition-all duration-200 focus:outline-none
+           focus:ring-2 focus:ring-offset-2 focus:ring-offset-white
+           dark:focus:ring-offset-gray-950
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-red-600 hover:bg-red-500 active:bg-red-700
+           text-white focus:ring-red-500;
+  }
+  .btn-secondary {
+    @apply btn bg-gray-200 hover:bg-gray-300 active:bg-gray-400
+           dark:bg-gray-700 dark:hover:bg-gray-600 dark:active:bg-gray-800
+           text-gray-800 dark:text-gray-100 focus:ring-gray-500;
+  }
+  .btn-gold {
+    @apply btn bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600
+           text-black focus:ring-yellow-400;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent hover:bg-gray-100 active:bg-gray-200
+           dark:hover:bg-gray-800 dark:active:bg-gray-700
+           text-gray-600 dark:text-gray-300 focus:ring-gray-500;
+  }
+  .btn-sm { @apply px-3 py-1.5 text-xs; }
+  .btn-lg { @apply px-6 py-3 text-base; }
+
+  /* ── Cards ───────────────────────────────────────────── */
+  .card {
+    @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-5 shadow-lg;
+  }
+  .card-hover {
+    @apply card cursor-pointer hover:border-red-600/50 hover:shadow-red-900/20
+           hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5;
+  }
+
+  /* ── Inputs ──────────────────────────────────────────── */
+  .input {
+    @apply w-full bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700
+           rounded-lg px-4 py-2.5
+           text-gray-900 dark:text-gray-100
+           placeholder-gray-400 dark:placeholder-gray-500
+           focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent
+           transition-all duration-200;
+  }
+
+  /* ── Badges ──────────────────────────────────────────── */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+  .badge-a1  { @apply badge bg-green-100  dark:bg-green-900/50  text-green-800  dark:text-green-400  border border-green-300  dark:border-green-700/50; }
+  .badge-a2  { @apply badge bg-teal-100   dark:bg-teal-900/50   text-teal-800   dark:text-teal-400   border border-teal-300   dark:border-teal-700/50; }
+  .badge-b1  { @apply badge bg-blue-100   dark:bg-blue-900/50   text-blue-800   dark:text-blue-400   border border-blue-300   dark:border-blue-700/50; }
+  .badge-b2  { @apply badge bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-400 border border-purple-300 dark:border-purple-700/50; }
+  .badge-c1  { @apply badge bg-orange-100 dark:bg-orange-900/50 text-orange-800 dark:text-orange-400 border border-orange-300 dark:border-orange-700/50; }
+
+  /* ── German flag stripe ──────────────────────────────── */
+  .flag-stripe {
+    background: linear-gradient(
+      to bottom,
+      #000 0%, #000 33.3%,
+      #DD0000 33.3%, #DD0000 66.6%,
+      #FFCE00 66.6%, #FFCE00 100%
+    );
+  }
+
+  /* ── Flip card ───────────────────────────────────────── */
+  .flip-container {
+    perspective: 1000px;
+  }
+  .flip-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+  }
+  .flip-card.flipped {
+    transform: rotateY(180deg);
+  }
+  .flip-front,
+  .flip-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+
+  /* ── Progress bar ────────────────────────────────────── */
+  .progress-bar {
+    @apply relative overflow-hidden bg-gray-200 dark:bg-gray-800 rounded-full h-2;
+  }
+  .progress-fill {
+    @apply absolute inset-y-0 left-0 rounded-full transition-all duration-500;
+  }
+
+  /* ── Scrollbar ───────────────────────────────────────── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track  { @apply bg-gray-100 dark:bg-gray-900; }
+  ::-webkit-scrollbar-thumb  { @apply bg-gray-300 dark:bg-gray-700 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-gray-400 dark:bg-gray-600; }
+}
+
+@layer utilities {
+  .text-german-gold { color: var(--german-gold); }
+  .text-german-red  { color: var(--german-red); }
+}
+
+/* ── Animations ──────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239,68,68,0.4); }
+  70%  { transform: scale(1);    box-shadow: 0 0 0 10px rgba(239,68,68,0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+}
+@keyframes bounce-in {
+  0%   { transform: scale(0.3);  opacity: 0; }
+  50%  { transform: scale(1.05); opacity: 1; }
+  70%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+
+.animate-fade-in      { animation: fadeIn 0.35s ease forwards; }
+.animate-slide-left   { animation: slideInLeft 0.35s ease forwards; }
+.animate-bounce-in    { animation: bounce-in 0.4s ease forwards; }
+.animate-shake        { animation: shake 0.4s ease; }
+.animate-pulse-ring   { animation: pulse-ring 1.5s ease infinite; }
+
+/*
+ * ══════════════════════════════════════════════════════════════════════
+ *  Global light-mode remapping of hardcoded dark Tailwind utilities
+ *
+ *  These rules have specificity (0,1,0,1) — higher than Tailwind's
+ *  single-class rules (0,0,1,0) — so no !important is needed.
+ *
+ *  Mirror: dark-gray-N  →  Tailwind light-gray equivalent
+ *    950 → gray-50   (#f9fafb)  – page bg
+ *    900 → white     (#ffffff)  – card / surface bg
+ *    800 → gray-100  (#f3f4f6)  – input / elevated bg
+ *    700 → gray-700  (#374151)  – kept dark for selected/active states
+ *                                  (ensures white text stays readable)
+ * ══════════════════════════════════════════════════════════════════════
+ */
+
+/* ── Backgrounds ──────────────────────────────────────────────────── */
+html:not(.dark) .bg-gray-950 { background-color: #f9fafb; }
+html:not(.dark) .bg-gray-900 { background-color: #ffffff; }
+html:not(.dark) .bg-gray-800 { background-color: #f3f4f6; }
+html:not(.dark) .bg-gray-700 { background-color: #374151; }
+
+/* ── Text ─────────────────────────────────────────────────────────── */
+html:not(.dark) .text-gray-100 { color: #111827; }
+html:not(.dark) .text-gray-200 { color: #1f2937; }
+html:not(.dark) .text-gray-300 { color: #374151; }
+html:not(.dark) .text-gray-400 { color: #6b7280; }
+html:not(.dark) .text-gray-500 { color: #9ca3af; }
+html:not(.dark) .text-gray-600 { color: #6b7280; }
+html:not(.dark) .text-gray-700 { color: #374151; }
+
+/* ── Borders ──────────────────────────────────────────────────────── */
+html:not(.dark) .border-gray-800 { border-color: #e5e7eb; }
+html:not(.dark) .border-gray-700 { border-color: #d1d5db; }
+html:not(.dark) .border-gray-600 { border-color: #9ca3af; }
+
+/* ── Hover backgrounds ────────────────────────────────────────────── */
+html:not(.dark) .hover\:bg-gray-800:hover { background-color: #e5e7eb; }
+html:not(.dark) .hover\:bg-gray-700:hover { background-color: #374151; }
+
+/* ── Hover text ───────────────────────────────────────────────────── */
+html:not(.dark) .hover\:text-gray-100:hover { color: #111827; }
+html:not(.dark) .hover\:text-gray-200:hover { color: #1f2937; }
+html:not(.dark) .hover\:text-gray-300:hover { color: #374151; }
