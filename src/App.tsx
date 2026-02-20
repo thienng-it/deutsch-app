@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
 import Layout from './components/Layout/Layout';
-import Login from './pages/Login';
+import PasscodeGate from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import VocabularyPage from './pages/Vocabulary';
 import GrammarPage from './pages/Grammar';
@@ -21,35 +21,25 @@ import FillInBlank from './pages/Games/FillInBlank';
 import SpeedRound from './pages/Games/SpeedRound';
 import GamesHub from './pages/Games/GamesHub';
 
-function PrivateRoute({ children }: { children: React.ReactNode }) {
-  const { user, loading } = useAuth();
-  if (loading) return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-950">
-      <div className="text-center">
-        <div className="text-4xl mb-4 animate-spin">🇩🇪</div>
-        <p className="text-gray-400">Loading…</p>
-      </div>
+function Spinner() {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-950">
+      <div className="text-4xl animate-pulse">🇩🇪</div>
     </div>
   );
-  return user ? <>{children}</> : <Navigate to="/login" replace />;
 }
 
 export default function App() {
   const { user, loading } = useAuth();
 
-  if (loading) return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-950">
-      <div className="text-4xl animate-pulse">🇩🇪</div>
-    </div>
-  );
+  if (loading) return <Spinner />;
+
+  // Not unlocked → show passcode gate for every route
+  if (!user) return <PasscodeGate />;
 
   return (
     <Routes>
-      <Route path="/login" element={user ? <Navigate to="/" replace /> : <Login />} />
-
-      <Route path="/" element={
-        <PrivateRoute><Layout /></PrivateRoute>
-      }>
+      <Route path="/" element={<Layout />}>
         <Route index element={<LearningPlanPage />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="vocabulary" element={<VocabularyPage />} />

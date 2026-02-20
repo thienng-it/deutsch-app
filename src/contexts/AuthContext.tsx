@@ -1,68 +1,78 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import type { User } from '../types';
-import { authApi } from '../api/auth';
+
+// ── Passcode config ────────────────────────────────────────────────────
+// Change this to your desired passcode. It lives only in the browser.
+const PASSCODE = 'deutsch2024';
+const SESSION_KEY = 'deutsch_session_ts';
+const SESSION_TTL_MS = 12 * 60 * 60 * 1000; // 12 hours
+
+function isSessionValid(): boolean {
+  const ts = localStorage.getItem(SESSION_KEY);
+  if (!ts) return false;
+  return Date.now() - parseInt(ts, 10) < SESSION_TTL_MS;
+}
+
+// ── Fake user so existing pages don't break ────────────────────────────
+const STATIC_USER = {
+  id: 1,
+  username: 'student',
+  displayName: 'Joseph',
+  currentLevel: 'A1',
+};
 
 interface AuthContextType {
-  user: User | null;
+  user: typeof STATIC_USER | null;
   token: string | null;
   loading: boolean;
-  login: (username: string, password: string) => Promise<void>;
-  register: (username: string, password: string, displayName: string) => Promise<void>;
+  unlock: (code: string) => boolean;
   logout: () => void;
-  updateUser: (data: Partial<User>) => void;
+  updateUser: (data: Partial<typeof STATIC_USER>) => void;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [user, setUser]       = useState<User | null>(null);
-  const [token, setToken]     = useState<string | null>(null);
+  const [authed, setAuthed] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const storedToken = localStorage.getItem('token');
-    const storedUser  = localStorage.getItem('user');
-    if (storedToken && storedUser) {
-      setToken(storedToken);
-      setUser(JSON.parse(storedUser));
-    }
+    setAuthed(isSessionValid());
     setLoading(false);
+
+    // Auto-expire: check every minute
+    const interval = setInterval(() => {
+      if (!isSessionValid()) setAuthed(false);
+    }, 60_000);
+    return () => clearInterval(interval);
   }, []);
 
-  const login = useCallback(async (username: string, password: string) => {
-    const data = await authApi.login(username, password);
-    localStorage.setItem('token', data.token);
-    localStorage.setItem('user', JSON.stringify(data.user));
-    setToken(data.token);
-    setUser(data.user);
-  }, []);
-
-  const register = useCallback(async (username: string, password: string, displayName: string) => {
-    const data = await authApi.register(username, password, displayName);
-    localStorage.setItem('token', data.token);
-    localStorage.setItem('user', JSON.stringify(data.user));
-    setToken(data.token);
-    setUser(data.user);
+  const unlock = useCallback((code: string): boolean => {
+    if (code === PASSCODE) {
+      localStorage.setItem(SESSION_KEY, Date.now().toString());
+      setAuthed(true);
+      return true;
+    }
+    return false;
   }, []);
 
   const logout = useCallback(() => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setToken(null);
-    setUser(null);
+    localStorage.removeItem(SESSION_KEY);
+    setAuthed(false);
   }, []);
 
-  const updateUser = useCallback((data: Partial<User>) => {
-    setUser(prev => {
-      if (!prev) return prev;
-      const updated = { ...prev, ...data };
-      localStorage.setItem('user', JSON.stringify(updated));
-      return updated;
-    });
+  const updateUser = useCallback((_data: Partial<typeof STATIC_USER>) => {
+    // no-op for static user; extend if you want persistence
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, token, loading, login, register, logout, updateUser }}>
+    <AuthContext.Provider value={{
+      user: authed ? STATIC_USER : null,
+      token: authed ? 'local' : null,
+      loading,
+      unlock,
+      logout,
+      updateUser,
+    }}>
       {children}
     </AuthContext.Provider>
   );
