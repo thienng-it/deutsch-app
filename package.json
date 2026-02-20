@@ -8,7 +8,6 @@
     "dev:full": "concurrently \"npm run dev\" \"npm run dev:server\"",
     "dev:server": "nodemon server/index.js",
     "build": "vite build",
-    "vercel-build": "node fetch_drive_materials.cjs && vite build",
     "preview": "vite preview",
     "start": "node server/index.js"
   },

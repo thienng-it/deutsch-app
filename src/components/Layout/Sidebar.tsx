@@ -11,9 +11,7 @@ const learnItems = [
   { to: '/', icon: '📅', label: 'Learning Plan' },
   { to: '/vocabulary', icon: '📖', label: 'Vocabulary' },
   { to: '/grammar', icon: '✏️', label: 'Grammar' },
-  { to: '/listening', icon: '🎧', label: 'Listening' },
   { to: '/prepositions', icon: '📍', label: 'Prepositions' },
-  { to: '/materials', icon: '📁', label: 'Materials' },
 ];
 
 const moreItems = [

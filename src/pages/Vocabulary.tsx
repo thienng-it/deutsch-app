@@ -16,20 +16,26 @@ export default function VocabularyPage() {
   const [showAdd, setShowAdd] = useState(false);
   const LIMIT = 30;
 
-  const load = (reset = true) => {
+  const load = (currentOffset: number, isLoadMore = false) => {
     setLoading(true);
-    const off = reset ? 0 : offset;
-    if (reset) setOffset(0);
-    contentApi.getVocabulary({ level: level || undefined, category: category || undefined, search: search || undefined, limit: LIMIT, offset: off })
+    contentApi.getVocabulary({ level: level || undefined, category: category || undefined, search: search || undefined, limit: LIMIT, offset: currentOffset })
       .then(d => {
-        setItems(reset ? d.items : prev => [...prev, ...d.items]);
+        setItems(isLoadMore ? prev => {
+          // Deduplicate just in case
+          const existingIds = new Set(prev.map(p => p.id));
+          const newItems = d.items.filter(item => !existingIds.has(item.id));
+          return [...prev, ...newItems];
+        } : d.items);
         setTotal(d.total);
       })
-      .catch(() => { if (reset) { setItems([]); setTotal(0); } })
+      .catch(() => { if (!isLoadMore) { setItems([]); setTotal(0); } })
       .finally(() => setLoading(false));
   };
 
-  useEffect(() => { load(); }, [level, category, search]);
+  useEffect(() => {
+    setOffset(0);
+    load(0, false);
+  }, [level, category, search]);
 
   useEffect(() => {
     contentApi.getCategories(level || undefined).then(setCategories).catch(() => setCategories([]));
@@ -49,7 +55,8 @@ export default function VocabularyPage() {
       await contentApi.addVocabulary(newWord);
       setNewWord({ german: '', english: '', level: 'A1', category: '', exampleSentence: '' });
       setShowAdd(false);
-      load();
+      setOffset(0);
+      load(0, false);
     } catch {
       setAddError('Failed to add word');
     }
@@ -154,7 +161,7 @@ export default function VocabularyPage() {
       {items.length < total && (
         <div className="text-center">
           <button
-            onClick={() => { const newOff = offset + LIMIT; setOffset(newOff); load(false); }}
+            onClick={() => { const newOff = offset + LIMIT; setOffset(newOff); load(newOff, true); }}
             className="btn-secondary"
             disabled={loading}
           >
