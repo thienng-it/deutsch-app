@@ -1,7 +1,5 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import { useAuth } from './contexts/AuthContext';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
-import PasscodeGate from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import VocabularyPage from './pages/Vocabulary';
 import GrammarPage from './pages/Grammar';
@@ -9,7 +7,6 @@ import ListeningPage from './pages/Listening';
 import MaterialsPage from './pages/Materials';
 import ProgressPage from './pages/Progress';
 import LearningPlanPage from './pages/LearningPlan';
-import ProfilePage from './pages/Profile';
 import PrepositionsPage from './pages/Prepositions';
 
 // Games
@@ -21,22 +18,7 @@ import FillInBlank from './pages/Games/FillInBlank';
 import SpeedRound from './pages/Games/SpeedRound';
 import GamesHub from './pages/Games/GamesHub';
 
-function Spinner() {
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-950">
-      <div className="text-4xl animate-pulse">🇩🇪</div>
-    </div>
-  );
-}
-
 export default function App() {
-  const { user, loading } = useAuth();
-
-  if (loading) return <Spinner />;
-
-  // Not unlocked → show passcode gate for every route
-  if (!user) return <PasscodeGate />;
-
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -47,7 +29,6 @@ export default function App() {
         <Route path="listening" element={<ListeningPage />} />
         <Route path="materials" element={<MaterialsPage />} />
         <Route path="progress" element={<ProgressPage />} />
-        <Route path="profile" element={<ProfilePage />} />
         <Route path="prepositions" element={<PrepositionsPage />} />
 
         {/* Games */}
@@ -59,8 +40,6 @@ export default function App() {
         <Route path="games/fill-blank" element={<FillInBlank />} />
         <Route path="games/speed" element={<SpeedRound />} />
       </Route>
-
-      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
