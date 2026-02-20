@@ -24,7 +24,7 @@ const moreItems = [
 ];
 
 export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: SidebarProps) {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
 
   const linkClass = ({ isActive }: { isActive: boolean }) => `
     flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200
@@ -40,11 +40,11 @@ export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: 
       bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800
       flex flex-col transform transition-all duration-300 ease-in-out
       lg:relative lg:translate-x-0 lg:z-auto
-      ${collapsed ? 'lg:w-[72px]' : 'lg:w-64'}
-      ${open ? 'translate-x-0 w-64' : '-translate-x-full'}
+      ${collapsed ? 'lg:w-[68px]' : 'lg:w-60'}
+      ${open ? 'translate-x-0 w-72' : '-translate-x-full lg:translate-x-0'}
     `}>
       {/* Logo */}
-      <div className={`h-16 flex items-center justify-between px-4 border-b border-gray-200 dark:border-gray-800 shrink-0`}>
+      <div className="h-14 flex items-center justify-between px-3 border-b border-gray-200 dark:border-gray-800 shrink-0">
         <div className="flex items-center gap-2 min-w-0">
           <span className="text-2xl shrink-0">🇩🇪</span>
           {!collapsed && (
@@ -53,18 +53,18 @@ export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: 
             </span>
           )}
         </div>
-        <button onClick={onClose} className="lg:hidden btn-ghost p-1 rounded">
+        <button onClick={onClose} className="lg:hidden btn-ghost p-1.5 rounded-lg" aria-label="Close menu">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
 
-      {/* User info — shown only when expanded */}
+      {/* User info */}
       {user && !collapsed && (
-        <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-800">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full bg-red-600 flex items-center justify-center font-bold text-sm text-white shrink-0">
+        <div className="px-3 py-2.5 border-b border-gray-200 dark:border-gray-800">
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center font-bold text-xs text-white shrink-0">
               {user.displayName[0].toUpperCase()}
             </div>
             <div className="min-w-0">
@@ -77,17 +77,17 @@ export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: 
 
       {/* Collapsed user avatar */}
       {user && collapsed && (
-        <div className="flex justify-center py-3 border-b border-gray-200 dark:border-gray-800">
-          <div className="w-9 h-9 rounded-full bg-red-600 flex items-center justify-center font-bold text-sm text-white">
+        <div className="flex justify-center py-2.5 border-b border-gray-200 dark:border-gray-800">
+          <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center font-bold text-xs text-white">
             {user.displayName[0].toUpperCase()}
           </div>
         </div>
       )}
 
       {/* Navigation */}
-      <nav className="flex-1 overflow-y-auto py-4 px-2 space-y-1">
+      <nav className="flex-1 overflow-y-auto py-3 px-2 space-y-0.5">
         {!collapsed && (
-          <p className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest px-3 mb-2">
+          <p className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest px-3 mb-1.5">
             Learn
           </p>
         )}
@@ -105,13 +105,12 @@ export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: 
           </NavLink>
         ))}
 
-        {/* Divider */}
-        <div className={`${collapsed ? 'my-3 mx-2' : 'my-3 mx-3'}`}>
+        <div className={`${collapsed ? 'my-2 mx-1' : 'my-2 mx-2'}`}>
           <div className="border-t border-gray-200 dark:border-gray-800" />
         </div>
 
         {!collapsed && (
-          <p className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest px-3 mb-2">
+          <p className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest px-3 mb-1.5">
             More
           </p>
         )}
@@ -129,39 +128,50 @@ export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: 
         ))}
       </nav>
 
-      {/* Collapse toggle (desktop only) */}
-      <div className="hidden lg:block px-2 py-3 border-t border-gray-200 dark:border-gray-800">
+      {/* Bottom: collapse toggle + logout */}
+      <div className="px-2 py-2 border-t border-gray-200 dark:border-gray-800 space-y-1">
+        {/* Collapse toggle — desktop only */}
         <button
           onClick={onToggleCollapse}
-          className={`
-            w-full flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium
+          className={`hidden lg:flex w-full items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium
             text-gray-400 hover:text-gray-600 dark:hover:text-gray-200
-            hover:bg-gray-100 dark:hover:bg-gray-800/60
-            transition-all duration-200
-            ${collapsed ? 'justify-center' : ''}
-          `}
+            hover:bg-gray-100 dark:hover:bg-gray-800/60 transition-all duration-200
+            ${collapsed ? 'justify-center' : ''}`}
           title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           <svg
             className={`w-4 h-4 shrink-0 transition-transform duration-300 ${collapsed ? 'rotate-180' : ''}`}
             fill="none" stroke="currentColor" viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-              d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
           </svg>
           {!collapsed && <span>Hide sidebar</span>}
         </button>
-      </div>
 
-      {/* Footer — expanded only */}
-      {!collapsed && (
-        <div className="px-4 py-2 border-t border-gray-200 dark:border-gray-800">
-          <div className="flex items-center gap-2 text-xs text-gray-500">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-            Local · Private
+        {/* Lock / logout */}
+        <button
+          onClick={logout}
+          className={`flex w-full items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium
+            text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20
+            transition-all duration-200 ${collapsed ? 'justify-center' : ''}`}
+          title="Lock app"
+        >
+          <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          {!collapsed && <span>Lock</span>}
+        </button>
+
+        {!collapsed && (
+          <div className="px-3 py-1">
+            <div className="flex items-center gap-2 text-xs text-gray-500">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+              Local · Private
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </aside>
   );
 }

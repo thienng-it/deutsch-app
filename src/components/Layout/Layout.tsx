@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import BottomNav from './BottomNav';
 import { useState, useEffect } from 'react';
 
 export default function Layout() {
@@ -15,7 +16,7 @@ export default function Layout() {
 
   return (
     <div className="flex h-screen overflow-hidden bg-gray-50 dark:bg-gray-950">
-      {/* Sidebar */}
+      {/* Sidebar — hidden on mobile, visible on lg+ */}
       <Sidebar
         open={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
@@ -27,8 +28,8 @@ export default function Layout() {
       <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
         <Navbar onMenuClick={() => setSidebarOpen(true)} />
 
-        <main className="flex-1 overflow-y-auto">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <main className="flex-1 overflow-y-auto pb-20 lg:pb-0">
+          <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-8 py-4 sm:py-6">
             <Outlet />
           </div>
         </main>
@@ -41,6 +42,9 @@ export default function Layout() {
           onClick={() => setSidebarOpen(false)}
         />
       )}
+
+      {/* Bottom navigation — mobile only */}
+      <BottomNav />
     </div>
   );
 }
