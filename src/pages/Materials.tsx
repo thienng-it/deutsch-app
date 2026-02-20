@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import {
-  buildDriveTree,
-  DRIVE_ROOT_FOLDER_ID,
+  loadMaterialsTree,
   getAudioStreamUrl,
+  getDriveFileUrl,
   type DriveNode,
 } from '../api/googleDrive';
 
@@ -51,7 +51,7 @@ function FileTree({ nodes, depth = 0 }: { nodes: DriveNode[]; depth?: number }) 
                 >
                   {playing === node.id ? '⏸ Stop' : '▶ Play'}
                 </button>
-                <a href={`https://drive.google.com/file/d/${node.id}/view`}
+                <a href={getDriveFileUrl(node.id)}
                   target="_blank" rel="noreferrer"
                   className="opacity-0 group-hover:opacity-100 btn-ghost py-0.5 px-2 text-xs rounded shrink-0"
                 >
@@ -74,7 +74,7 @@ function FileTree({ nodes, depth = 0 }: { nodes: DriveNode[]; depth?: number }) 
               <span className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 truncate flex-1">
                 {node.name}
               </span>
-              <a href={`https://drive.google.com/file/d/${node.id}/view`}
+              <a href={getDriveFileUrl(node.id)}
                 target="_blank" rel="noreferrer"
                 className="opacity-0 group-hover:opacity-100 btn-ghost py-0.5 px-2 text-xs rounded shrink-0"
               >
@@ -110,9 +110,9 @@ export default function MaterialsPage() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    buildDriveTree(DRIVE_ROOT_FOLDER_ID, 0, 3)
+    loadMaterialsTree()
       .then(setTree)
-      .catch(() => setError('Could not load from Google Drive. Make sure the API key is set and the folder is public.'))
+      .catch(() => setError('Could not load materials. Make sure the site was deployed with valid Drive secrets.'))
       .finally(() => setLoading(false));
   }, []);
 

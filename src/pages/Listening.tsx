@@ -1,8 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import {
-  buildDriveTree,
-  getAudioFilesInFolder,
-  DRIVE_ROOT_FOLDER_ID,
+  loadMaterialsTree,
+  getDirectAudioFiles,
   type DriveNode,
 } from '../api/googleDrive';
 
@@ -75,17 +74,17 @@ export default function ListeningPage() {
   const [error, setError] = useState('');
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  // Load folder tree once
+  // Load folder tree once (from pre-built static JSON)
   useEffect(() => {
-    buildDriveTree(DRIVE_ROOT_FOLDER_ID, 0, 2)
+    loadMaterialsTree()
       .then(setTree)
-      .catch(() => setError('Could not load materials from Google Drive. Check your API key.'))
+      .catch(() => setError('Could not load materials. Make sure the site was deployed with valid Drive secrets.'))
       .finally(() => setLoading(false));
   }, []);
 
-  // Load audio files when a folder is selected
+  // Get audio files from the in-memory tree (no extra network call)
   useEffect(() => {
-    if (!selectedId) return;
+    if (!selectedId || tree.length === 0) return;
     setLoadingFiles(true);
     setAudioFiles([]);
     setCurrentIdx(0);
@@ -93,11 +92,10 @@ export default function ListeningPage() {
     setWantPlay(false);
     setProgress(0);
     setDuration(0);
-    getAudioFilesInFolder(selectedId)
-      .then(files => setAudioFiles(files))
-      .catch(() => setAudioFiles([]))
-      .finally(() => setLoadingFiles(false));
-  }, [selectedId]);
+    const files = getDirectAudioFiles(tree, selectedId);
+    setAudioFiles(files);
+    setLoadingFiles(false);
+  }, [selectedId, tree]);
 
   // Reload audio element when track changes
   useEffect(() => {
