@@ -12,12 +12,13 @@ export default function ProgressPage() {
   useEffect(() => {
     Promise.all([progressApi.getSummary(), progressApi.getAchievements()])
       .then(([s, a]) => { setSummary(s); setAchievements(a); })
+      .catch(() => { /* no backend on static deployment — show empty state */ })
       .finally(() => setLoading(false));
   }, []);
 
   if (loading) return <div className="flex items-center justify-center h-64"><div className="text-4xl animate-spin">📊</div></div>;
 
-  const totalVocab  = summary?.vocabByLevel.reduce((s, v) => s + v.total, 0) ?? 0;
+  const totalVocab = summary?.vocabByLevel.reduce((s, v) => s + v.total, 0) ?? 0;
   const totalMaster = summary?.vocabByLevel.reduce((s, v) => s + v.mastered, 0) ?? 0;
 
   return (
@@ -30,10 +31,10 @@ export default function ProgressPage() {
       {/* Total score */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {[
-          { icon: '🏆', label: 'Total Score',    value: summary?.totalScore ?? 0,                   color: 'text-yellow-400' },
-          { icon: '✅', label: 'Mastered',        value: totalMaster,                                color: 'text-green-400' },
-          { icon: '📚', label: 'Total Vocab',    value: totalVocab,                                 color: 'text-blue-400' },
-          { icon: '🎮', label: 'Game Sessions',  value: summary?.recentSessions.length ?? 0,        color: 'text-purple-400' },
+          { icon: '🏆', label: 'Total Score', value: summary?.totalScore ?? 0, color: 'text-yellow-400' },
+          { icon: '✅', label: 'Mastered', value: totalMaster, color: 'text-green-400' },
+          { icon: '📚', label: 'Total Vocab', value: totalVocab, color: 'text-blue-400' },
+          { icon: '🎮', label: 'Game Sessions', value: summary?.recentSessions.length ?? 0, color: 'text-purple-400' },
         ].map(s => (
           <div key={s.label} className="card text-center">
             <div className="text-2xl mb-1">{s.icon}</div>
@@ -91,9 +92,8 @@ export default function ProgressPage() {
               <div
                 key={d.day}
                 title={`${d.day}: ${d.sessions} sessions`}
-                className={`w-6 h-6 rounded text-xs flex items-center justify-center ${
-                  d.sessions >= 3 ? 'bg-green-500' : d.sessions >= 2 ? 'bg-green-700' : d.sessions >= 1 ? 'bg-green-900/80' : 'bg-gray-800'
-                }`}
+                className={`w-6 h-6 rounded text-xs flex items-center justify-center ${d.sessions >= 3 ? 'bg-green-500' : d.sessions >= 2 ? 'bg-green-700' : d.sessions >= 1 ? 'bg-green-900/80' : 'bg-gray-800'
+                  }`}
               />
             ))}
           </div>

@@ -5,15 +5,15 @@ import type { VocabItem } from '../types';
 import { LEVELS, LEVEL_COLORS, LEVEL_BG } from '../types';
 
 export default function VocabularyPage() {
-  const [items, setItems]         = useState<VocabItem[]>([]);
-  const [total, setTotal]         = useState(0);
-  const [level, setLevel]         = useState('');
-  const [category, setCategory]   = useState('');
-  const [search, setSearch]       = useState('');
+  const [items, setItems] = useState<VocabItem[]>([]);
+  const [total, setTotal] = useState(0);
+  const [level, setLevel] = useState('');
+  const [category, setCategory] = useState('');
+  const [search, setSearch] = useState('');
   const [categories, setCategories] = useState<string[]>([]);
-  const [loading, setLoading]     = useState(false);
-  const [offset, setOffset]       = useState(0);
-  const [showAdd, setShowAdd]     = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const [showAdd, setShowAdd] = useState(false);
   const LIMIT = 30;
 
   const load = (reset = true) => {
@@ -25,13 +25,14 @@ export default function VocabularyPage() {
         setItems(reset ? d.items : prev => [...prev, ...d.items]);
         setTotal(d.total);
       })
+      .catch(() => { if (reset) { setItems([]); setTotal(0); } })
       .finally(() => setLoading(false));
   };
 
   useEffect(() => { load(); }, [level, category, search]);
 
   useEffect(() => {
-    contentApi.getCategories(level || undefined).then(setCategories);
+    contentApi.getCategories(level || undefined).then(setCategories).catch(() => setCategories([]));
   }, [level]);
 
   const markMastered = async (item: VocabItem) => {

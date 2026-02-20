@@ -4,15 +4,16 @@ import type { GrammarTopic } from '../types';
 import { LEVELS, LEVEL_COLORS, LEVEL_BG } from '../types';
 
 export default function GrammarPage() {
-  const [topics, setTopics]     = useState<GrammarTopic[]>([]);
+  const [topics, setTopics] = useState<GrammarTopic[]>([]);
   const [selected, setSelected] = useState<GrammarTopic | null>(null);
-  const [level, setLevel]       = useState('');
-  const [loading, setLoading]   = useState(false);
+  const [level, setLevel] = useState('');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
     contentApi.getGrammar(level || undefined)
       .then(setTopics)
+      .catch(() => setTopics([]))
       .finally(() => setLoading(false));
   }, [level]);
 
@@ -34,11 +35,10 @@ export default function GrammarPage() {
           <button
             key={l || 'all'}
             onClick={() => setLevel(l)}
-            className={`badge cursor-pointer transition-all ${
-              level === l
+            className={`badge cursor-pointer transition-all ${level === l
                 ? l ? `badge-${l.toLowerCase()}` : 'bg-gray-700 text-white border-gray-600'
                 : 'bg-gray-800/50 text-gray-500 border-gray-700 hover:text-gray-300'
-            }`}
+              }`}
           >
             {l || 'All Levels'}
           </button>
