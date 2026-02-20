@@ -17,8 +17,11 @@ const API_KEY = process.env.GOOGLE_API_KEY;
 const FOLDER_ID = process.env.DRIVE_FOLDER_ID;
 
 if (!API_KEY || !FOLDER_ID) {
-    console.error('Missing GOOGLE_API_KEY or DRIVE_FOLDER_ID env vars.');
-    process.exit(1);
+    console.warn('⚠️  GOOGLE_API_KEY or DRIVE_FOLDER_ID not set — writing empty materials.json');
+    const outDir = require('path').join(__dirname, 'public');
+    if (!require('fs').existsSync(outDir)) require('fs').mkdirSync(outDir, { recursive: true });
+    require('fs').writeFileSync(require('path').join(outDir, 'materials.json'), JSON.stringify({ tree: [] }, null, 2));
+    process.exit(0); // Don't block the build
 }
 
 const AUDIO_MIMES = new Set([
