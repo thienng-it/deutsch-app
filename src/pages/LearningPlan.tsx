@@ -62,6 +62,32 @@ function DayLesson({ chapter, dayNum, onBack }: {
         ))}
       </div>
 
+      {/* Textbook Gallery */}
+      {chapter.imagePaths && chapter.imagePaths.length > 0 && (
+        <div className="card bg-gray-900 border border-gray-700/50 p-4 space-y-3">
+          <div className="flex items-center justify-between">
+            <h3 className="font-bold text-gray-300 text-sm flex items-center gap-2">
+              <span className="text-xl">📚</span> Textbook Reference
+            </h3>
+            <span className="text-xs px-2 py-1 bg-gray-800 rounded font-mono text-gray-400">
+              {chapter.imagePaths.length} Pages
+            </span>
+          </div>
+          <div className="flex gap-4 overflow-x-auto pb-2 snap-x hide-scrollbar">
+            {chapter.imagePaths.map((src, i) => (
+              <img
+                key={i}
+                src={`/materials/${src.replace(/'/g, '')}`}
+                className="h-64 sm:h-96 object-contain rounded border border-gray-700/50 bg-white snap-center shrink-0 shadow-lg cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() => window.open(`/materials/${src.replace(/'/g, '')}`, '_blank')}
+                alt={`Page ${i + 1}`}
+              />
+            ))}
+          </div>
+          <p className="text-xs text-gray-500 italic text-center pt-1">Click a page to view full size</p>
+        </div>
+      )}
+
       {/* Activity card */}
       <div className="card bg-gradient-to-br from-gray-900 to-gray-800 space-y-4">
         <div className="flex items-center gap-2">
@@ -236,8 +262,8 @@ export default function LearningPlanPage() {
             key={l}
             onClick={() => setSelectedLevel(l)}
             className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${selectedLevel === l
-                ? l === 'A1' ? 'bg-green-600 text-white' : l === 'A2' ? 'bg-orange-600 text-white' : 'bg-blue-600 text-white'
-                : 'bg-gray-800/50 text-gray-500 hover:bg-gray-700/50 hover:text-gray-300'
+              ? l === 'A1' ? 'bg-green-600 text-white' : l === 'A2' ? 'bg-orange-600 text-white' : 'bg-blue-600 text-white'
+              : 'bg-gray-800/50 text-gray-500 hover:bg-gray-700/50 hover:text-gray-300'
               }`}
           >
             {l} Curriculum

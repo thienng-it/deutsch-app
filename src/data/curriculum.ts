@@ -43,6 +43,7 @@ export interface ChapterDef {
     subtitle: string;
     days: DayDef[];
     recommendedMaterial?: { book: string; path: string };
+    imagePaths?: string[]; // textbook reference images for this chapter
 }
 
 // Progress helpers (localStorage)
@@ -66,14 +67,14 @@ const A1_CH1: ChapterDef = {
     id: 'a1_ch1', level: 'A1',
     title: 'Chapter 1: Hallo! Ich bin Nicole...',
     subtitle: 'Begrüßung, Länder, Alphabet',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_9.jpg', 'German/Menschen/A1/Images/KB1_page_10.jpg', 'German/Menschen/A1/Images/KB1_page_11.jpg', 'German/Menschen/A1/Images/KB1_page_12.jpg'],
     days: [
         {
             num: 1, title: 'Vocabulary: Begrüßung', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Introductions & Greetings
-Listen carefully to the main dialogue of Lektion 1.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
                 speaking: {
@@ -103,10 +104,9 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
         {
             num: 2, title: 'Grammar: Länder & Herkunft', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Introductions & Greetings
-Listen carefully to the main dialogue of Lektion 1.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
                 speaking: {
@@ -136,10 +136,9 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
         {
             num: 3, title: 'Speaking: Das Alphabet', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Introductions & Greetings
-Listen carefully to the main dialogue of Lektion 1.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
                 speaking: {
@@ -169,10 +168,9 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
         {
             num: 4, title: 'Writing: Introductions', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Introductions & Greetings
-Listen carefully to the main dialogue of Lektion 1.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
                 speaking: {
@@ -202,10 +200,9 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
         {
             num: 5, title: 'Chapter 1 Review', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Introductions & Greetings
-Listen carefully to the main dialogue of Lektion 1.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
                 speaking: {
@@ -239,14 +236,14 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
     id: 'a1_ch2', level: 'A1',
     title: 'Chapter 2: Ich bin Journalistin...',
     subtitle: 'Berufe, Familienstand, Zahlen',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_13.jpg', 'German/Menschen/A1/Images/KB1_page_14.jpg', 'German/Menschen/A1/Images/KB1_page_15.jpg', 'German/Menschen/A1/Images/KB1_page_16.jpg'],
     days: [
         {
             num: 1, title: 'Vocabulary: Berufe', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Professions & Numbers
-Listen carefully to the main dialogue of Lektion 2.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
                 speaking: {
@@ -276,10 +273,9 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
         {
             num: 2, title: 'Grammar: Familienstand', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Professions & Numbers
-Listen carefully to the main dialogue of Lektion 2.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
                 speaking: {
@@ -309,10 +305,9 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
         {
             num: 3, title: 'Speaking: Zahlen 1-100', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Professions & Numbers
-Listen carefully to the main dialogue of Lektion 2.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
                 speaking: {
@@ -342,10 +337,9 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
         {
             num: 4, title: 'Asking Questions', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Professions & Numbers
-Listen carefully to the main dialogue of Lektion 2.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
                 speaking: {
@@ -375,10 +369,9 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
         {
             num: 5, title: 'Chapter 2 Review', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Professions & Numbers
-Listen carefully to the main dialogue of Lektion 2.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
                 speaking: {
@@ -412,14 +405,14 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
     id: 'a1_ch3', level: 'A1',
     title: 'Chapter 3: Das ist meine Familie...',
     subtitle: 'Familie, Sprachen',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_17.jpg', 'German/Menschen/A1/Images/KB1_page_18.jpg', 'German/Menschen/A1/Images/KB1_page_19.jpg', 'German/Menschen/A1/Images/KB1_page_20.jpg'],
     days: [
         {
             num: 1, title: 'Vocabulary: Die Familie', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Family Members & Languages
-Listen carefully to the main dialogue of Lektion 3.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
                 speaking: {
@@ -449,10 +442,9 @@ Possessivartikel: mein, dein, meine, deine.`,
         {
             num: 2, title: 'Grammar: Possessivartikel', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Family Members & Languages
-Listen carefully to the main dialogue of Lektion 3.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
                 speaking: {
@@ -482,10 +474,9 @@ Possessivartikel: mein, dein, meine, deine.`,
         {
             num: 3, title: 'Speaking: Sprachen', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Family Members & Languages
-Listen carefully to the main dialogue of Lektion 3.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
                 speaking: {
@@ -515,10 +506,9 @@ Possessivartikel: mein, dein, meine, deine.`,
         {
             num: 4, title: 'Describing People', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Family Members & Languages
-Listen carefully to the main dialogue of Lektion 3.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
                 speaking: {
@@ -548,10 +538,9 @@ Possessivartikel: mein, dein, meine, deine.`,
         {
             num: 5, title: 'Chapter 3 Review', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Family Members & Languages
-Listen carefully to the main dialogue of Lektion 3.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
                 speaking: {
@@ -585,14 +574,14 @@ Possessivartikel: mein, dein, meine, deine.`,
     id: 'a1_ch4', level: 'A1',
     title: 'Chapter 4: Der Tisch ist schön!',
     subtitle: 'Möbel, Adjektive',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_23.jpg', 'German/Menschen/A1/Images/KB1_page_24.jpg', 'German/Menschen/A1/Images/KB1_page_25.jpg', 'German/Menschen/A1/Images/KB1_page_26.jpg'],
     days: [
         {
             num: 1, title: 'Vocabulary: Möbel', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Furniture & Adjectives
-Listen carefully to the main dialogue of Lektion 4.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
                 speaking: {
@@ -622,10 +611,9 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
         {
             num: 2, title: 'Grammar: Bestimmter Artikel', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Furniture & Adjectives
-Listen carefully to the main dialogue of Lektion 4.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
                 speaking: {
@@ -655,10 +643,9 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
         {
             num: 3, title: 'Speaking: Adjektive & Preise', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Furniture & Adjectives
-Listen carefully to the main dialogue of Lektion 4.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
                 speaking: {
@@ -688,10 +675,9 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
         {
             num: 4, title: 'Writing: Room Descriptions', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Furniture & Adjectives
-Listen carefully to the main dialogue of Lektion 4.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
                 speaking: {
@@ -721,10 +707,9 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
         {
             num: 5, title: 'Chapter 4 Review', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Furniture & Adjectives
-Listen carefully to the main dialogue of Lektion 4.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
                 speaking: {
@@ -758,14 +743,14 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
     id: 'a1_ch5', level: 'A1',
     title: 'Chapter 5: Was ist das? Das ist ein F...',
     subtitle: 'Gegenstände, Farben, Materialien',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_27.jpg', 'German/Menschen/A1/Images/KB1_page_28.jpg', 'German/Menschen/A1/Images/KB1_page_29.jpg', 'German/Menschen/A1/Images/KB1_page_30.jpg'],
     days: [
         {
             num: 1, title: 'Vocabulary: Gegenstände', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Objects & Colors
-Listen carefully to the main dialogue of Lektion 5.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
                 speaking: {
@@ -795,10 +780,9 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
         {
             num: 2, title: 'Grammar: Unbestimmter Artikel', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Objects & Colors
-Listen carefully to the main dialogue of Lektion 5.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
                 speaking: {
@@ -828,10 +812,9 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
         {
             num: 3, title: 'Speaking: Farben & Materialien', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Objects & Colors
-Listen carefully to the main dialogue of Lektion 5.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
                 speaking: {
@@ -861,10 +844,9 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
         {
             num: 4, title: 'Describing Objects', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Objects & Colors
-Listen carefully to the main dialogue of Lektion 5.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
                 speaking: {
@@ -894,10 +876,9 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
         {
             num: 5, title: 'Chapter 5 Review', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Objects & Colors
-Listen carefully to the main dialogue of Lektion 5.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
                 speaking: {
@@ -931,14 +912,14 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
     id: 'a1_ch6', level: 'A1',
     title: 'Chapter 6: Ich brauche kein Büro...',
     subtitle: 'Büro und Technik',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_31.jpg', 'German/Menschen/A1/Images/KB1_page_32.jpg', 'German/Menschen/A1/Images/KB1_page_33.jpg', 'German/Menschen/A1/Images/KB1_page_34.jpg'],
     days: [
         {
             num: 1, title: 'Vocabulary: Büro & Technik', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Office & Technology
-Listen carefully to the main dialogue of Lektion 6.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
                 speaking: {
@@ -968,10 +949,9 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
         {
             num: 2, title: 'Grammar: Akkusativ', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Office & Technology
-Listen carefully to the main dialogue of Lektion 6.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
                 speaking: {
@@ -1001,10 +981,9 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
         {
             num: 3, title: 'Speaking: Pluralformen', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Office & Technology
-Listen carefully to the main dialogue of Lektion 6.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
                 speaking: {
@@ -1034,10 +1013,9 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
         {
             num: 4, title: 'Writing: Emails', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Office & Technology
-Listen carefully to the main dialogue of Lektion 6.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
                 speaking: {
@@ -1067,10 +1045,9 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
         {
             num: 5, title: 'Chapter 6 Review', skills: {
                 listening: {
-                    instruction: 'Listen to the audio text.',
-                    content: `🎧 Topic: Office & Technology
-Listen carefully to the main dialogue of Lektion 6.`,
-                    exercises: [ { type: 'trueFalse', prompt: 'Man hört ein Gespräch.', options: ['Richtig', 'Falsch'], correctAnswer: 0 } ],
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
                 speaking: {
@@ -1104,29 +1081,16 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
     id: 'a1_ch7', level: 'A1',
     title: 'Chapter 7: Hobbys & Fähigkeiten',
     subtitle: 'Du kannst wirklich toll ...!',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_37.jpg', 'German/Menschen/A1/Images/KB1_page_38.jpg', 'German/Menschen/A1/Images/KB1_page_39.jpg', 'German/Menschen/A1/Images/KB1_page_40.jpg'],
     days: [
         {
             num: 1, title: 'Vocabulary: Hobbys', skills: {
                 listening: {
-                    instruction: 'Listen to the audio. Review the vocabulary first, then answer the questions.',
-                    content: `🎧 Topic: Hobbys & Freizeit (Level Course, Chapter 7)
-
-📝 Vocabulary to listen for:
-• kochen = to cook
-• tanzen = to dance
-• Schach spielen = to play chess
-• Musik hören = to listen to music
-• Ski fahren = to ski
-• im Internet surfen = to surf the internet
-
-🎯 Task: Identify the hobbies mentioned by the speakers.`,
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What hobbies do you hear?',
                     answer: 'Listen again — the speakers mention singing, cooking, and playing chess.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'Which of the following means "to ski"?', options: ['kochen', 'Schach spielen', 'Ski fahren', 'tanzen'], correctAnswer: 2 },
-                        { type: 'fillBlank', prompt: 'Im Internet ___.', correctAnswer: 'surfen', acceptableAnswers: ['Surfen'] },
-                        { type: 'multipleChoice', prompt: 'What does "Schach spielen" mean?', options: ['To play football', 'To play chess', 'To play tennis', 'To dance'], correctAnswer: 1 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 7, 2.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 7, 8 1.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 7, 8 2.mp3' }
@@ -1169,21 +1133,11 @@ Exercise 2: Write "I like to cook" in German.`,
         {
             num: 2, title: 'Grammar: können', skills: {
                 listening: {
-                    instruction: 'Listen to the audio regarding abilities.',
-                    content: `🎧 Topic: The verb "können" (Level Course, Chapter 7)
-
-📝 Conjugation of können (can/be able to):
-• ich kann      • wir können
-• du kannst     • ihr könnt
-• er/sie kann   • sie/Sie können
-
-🎯 Task: Listen for what the speakers can or cannot do.`,
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: Can the person play the guitar well?',
                     answer: 'Yes, they can play the guitar very well.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'Which is correct for "ich"?', options: ['können', 'kannst', 'kann'], correctAnswer: 2 },
-                        { type: 'fillBlank', prompt: 'Du ___ wirklich toll tanzen.', correctAnswer: 'kannst', acceptableAnswers: ['Kannst'] }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 7, 8.mp3'
                 },
                 speaking: {
@@ -1361,17 +1315,16 @@ const A1_CH8: ChapterDef = {
     id: 'a1_ch8', level: 'A1',
     title: 'Chapter 8: A1 Lektion 8',
     subtitle: 'A1 Course, Chapter 8',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_41.jpg', 'German/Menschen/A1/Images/KB1_page_42.jpg', 'German/Menschen/A1/Images/KB1_page_43.jpg', 'German/Menschen/A1/Images/KB1_page_44.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 8, Aussprache, 1.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 8, 5a.mp3' }
                     ]
@@ -1402,13 +1355,11 @@ const A1_CH8: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 8, Aussprache, 3 1.mp3'
                 },
                 speaking: {
@@ -1437,13 +1388,11 @@ const A1_CH8: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 8, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -1472,13 +1421,11 @@ const A1_CH8: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 8, Basistraining, 10.mp3'
                 },
                 speaking: {
@@ -1507,13 +1454,11 @@ const A1_CH8: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 8, 2a.mp3'
                 },
                 speaking: {
@@ -1546,17 +1491,16 @@ const A1_CH9: ChapterDef = {
     id: 'a1_ch9', level: 'A1',
     title: 'Chapter 9: A1 Lektion 9',
     subtitle: 'A1 Course, Chapter 9',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_45.jpg', 'German/Menschen/A1/Images/KB1_page_46.jpg', 'German/Menschen/A1/Images/KB1_page_47.jpg', 'German/Menschen/A1/Images/KB1_page_48.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 9\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 9.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 9, Aussprache, 1 1.mp3'
                 },
                 speaking: {
@@ -1585,13 +1529,11 @@ const A1_CH9: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 9\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 9.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 9, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -1620,13 +1562,11 @@ const A1_CH9: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 9\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 9.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 9, 2.mp3'
                 },
                 speaking: {
@@ -1729,17 +1669,16 @@ const A1_CH10: ChapterDef = {
     id: 'a1_ch10', level: 'A1',
     title: 'Chapter 10: A1 Lektion 10',
     subtitle: 'A1 Course, Chapter 10',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_51.jpg', 'German/Menschen/A1/Images/KB1_page_52.jpg', 'German/Menschen/A1/Images/KB1_page_53.jpg', 'German/Menschen/A1/Images/KB1_page_54.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 10, Aussprache, 1 1.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 10, Hoeren, 1 und 2 2.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 10, Hoeren, 1 und 2.mp3' },
@@ -1778,13 +1717,11 @@ const A1_CH10: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 10, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -1813,13 +1750,11 @@ const A1_CH10: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 10, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -1848,13 +1783,11 @@ const A1_CH10: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 10, Basistraining, 10.mp3'
                 },
                 speaking: {
@@ -1883,13 +1816,11 @@ const A1_CH10: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 10, Hoeren, 1 und 2 1.mp3'
                 },
                 speaking: {
@@ -1922,17 +1853,16 @@ const A1_CH11: ChapterDef = {
     id: 'a1_ch11', level: 'A1',
     title: 'Chapter 11: A1 Lektion 11',
     subtitle: 'A1 Course, Chapter 11',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_55.jpg', 'German/Menschen/A1/Images/KB1_page_56.jpg', 'German/Menschen/A1/Images/KB1_page_57.jpg', 'German/Menschen/A1/Images/KB1_page_58.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 11, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -1961,13 +1891,11 @@ const A1_CH11: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 11, 2.mp3'
                 },
                 speaking: {
@@ -2105,17 +2033,16 @@ const A1_CH12: ChapterDef = {
     id: 'a1_ch12', level: 'A1',
     title: 'Chapter 12: A1 Lektion 12',
     subtitle: 'A1 Course, Chapter 12',
+    imagePaths: ['German/Menschen/A1/Images/KB1_page_59.jpg', 'German/Menschen/A1/Images/KB1_page_60.jpg', 'German/Menschen/A1/Images/KB1_page_61.jpg', 'German/Menschen/A1/Images/KB1_page_62.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 12, Aussprache, 1 1.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 12, 1.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 12, 3a.mp3' },
@@ -2149,13 +2076,11 @@ const A1_CH12: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 12, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -2184,13 +2109,11 @@ const A1_CH12: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 12, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -2219,13 +2142,11 @@ const A1_CH12: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 12, Basistraining, 2a.mp3'
                 },
                 speaking: {
@@ -2254,13 +2175,11 @@ const A1_CH12: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_AB_Audio/01 Lektion 12, Basistraining, 2b.mp3'
                 },
                 speaking: {
@@ -2293,17 +2212,16 @@ const A1_CH13: ChapterDef = {
     id: 'a1_ch13', level: 'A1',
     title: 'Chapter 13: A1 Lektion 13',
     subtitle: 'A1 Course, Chapter 13',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_9.jpg', 'German/Menschen/A1/Images/KB2_page_10.jpg', 'German/Menschen/A1/Images/KB2_page_11.jpg', 'German/Menschen/A1/Images/KB2_page_12.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 13, Aussprache, 1.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/1 Lektion 13, 1.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/2 Lektion 13, 4.mp3' }
@@ -2335,13 +2253,11 @@ const A1_CH13: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 13, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -2370,13 +2286,11 @@ const A1_CH13: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 13, Aussprache, 3 2.mp3'
                 },
                 speaking: {
@@ -2405,13 +2319,11 @@ const A1_CH13: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 13, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -2440,13 +2352,11 @@ const A1_CH13: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 13, HoÌˆren, 1 und 2.mp3'
                 },
                 speaking: {
@@ -2479,17 +2389,16 @@ const A1_CH14: ChapterDef = {
     id: 'a1_ch14', level: 'A1',
     title: 'Chapter 14: A1 Lektion 14',
     subtitle: 'A1 Course, Chapter 14',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_13.jpg', 'German/Menschen/A1/Images/KB2_page_14.jpg', 'German/Menschen/A1/Images/KB2_page_15.jpg', 'German/Menschen/A1/Images/KB2_page_16.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 14\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 14.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 14, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -2518,13 +2427,11 @@ const A1_CH14: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 14\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 14.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 14, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -2553,13 +2460,11 @@ const A1_CH14: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 14\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 14.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 14, Basistraining, 11 und 12.mp3'
                 },
                 speaking: {
@@ -2662,17 +2567,16 @@ const A1_CH15: ChapterDef = {
     id: 'a1_ch15', level: 'A1',
     title: 'Chapter 15: A1 Lektion 15',
     subtitle: 'A1 Course, Chapter 15',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_17.jpg', 'German/Menschen/A1/Images/KB2_page_18.jpg', 'German/Menschen/A1/Images/KB2_page_19.jpg', 'German/Menschen/A1/Images/KB2_page_20.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 15, Aussprache, 1.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/11 Lektion 15, 1b.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/9 Lektion 15, 1b.mp3' }
@@ -2704,13 +2608,11 @@ const A1_CH15: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 15, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -2739,13 +2641,11 @@ const A1_CH15: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 15, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -2774,13 +2674,11 @@ const A1_CH15: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 15, Basistraining, 1 a.mp3'
                 },
                 speaking: {
@@ -2809,13 +2707,11 @@ const A1_CH15: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 15, Basistraining, 5.mp3'
                 },
                 speaking: {
@@ -2848,17 +2744,16 @@ const A1_CH16: ChapterDef = {
     id: 'a1_ch16', level: 'A1',
     title: 'Chapter 16: A1 Lektion 16',
     subtitle: 'A1 Course, Chapter 16',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_23.jpg', 'German/Menschen/A1/Images/KB2_page_24.jpg', 'German/Menschen/A1/Images/KB2_page_25.jpg', 'German/Menschen/A1/Images/KB2_page_26.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 16\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 16.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 16, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -2887,13 +2782,11 @@ const A1_CH16: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 16\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 16.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 16, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -2922,13 +2815,11 @@ const A1_CH16: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 16\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 16.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 16, Basistraining, 10.mp3'
                 },
                 speaking: {
@@ -3031,17 +2922,16 @@ const A1_CH17: ChapterDef = {
     id: 'a1_ch17', level: 'A1',
     title: 'Chapter 17: A1 Lektion 17',
     subtitle: 'A1 Course, Chapter 17',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_27.jpg', 'German/Menschen/A1/Images/KB2_page_28.jpg', 'German/Menschen/A1/Images/KB2_page_29.jpg', 'German/Menschen/A1/Images/KB2_page_30.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 17\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 17.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 17, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -3214,17 +3104,16 @@ const A1_CH18: ChapterDef = {
     id: 'a1_ch18', level: 'A1',
     title: 'Chapter 18: A1 Lektion 18',
     subtitle: 'A1 Course, Chapter 18',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_31.jpg', 'German/Menschen/A1/Images/KB2_page_32.jpg', 'German/Menschen/A1/Images/KB2_page_33.jpg', 'German/Menschen/A1/Images/KB2_page_34.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 18, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -3253,13 +3142,11 @@ const A1_CH18: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 18, Aussprache, 3 2.mp3'
                 },
                 speaking: {
@@ -3288,13 +3175,11 @@ const A1_CH18: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 18, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -3323,13 +3208,11 @@ const A1_CH18: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 18, HoÌˆren, 1.mp3'
                 },
                 speaking: {
@@ -3397,17 +3280,16 @@ const A1_CH19: ChapterDef = {
     id: 'a1_ch19', level: 'A1',
     title: 'Chapter 19: A1 Lektion 19',
     subtitle: 'A1 Course, Chapter 19',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_37.jpg', 'German/Menschen/A1/Images/KB2_page_38.jpg', 'German/Menschen/A1/Images/KB2_page_39.jpg', 'German/Menschen/A1/Images/KB2_page_40.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 19, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -3436,13 +3318,11 @@ const A1_CH19: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 19, Aussprache, 4 2.mp3'
                 },
                 speaking: {
@@ -3471,13 +3351,11 @@ const A1_CH19: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 19, Aussprache, 4.mp3'
                 },
                 speaking: {
@@ -3506,13 +3384,11 @@ const A1_CH19: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/23 Lektion 19, 1a.mp3'
                 },
                 speaking: {
@@ -3541,13 +3417,11 @@ const A1_CH19: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/28 Lektion 19, 8a.mp3'
                 },
                 speaking: {
@@ -3580,17 +3454,16 @@ const A1_CH20: ChapterDef = {
     id: 'a1_ch20', level: 'A1',
     title: 'Chapter 20: A1 Lektion 20',
     subtitle: 'A1 Course, Chapter 20',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_41.jpg', 'German/Menschen/A1/Images/KB2_page_42.jpg', 'German/Menschen/A1/Images/KB2_page_43.jpg', 'German/Menschen/A1/Images/KB2_page_44.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 20\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 20.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 20, Aussprache, 1 2.mp3'
                 },
                 speaking: {
@@ -3619,13 +3492,11 @@ const A1_CH20: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 20\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 20.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 20, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -3654,13 +3525,11 @@ const A1_CH20: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 20\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 20.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 20, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -3689,13 +3558,11 @@ const A1_CH20: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 20\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 20.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/31 Lektion 20, 2.mp3'
                 },
                 speaking: {
@@ -3763,17 +3630,16 @@ const A1_CH21: ChapterDef = {
     id: 'a1_ch21', level: 'A1',
     title: 'Chapter 21: A1 Lektion 21',
     subtitle: 'A1 Course, Chapter 21',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_45.jpg', 'German/Menschen/A1/Images/KB2_page_46.jpg', 'German/Menschen/A1/Images/KB2_page_47.jpg', 'German/Menschen/A1/Images/KB2_page_48.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 21, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -3802,13 +3668,11 @@ const A1_CH21: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 21, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -3837,13 +3701,11 @@ const A1_CH21: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 21, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -3872,13 +3734,11 @@ const A1_CH21: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 21, Basistraining, 11 und 12.mp3'
                 },
                 speaking: {
@@ -3907,13 +3767,11 @@ const A1_CH21: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/32 Lektion 21, 1.mp3'
                 },
                 speaking: {
@@ -3946,17 +3804,16 @@ const A1_CH22: ChapterDef = {
     id: 'a1_ch22', level: 'A1',
     title: 'Chapter 22: A1 Lektion 22',
     subtitle: 'A1 Course, Chapter 22',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_51.jpg', 'German/Menschen/A1/Images/KB2_page_52.jpg', 'German/Menschen/A1/Images/KB2_page_53.jpg', 'German/Menschen/A1/Images/KB2_page_54.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 22, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -3985,13 +3842,11 @@ const A1_CH22: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 22, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -4020,13 +3875,11 @@ const A1_CH22: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/34 Lektion 22, 1a.mp3'
                 },
                 speaking: {
@@ -4055,13 +3908,11 @@ const A1_CH22: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/35 Lektion 22, 3.mp3'
                 },
                 speaking: {
@@ -4090,13 +3941,11 @@ const A1_CH22: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/36 Lektion 22, 8a.mp3'
                 },
                 speaking: {
@@ -4129,17 +3978,16 @@ const A1_CH23: ChapterDef = {
     id: 'a1_ch23', level: 'A1',
     title: 'Chapter 23: A1 Lektion 23',
     subtitle: 'A1 Course, Chapter 23',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_55.jpg', 'German/Menschen/A1/Images/KB2_page_56.jpg', 'German/Menschen/A1/Images/KB2_page_57.jpg', 'German/Menschen/A1/Images/KB2_page_58.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 23, Aussprache, 1.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/38 Lektion 23, 3b.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/39 Lektion 23, 3b.mp3' },
@@ -4177,13 +4025,11 @@ const A1_CH23: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 23, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -4212,13 +4058,11 @@ const A1_CH23: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 23, Basistraining, 6.mp3'
                 },
                 speaking: {
@@ -4247,13 +4091,11 @@ const A1_CH23: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 23, HoÌˆren, 2.mp3'
                 },
                 speaking: {
@@ -4282,13 +4124,11 @@ const A1_CH23: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_KB_Audio/37 Lektion 23, 1.mp3'
                 },
                 speaking: {
@@ -4321,17 +4161,16 @@ const A1_CH24: ChapterDef = {
     id: 'a1_ch24', level: 'A1',
     title: 'Chapter 24: A1 Lektion 24',
     subtitle: 'A1 Course, Chapter 24',
+    imagePaths: ['German/Menschen/A1/Images/KB2_page_59.jpg', 'German/Menschen/A1/Images/KB2_page_60.jpg', 'German/Menschen/A1/Images/KB2_page_61.jpg', 'German/Menschen/A1/Images/KB2_page_62.jpg'],
     days: [
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 24, Aussprache, 1.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 24, Basistraining, 5c.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 24, Basistraining, 5d.mp3' },
@@ -4365,13 +4204,11 @@ const A1_CH24: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 24, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -4400,13 +4237,11 @@ const A1_CH24: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 24, Aussprache, 4.mp3'
                 },
                 speaking: {
@@ -4435,13 +4270,11 @@ const A1_CH24: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 24, Basistraining, 5a.mp3'
                 },
                 speaking: {
@@ -4470,13 +4303,11 @@ const A1_CH24: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A1 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_2_AB_Audio/Lektion 24, Basistraining, 5b.mp3'
                 },
                 speaking: {
@@ -4513,13 +4344,11 @@ const A2_CH1: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/02-Lektion1-1(1).mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/04-Lektion1-3c.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/05-Lektion1-5-7(1).mp3' },
@@ -4552,13 +4381,11 @@ const A2_CH1: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/02-Lektion1-1.mp3'
                 },
                 speaking: {
@@ -4587,13 +4414,11 @@ const A2_CH1: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/03-Lektion1-3b(1).mp3'
                 },
                 speaking: {
@@ -4622,13 +4447,11 @@ const A2_CH1: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/03-Lektion1-3b.mp3'
                 },
                 speaking: {
@@ -4657,13 +4480,11 @@ const A2_CH1: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/04-Lektion1-3c(1).mp3'
                 },
                 speaking: {
@@ -4700,13 +4521,11 @@ const A2_CH2: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/06-Lektion2-2(1).mp3'
                 },
                 speaking: {
@@ -4735,13 +4554,11 @@ const A2_CH2: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/06-Lektion2-2.mp3'
                 },
                 speaking: {
@@ -4770,13 +4587,11 @@ const A2_CH2: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/07-Lektion2-3(1).mp3'
                 },
                 speaking: {
@@ -4805,13 +4620,11 @@ const A2_CH2: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/07-Lektion2-3.mp3'
                 },
                 speaking: {
@@ -4883,13 +4696,11 @@ const A2_CH3: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 3\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 3.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/08-Lektion3-2(1).mp3'
                 },
                 speaking: {
@@ -4918,13 +4729,11 @@ const A2_CH3: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 3\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 3.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/08-Lektion3-2.mp3'
                 },
                 speaking: {
@@ -5066,13 +4875,11 @@ const A2_CH4: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 4\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 4.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/10-Lektion4-1(1).mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/12-Lektion4-4_2.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/13-Lektion4-4_3(1).mp3' },
@@ -5107,13 +4914,11 @@ const A2_CH4: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 4\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 4.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/10-Lektion4-1.mp3'
                 },
                 speaking: {
@@ -5142,13 +4947,11 @@ const A2_CH4: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 4\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 4.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/11-Lektion4-4_1(1).mp3'
                 },
                 speaking: {
@@ -5177,13 +4980,11 @@ const A2_CH4: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 4\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 4.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/11-Lektion4-4_1.mp3'
                 },
                 speaking: {
@@ -5212,13 +5013,11 @@ const A2_CH4: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 4\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 4.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/12-Lektion4-4_2(1).mp3'
                 },
                 speaking: {
@@ -5255,13 +5054,11 @@ const A2_CH5: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 5\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 5.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/15-Lektion5-2(1).mp3'
                 },
                 speaking: {
@@ -5290,13 +5087,11 @@ const A2_CH5: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 5\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 5.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/15-Lektion5-2.mp3'
                 },
                 speaking: {
@@ -5438,13 +5233,11 @@ const A2_CH6: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 6\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 6.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/16-Lektion6-2(1).mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/18-Lektion6-5_2.mp3' }
                     ]
@@ -5475,13 +5268,11 @@ const A2_CH6: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 6\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 6.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/16-Lektion6-2.mp3'
                 },
                 speaking: {
@@ -5510,13 +5301,11 @@ const A2_CH6: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 6\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 6.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/17-Lektion6-5_1(1).mp3'
                 },
                 speaking: {
@@ -5545,13 +5334,11 @@ const A2_CH6: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 6\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 6.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/17-Lektion6-5_1.mp3'
                 },
                 speaking: {
@@ -5580,13 +5367,11 @@ const A2_CH6: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 6\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 6.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/18-Lektion6-5_2(1).mp3'
                 },
                 speaking: {
@@ -5623,13 +5408,11 @@ const A2_CH7: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 7\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 7.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/20-Lektion7_2(1).mp3'
                 },
                 speaking: {
@@ -5658,13 +5441,11 @@ const A2_CH7: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 7\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 7.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/20-Lektion7_2.mp3'
                 },
                 speaking: {
@@ -5693,13 +5474,11 @@ const A2_CH7: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 7\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 7.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/21-Lektion7_3(1).mp3'
                 },
                 speaking: {
@@ -5728,13 +5507,11 @@ const A2_CH7: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 7\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 7.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/21-Lektion7_3.mp3'
                 },
                 speaking: {
@@ -5806,13 +5583,11 @@ const A2_CH8: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/22-Lektion8_1a(1).mp3'
                 },
                 speaking: {
@@ -5841,13 +5616,11 @@ const A2_CH8: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/22-Lektion8_1a.mp3'
                 },
                 speaking: {
@@ -5989,13 +5762,11 @@ const A2_CH9: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 9\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 9.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/23-Lektion9_1(1).mp3'
                 },
                 speaking: {
@@ -6024,13 +5795,11 @@ const A2_CH9: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 9\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 9.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/23-Lektion9_1.mp3'
                 },
                 speaking: {
@@ -6172,13 +5941,11 @@ const A2_CH10: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/25-Lektion10-2(1).mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/27-Lektion10-5.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/28-Lektion10-8(1).mp3' },
@@ -6211,13 +5978,11 @@ const A2_CH10: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/25-Lektion10-2.mp3'
                 },
                 speaking: {
@@ -6246,13 +6011,11 @@ const A2_CH10: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/26-Lektion10-3(1).mp3'
                 },
                 speaking: {
@@ -6281,13 +6044,11 @@ const A2_CH10: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/26-Lektion10-3.mp3'
                 },
                 speaking: {
@@ -6316,13 +6077,11 @@ const A2_CH10: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/27-Lektion10-5(1).mp3'
                 },
                 speaking: {
@@ -6359,13 +6118,11 @@ const A2_CH11: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/29-Lektion11-1(1).mp3'
                 },
                 speaking: {
@@ -6394,13 +6151,11 @@ const A2_CH11: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/29-Lektion11-1.mp3'
                 },
                 speaking: {
@@ -6542,13 +6297,11 @@ const A2_CH12: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/30-Lektion12-2(1).mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/32-Lektion12-5_2.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/33-Lektion12-5_3(1).mp3' },
@@ -6583,13 +6336,11 @@ const A2_CH12: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/30-Lektion12-2.mp3'
                 },
                 speaking: {
@@ -6618,13 +6369,11 @@ const A2_CH12: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/31-Lektion12-5_1(1).mp3'
                 },
                 speaking: {
@@ -6653,13 +6402,11 @@ const A2_CH12: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/31-Lektion12-5_1.mp3'
                 },
                 speaking: {
@@ -6688,13 +6435,11 @@ const A2_CH12: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Kursbuch A2.1/Kursbuch A2.1/32-Lektion12-5_2(1).mp3'
                 },
                 speaking: {
@@ -6731,13 +6476,11 @@ const A2_CH13: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/02 Lektion 13, Aussprache, 1b.mp3'
                 },
                 speaking: {
@@ -6766,13 +6509,11 @@ const A2_CH13: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/03 Lektion 13, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -6801,13 +6542,11 @@ const A2_CH13: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/04 Lektion 13, Aussprache, 3a.mp3'
                 },
                 speaking: {
@@ -6836,13 +6575,11 @@ const A2_CH13: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 13\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 13.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/05 Lektion 13, Aussprache, 3b.mp3'
                 },
                 speaking: {
@@ -6914,13 +6651,11 @@ const A2_CH14: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 14\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 14.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/06 Lektion 14, Basistraining, 10.mp3'
                 },
                 speaking: {
@@ -6949,13 +6684,11 @@ const A2_CH14: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 14\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 14.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/07 Lektion 14, Aussprache, 1a.mp3'
                 },
                 speaking: {
@@ -6984,13 +6717,11 @@ const A2_CH14: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 14\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 14.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/08 Lektion 14, Aussprache, 1b.mp3'
                 },
                 speaking: {
@@ -7097,13 +6828,11 @@ const A2_CH15: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/09 Lektion 15, Hoeren, 2.mp3'
                 },
                 speaking: {
@@ -7132,13 +6861,11 @@ const A2_CH15: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/10 Lektion 15, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -7167,13 +6894,11 @@ const A2_CH15: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 15\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 15.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/11 Lektion 15, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -7280,13 +7005,11 @@ const A2_CH16: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 16\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 16.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/12 Lektion 16, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -7315,13 +7038,11 @@ const A2_CH16: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 16\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 16.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/13 Lektion 16, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -7463,13 +7184,11 @@ const A2_CH17: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 17\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 17.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/14 Lektion 17, Aussprache, 1a.mp3'
                 },
                 speaking: {
@@ -7498,13 +7217,11 @@ const A2_CH17: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 17\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 17.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/15 Lektion 17, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -7646,13 +7363,11 @@ const A2_CH18: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/16 Lektion 18, Hoeren, 2a.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/21 Lektion 18, Aussprache, 2.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/22 Lektion 18, Aussprache, 3.mp3' }
@@ -7684,13 +7399,11 @@ const A2_CH18: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/17 Lektion 18, Hoeren, 2b.mp3'
                 },
                 speaking: {
@@ -7719,13 +7432,11 @@ const A2_CH18: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/18 Lektion 18, Hoeren, 2c.mp3'
                 },
                 speaking: {
@@ -7754,13 +7465,11 @@ const A2_CH18: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/19 Lektion 18, Hoeren, 2d.mp3'
                 },
                 speaking: {
@@ -7789,13 +7498,11 @@ const A2_CH18: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 18\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 18.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/20 Lektion 18, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -7832,13 +7539,11 @@ const A2_CH19: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/23 Lektion 19, Basistraining, 10.mp3'
                 },
                 speaking: {
@@ -7867,13 +7572,11 @@ const A2_CH19: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/24 Lektion 19, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -7902,13 +7605,11 @@ const A2_CH19: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/25 Lektion 19, Aussprache, 2a.mp3'
                 },
                 speaking: {
@@ -7937,13 +7638,11 @@ const A2_CH19: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 19\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 19.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/26 Lektion 19, Aussprache, 2b.mp3'
                 },
                 speaking: {
@@ -8198,13 +7897,11 @@ const A2_CH21: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/27 Lektion 21, Basistraining, 12a.mp3'
                 },
                 speaking: {
@@ -8233,13 +7930,11 @@ const A2_CH21: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/28 Lektion 21, Basistraining, 12b.mp3'
                 },
                 speaking: {
@@ -8268,13 +7963,11 @@ const A2_CH21: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/29 Lektion 21, Aussprache, 1a.mp3'
                 },
                 speaking: {
@@ -8303,13 +7996,11 @@ const A2_CH21: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/30 Lektion 21, Aussprache, 1b.mp3'
                 },
                 speaking: {
@@ -8338,13 +8029,11 @@ const A2_CH21: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 21\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 21.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/31 Lektion 21, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -8381,13 +8070,11 @@ const A2_CH22: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/32 Lektion 22, Hoeren, 1a.mp3', extraAudio: [
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/37 Lektion 22, Aussprache, 1b.mp3' },
                         { label: 'Extra Audio', path: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/38 Lektion 22, Aussprache, 3.mp3' }
@@ -8419,13 +8106,11 @@ const A2_CH22: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/33 Lektion 22, Hoeren, 1b.mp3'
                 },
                 speaking: {
@@ -8454,13 +8139,11 @@ const A2_CH22: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/34 Lektion 22, Hoeren, 1c.mp3'
                 },
                 speaking: {
@@ -8489,13 +8172,11 @@ const A2_CH22: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/35 Lektion 22, Hoeren, 1d.mp3'
                 },
                 speaking: {
@@ -8524,13 +8205,11 @@ const A2_CH22: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 22\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 22.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/36 Lektion 22, Aussprache, 1a.mp3'
                 },
                 speaking: {
@@ -8567,13 +8246,11 @@ const A2_CH23: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/39 Lektion 23, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -8602,13 +8279,11 @@ const A2_CH23: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/40 Lektion 23, Aussprache, 2a.mp3'
                 },
                 speaking: {
@@ -8637,13 +8312,11 @@ const A2_CH23: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 23\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 23.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/41 Lektion 23, Aussprache, 2b.mp3'
                 },
                 speaking: {
@@ -8750,13 +8423,11 @@ const A2_CH24: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/42 Lektion 24, Basistraining, 10.mp3'
                 },
                 speaking: {
@@ -8785,13 +8456,11 @@ const A2_CH24: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/43 Lektion 24, Aussprache, 1 und 2.mp3'
                 },
                 speaking: {
@@ -8820,13 +8489,11 @@ const A2_CH24: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: A2 Lektion 24\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 24.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A2/Menschen_A2_2_AB_Audio/Menschen_A2_2_AB_Audio/44 Lektion 24, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -8933,13 +8600,11 @@ const B1_CH1: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-02 Lektion 1, Aussprache, 1a.mp3'
                 },
                 speaking: {
@@ -8968,13 +8633,11 @@ const B1_CH1: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-03 Lektion 1, Aussprache, 1b.mp3'
                 },
                 speaking: {
@@ -9003,13 +8666,11 @@ const B1_CH1: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 1\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 1.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-04 Lektion 1, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -9116,13 +8777,11 @@ const B1_CH2: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-05 Lektion 2, Basistraining, 8a.mp3'
                 },
                 speaking: {
@@ -9151,13 +8810,11 @@ const B1_CH2: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-06 Lektion 2, Basistraining, 8b und c.mp3'
                 },
                 speaking: {
@@ -9186,13 +8843,11 @@ const B1_CH2: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-07 Lektion 2, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -9221,13 +8876,11 @@ const B1_CH2: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-08 Lektion 2, Aussprache, 2a.mp3'
                 },
                 speaking: {
@@ -9256,13 +8909,11 @@ const B1_CH2: ChapterDef = {
         {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 2\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 2.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-09 Lektion 2, Aussprache, 2b.mp3'
                 },
                 speaking: {
@@ -9299,13 +8950,11 @@ const B1_CH3: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 3\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 3.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-10 Lektion 3, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -9334,13 +8983,11 @@ const B1_CH3: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 3\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 3.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-11 Lektion 3, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -9482,13 +9129,11 @@ const B1_CH4: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 4\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 4.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-12 Lektion 4, Hoeren, 2.mp3'
                 },
                 speaking: {
@@ -9517,13 +9162,11 @@ const B1_CH4: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 4\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 4.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-13 Lektion 4, Aussprache, 1a und b.mp3'
                 },
                 speaking: {
@@ -9665,13 +9308,11 @@ const B1_CH5: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 5\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 5.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-14 Lektion 5, Aussprache, 1a.mp3'
                 },
                 speaking: {
@@ -9700,13 +9341,11 @@ const B1_CH5: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 5\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 5.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-15 Lektion 5, Aussprache, 1b.mp3'
                 },
                 speaking: {
@@ -9848,13 +9487,11 @@ const B1_CH6: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 6\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 6.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-16 Lektion 6, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -9883,13 +9520,11 @@ const B1_CH6: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 6\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 6.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-17 Lektion 6, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -10031,13 +9666,11 @@ const B1_CH7: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 7\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 7.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-18 Lektion 7, Basistraining, 8.mp3'
                 },
                 speaking: {
@@ -10066,13 +9699,11 @@ const B1_CH7: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 7\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 7.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-19 Lektion 7, Aussprache, 1a.mp3'
                 },
                 speaking: {
@@ -10101,13 +9732,11 @@ const B1_CH7: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 7\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 7.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-20 Lektion 7, Aussprache, 1b.mp3'
                 },
                 speaking: {
@@ -10214,13 +9843,11 @@ const B1_CH8: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the basic training exercises.',
+                    content: `🎧 Topic: Basistraining (Vocabulary/Grammar)\nHören Sie die Übung zum Basistraining.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'multipleChoice', prompt: 'Welcher Bereich wird hier geübt?', options: ['Wortschatz / Grammatik', 'Aussprache', 'Ein Dialog'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-21 Lektion 8, Basistraining, 10.mp3'
                 },
                 speaking: {
@@ -10249,13 +9876,11 @@ const B1_CH8: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 8\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 8.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-22 Lektion 8, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -10397,13 +10022,11 @@ const B1_CH9: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 9\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 9.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-23 Lektion 9, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -10432,13 +10055,11 @@ const B1_CH9: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 9\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 9.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-24 Lektion 9, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -10580,13 +10201,11 @@ const B1_CH10: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-25 Lektion 10, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -10615,13 +10234,11 @@ const B1_CH10: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-26 Lektion 10, Aussprache, 2.mp3'
                 },
                 speaking: {
@@ -10650,13 +10267,11 @@ const B1_CH10: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 10\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 10.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-27 Lektion 10, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -10763,13 +10378,11 @@ const B1_CH11: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-28 Lektion 11, Hoeren, 1.mp3'
                 },
                 speaking: {
@@ -10798,13 +10411,11 @@ const B1_CH11: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the dialogue or text passages.',
+                    content: `🎧 Topic: Dialog & Hörverstehen\nHören Sie den Dialog oder den Text aus der Lektion.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man hört ein Gespräch oder einen Text.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-29 Lektion 11, Hoeren, 2 und 3.mp3'
                 },
                 speaking: {
@@ -10833,13 +10444,11 @@ const B1_CH11: ChapterDef = {
         {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-30 Lektion 11, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -10868,13 +10477,11 @@ const B1_CH11: ChapterDef = {
         {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 11\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 11.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-31 Lektion 11, Aussprache, 3.mp3'
                 },
                 speaking: {
@@ -10946,13 +10553,11 @@ const B1_CH12: ChapterDef = {
         {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-32 Lektion 12, Aussprache, 1.mp3'
                 },
                 speaking: {
@@ -10981,13 +10586,11 @@ const B1_CH12: ChapterDef = {
         {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
-                    instruction: 'Listen to the audio recording for this chapter and answer the questions.',
-                    content: '🎧 Topic: B1 Lektion 12\n\nTask: Listen to the audio and understand the context. This is the generated content for Chapter 12.',
+                    instruction: 'Listen to the pronunciation and repeat.',
+                    content: `🎧 Topic: Aussprache (Pronunciation)\nHören Sie gut zu und sprechen Sie nach.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
-                    exercises: [
-                        { type: 'multipleChoice', prompt: 'What is the topic of the audio?', options: ['Topic A', 'Topic B', 'Topic C'], correctAnswer: 0 }
-                    ],
+                    exercises: [{ type: 'trueFalse', prompt: 'Man übt hier die Aussprache.', options: ['Richtig', 'Falsch'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/B1/Menschen_B1_1_Arbeitsbuch/1-33 Lektion 12, Aussprache, 2.mp3'
                 },
                 speaking: {
