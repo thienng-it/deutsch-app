@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import type { InteractiveQuestion } from '../data/curriculum';
+import type { InteractiveQuestion } from '../types';
 
 /* ─── Single Question Renderers ─────────────────────────── */
 
@@ -19,7 +19,7 @@ function MultipleChoice({ q, onAnswer }: {
         <div className="space-y-2">
             <p className="text-sm text-gray-200 font-medium">{q.prompt}</p>
             <div className="grid gap-2">
-                {q.options?.map((opt, i) => {
+                {q.options?.map((opt: string, i: number) => {
                     let cls = 'w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all border ';
                     if (selected === null) {
                         cls += 'border-gray-600 bg-gray-700/50 hover:bg-gray-600/70 hover:border-gray-500 text-gray-200 cursor-pointer';
@@ -68,7 +68,7 @@ function TrueFalse({ q, onAnswer }: {
         <div className="space-y-2">
             <p className="text-sm text-gray-200 font-medium">{q.prompt}</p>
             <div className="flex gap-3">
-                {options.map((opt, i) => {
+                {options.map((opt: string, i: number) => {
                     let cls = 'flex-1 py-3 rounded-lg text-sm font-medium transition-all border text-center ';
                     if (selected === null) {
                         cls += 'border-gray-600 bg-gray-700/50 hover:bg-gray-600/70 text-gray-200 cursor-pointer';
@@ -130,10 +130,10 @@ function TextInput({ q, onAnswer }: {
                     disabled={submitted}
                     placeholder="Type your answer…"
                     className={`flex-1 px-4 py-2.5 rounded-lg text-sm border bg-gray-800/80 outline-none transition-all ${submitted
-                            ? isCorrect
-                                ? 'border-green-500 text-green-300'
-                                : 'border-red-500 text-red-300'
-                            : 'border-gray-600 text-white focus:border-blue-500'
+                        ? isCorrect
+                            ? 'border-green-500 text-green-300'
+                            : 'border-red-500 text-red-300'
+                        : 'border-gray-600 text-white focus:border-blue-500'
                         }`}
                 />
                 {!submitted && (
@@ -189,7 +189,7 @@ function FillBlank({ q, onAnswer }: {
     return (
         <div className="space-y-2">
             <div className="text-sm text-gray-200 font-medium flex flex-wrap items-center gap-1">
-                {parts.map((part, i) => (
+                {parts.map((part: string, i: number) => (
                     <span key={i}>
                         {part}
                         {i < parts.length - 1 && (
@@ -200,10 +200,10 @@ function FillBlank({ q, onAnswer }: {
                                 onKeyDown={e => e.key === 'Enter' && handleSubmit()}
                                 disabled={submitted}
                                 className={`inline-block w-32 px-2 py-1 mx-1 rounded border text-sm text-center transition-all ${submitted
-                                        ? isCorrect
-                                            ? 'border-green-500 bg-green-900/30 text-green-300'
-                                            : 'border-red-500 bg-red-900/30 text-red-300'
-                                        : 'border-gray-500 bg-gray-700/50 text-white focus:border-blue-500'
+                                    ? isCorrect
+                                        ? 'border-green-500 bg-green-900/30 text-green-300'
+                                        : 'border-red-500 bg-red-900/30 text-red-300'
+                                    : 'border-gray-500 bg-gray-700/50 text-white focus:border-blue-500'
                                     }`}
                                 placeholder="..."
                             />
@@ -279,12 +279,12 @@ function Ordering({ q, onAnswer }: {
                         onDragOver={(e) => handleDragOver(e, i)}
                         onDragEnd={() => setDragging(null)}
                         className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm border transition-all ${submitted
-                                ? item === (q.options || [])[i]
-                                    ? 'border-green-600 bg-green-900/20 text-green-300'
-                                    : 'border-red-600 bg-red-900/20 text-red-300'
-                                : dragging === i
-                                    ? 'border-blue-500 bg-blue-900/30 text-blue-300'
-                                    : 'border-gray-600 bg-gray-700/40 text-gray-200 cursor-grab'
+                            ? item === (q.options || [])[i]
+                                ? 'border-green-600 bg-green-900/20 text-green-300'
+                                : 'border-red-600 bg-red-900/20 text-red-300'
+                            : dragging === i
+                                ? 'border-blue-500 bg-blue-900/30 text-blue-300'
+                                : 'border-gray-600 bg-gray-700/40 text-gray-200 cursor-grab'
                             }`}
                     >
                         <span className="text-gray-500 select-none">⣿</span>
@@ -301,7 +301,7 @@ function Ordering({ q, onAnswer }: {
             )}
             {submitted && !isCorrect && (
                 <p className="text-xs text-yellow-300 bg-yellow-900/20 rounded-lg p-2">
-                    ✏️ Correct order: {(q.options || []).map((o, i) => `${i + 1}. ${o}`).join(' → ')}
+                    ✏️ Correct order: {(q.options || []).map((o: string, i: number) => `${i + 1}. ${o}`).join(' → ')}
                 </p>
             )}
             {submitted && q.explanation && (
@@ -386,12 +386,12 @@ export default function InteractiveExercise({
                         key={i}
                         onClick={() => answered[i] && setCurrentIdx(i)}
                         className={`w-2.5 h-2.5 rounded-full transition-all ${i === currentIdx
-                                ? 'bg-blue-400 scale-125'
-                                : results[i] === true
-                                    ? 'bg-green-400'
-                                    : results[i] === false
-                                        ? 'bg-red-400'
-                                        : 'bg-gray-600'
+                            ? 'bg-blue-400 scale-125'
+                            : results[i] === true
+                                ? 'bg-green-400'
+                                : results[i] === false
+                                    ? 'bg-red-400'
+                                    : 'bg-gray-600'
                             }`}
                     />
                 ))}
@@ -405,10 +405,10 @@ export default function InteractiveExercise({
             {/* Score summary */}
             {allDone && (
                 <div className={`rounded-xl p-4 text-center border ${score === exercises.length
-                        ? 'bg-green-900/30 border-green-600/40'
-                        : score >= exercises.length / 2
-                            ? 'bg-yellow-900/30 border-yellow-600/40'
-                            : 'bg-red-900/30 border-red-600/40'
+                    ? 'bg-green-900/30 border-green-600/40'
+                    : score >= exercises.length / 2
+                        ? 'bg-yellow-900/30 border-yellow-600/40'
+                        : 'bg-red-900/30 border-red-600/40'
                     }`}>
                     <div className="text-3xl mb-1">
                         {score === exercises.length ? '🎉' : score >= exercises.length / 2 ? '👍' : '📚'}
