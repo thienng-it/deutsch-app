@@ -1,5 +1,5 @@
 import api from './client';
-import type { VocabItem, GrammarTopic } from '../types';
+import type { VocabItem, GrammarTopic, Preposition } from '../types';
 
 export const contentApi = {
   async getVocabulary(params?: {
@@ -23,7 +23,7 @@ export const contentApi = {
     return res.data;
   },
 
-  async getPrepositions(level?: string): Promise<any[]> {
+  async getPrepositions(level?: string): Promise<Preposition[]> {
     const res = await api.get('/content/prepositions', { params: { level } });
     return res.data;
   },

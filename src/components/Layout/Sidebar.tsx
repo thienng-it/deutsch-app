@@ -8,15 +8,17 @@ interface SidebarProps {
 }
 
 const learnItems = [
-  { to: '/', icon: '📅', label: 'Learning Plan' },
-  { to: '/vocabulary', icon: '📖', label: 'Vocabulary' },
+  { to: '/', icon: '📊', label: 'Dashboard' },
+  { to: '/reading', icon: '📖', label: 'Reading' },
   { to: '/grammar', icon: '✏️', label: 'Grammar' },
+  { to: '/vocabulary', icon: '📚', label: 'Vocabulary' },
   { to: '/prepositions', icon: '📍', label: 'Prepositions' },
 ];
 
 const moreItems = [
   { to: '/games', icon: '🎮', label: 'Games' },
-  { to: '/progress', icon: '📈', label: 'Progress' },
+  { to: '/speaking', icon: '🗣️', label: 'Speaking' },
+  { to: '/writing', icon: '✍️', label: 'Writing' },
 ];
 
 export default function Sidebar({ open, onClose, collapsed, onToggleCollapse }: SidebarProps) {

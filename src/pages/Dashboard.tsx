@@ -3,31 +3,35 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { progressApi } from '../api/progress';
 
-import type { ProgressSummary, LeaderboardEntry } from '../types';
-import { userApi } from '../api/auth';
+import type { ProgressSummary } from '../types';
 import { LEVEL_COLORS } from '../types';
-import { CURRICULUM, getProgress, SKILL_KEYS } from '../data/curriculum';
 
 export default function Dashboard() {
   const { user } = useAuth();
   const [summary, setSummary] = useState<ProgressSummary | null>(null);
-  const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([]);
-  const [materialStats, setMaterialStats] = useState<{ audioFiles: number; pdfFiles: number } | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Promise.all([
-      progressApi.getSummary(),
-      userApi.getLeaderboard(),
-      fetch('/api/materials/stats', {
-        headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
-      }).then(r => r.json()).catch(() => null),
-    ]).then(([sum, lb, ms]) => {
-      setSummary(sum);
-      setLeaderboard(lb);
-      setMaterialStats(ms);
-    }).finally(() => setLoading(false));
+    progressApi.getSummary()
+      .then(setSummary)
+      .finally(() => setLoading(false));
   }, []);
+
+  // Performance Analysis derived data
+  const vocabLevels = summary?.vocabByLevel || [];
+  const strongestLevel = vocabLevels.length > 0
+    ? vocabLevels.reduce((prev, curr) => (curr.mastered / (curr.total || 1)) > (prev.mastered / (prev.total || 1)) ? curr : prev)
+    : null;
+
+  const weakestLevel = vocabLevels.length > 0
+    ? vocabLevels.reduce((prev, curr) => (curr.mastered / (curr.total || 1)) < (prev.mastered / (prev.total || 1)) ? curr : prev)
+    : null;
+
+  const gameStats = summary?.gameStats || [];
+  const weakestGame = gameStats.length > 0
+    ? gameStats.reduce((prev, curr) => curr.avg_score < prev.avg_score ? curr : prev)
+    : null;
+
 
   const totalVocab = summary?.vocabByLevel.reduce((s, v) => s + v.total, 0) ?? 0;
   const totalMaster = summary?.vocabByLevel.reduce((s, v) => s + v.mastered, 0) ?? 0;
@@ -60,35 +64,9 @@ export default function Dashboard() {
             Current level: <span className={`font-bold ${LEVEL_COLORS[user?.currentLevel ?? 'A1']}`}>{user?.currentLevel}</span>
           </p>
         </div>
-        <Link to="/" className="btn-gold hidden sm:flex">📅 Learning Plan</Link>
       </div>
 
-      {/* Today's Lesson */}
-      {(() => {
-        const chProgress = getProgress();
-        const current = CURRICULUM.flatMap(ch =>
-          ch.days.map(d => ({ ch, day: d.num, key: `${ch.id}_day${d.num}` }))
-        ).find(({ key }) => {
-          const p = chProgress[key] ?? {};
-          return SKILL_KEYS.some(k => !p[k]);
-        });
-        if (!current) return null;
-        const dp = chProgress[current.key] ?? {};
-        const done = SKILL_KEYS.filter(k => dp[k]).length;
-        return (
-          <Link to="/" className="card bg-gradient-to-r from-red-900/30 to-yellow-900/20 border border-red-700/30 hover:border-red-600/50 transition-all block">
-            <div className="flex items-center gap-4">
-              <div className="text-3xl">📚</div>
-              <div className="flex-1">
-                <p className="text-xs text-gray-400">Continue Learning</p>
-                <p className="font-bold text-white">{current.ch.title} — Day {current.day}</p>
-                <p className="text-xs text-gray-500 mt-0.5">{current.ch.days[current.day - 1].title} · {done}/4 skills done</p>
-              </div>
-              <span className="text-red-400 font-semibold text-sm">Start →</span>
-            </div>
-          </Link>
-        );
-      })()}
+
 
       {/* Stats row */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -152,42 +130,53 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Leaderboard */}
+        {/* Performance Analysis */}
         <div>
-          <h2 className="text-lg font-semibold text-white mb-4">🏆 Leaderboard</h2>
-          <div className="card space-y-3">
-            {leaderboard.length === 0 ? (
-              <p className="text-gray-500 text-sm">No data yet – start playing!</p>
-            ) : leaderboard.map((entry, i) => (
-              <div key={entry.id} className={`flex items-center gap-3 p-2 rounded-lg ${entry.isCurrentUser ? 'bg-red-600/10 border border-red-600/20' : ''
-                }`}>
-                <span className="text-lg">{i === 0 ? '🥇' : i === 1 ? '🥈' : '🥉'}</span>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-white truncate">
-                    {entry.displayName} {entry.isCurrentUser && <span className="text-xs text-gray-500">(you)</span>}
+          <h2 className="text-lg font-semibold text-white mb-4">📈 Performance Analysis</h2>
+          <div className="card space-y-4">
+            {summary ? (
+              <>
+                <div className="space-y-1">
+                  <span className="text-xs text-green-400 font-semibold uppercase tracking-wider">Strongest Level</span>
+                  <p className="text-white text-sm">
+                    {strongestLevel ? (
+                      <>You are mastering <span className={`font-bold ${LEVEL_COLORS[strongestLevel.level]}`}>{strongestLevel.level}</span> vocabulary extremely well!</>
+                    ) : (
+                      <span className="text-gray-500">Not enough data.</span>
+                    )}
                   </p>
-                  <p className="text-xs text-gray-500">{entry.itemsMastered} mastered</p>
                 </div>
-                <span className="text-yellow-400 font-bold text-sm">{entry.totalScore.toLocaleString()}</span>
-              </div>
-            ))}
-          </div>
 
-          {/* Materials stats */}
-          {materialStats && (
-            <div className="card mt-4 space-y-2">
-              <h3 className="text-sm font-semibold text-gray-300">📁 Materials Library</h3>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">🎵 Audio files</span>
-                <span className="text-blue-400 font-bold">{materialStats.audioFiles.toLocaleString()}</span>
-              </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">📄 PDF files</span>
-                <span className="text-red-400 font-bold">{materialStats.pdfFiles}</span>
-              </div>
-              <Link to="/materials" className="btn-secondary btn-sm w-full mt-2">Browse Materials →</Link>
-            </div>
-          )}
+                <div className="h-px bg-gray-800" />
+
+                <div className="space-y-1">
+                  <span className="text-xs text-yellow-500 font-semibold uppercase tracking-wider">Level to Focus On</span>
+                  <p className="text-white text-sm">
+                    {weakestLevel && weakestLevel !== strongestLevel ? (
+                      <>Spend more time reviewing <span className={`font-bold ${LEVEL_COLORS[weakestLevel.level]}`}>{weakestLevel.level}</span> words to bring it up to speed.</>
+                    ) : (
+                      <span className="text-gray-500">Keep practicing to find your weak spots!</span>
+                    )}
+                  </p>
+                </div>
+
+                <div className="h-px bg-gray-800" />
+
+                <div className="space-y-1">
+                  <span className="text-xs text-red-400 font-semibold uppercase tracking-wider">Needs Practice</span>
+                  <p className="text-white text-sm">
+                    {weakestGame ? (
+                      <>Your average score in <span className="font-bold text-gray-300 capitalize">{weakestGame.session_type.replace('-', ' ')}</span> is lower than others. Try another round!</>
+                    ) : (
+                      <span className="text-gray-500">Play some games to see suggestions here.</span>
+                    )}
+                  </p>
+                </div>
+              </>
+            ) : (
+              <p className="text-gray-500 text-sm">Not enough data to analyze yet. Start learning!</p>
+            )}
+          </div>
         </div>
       </div>
 

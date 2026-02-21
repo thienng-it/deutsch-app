@@ -48,6 +48,16 @@ export interface Lesson {
   order_index: number | null;
 }
 
+// ── Preposition ────────────────────────────────────────────────────────────
+export interface Preposition {
+  id: number;
+  word: string;
+  case_type: string;
+  meaning: string;
+  example: string;
+  level: string;
+}
+
 // ── Progress ───────────────────────────────────────────────────────────────
 export interface ProgressItem {
   id: number;
@@ -95,8 +105,7 @@ export type GameType =
   | 'memory-cards'
   | 'word-scramble'
   | 'fill-in-blank'
-  | 'speed-round'
-  | 'listening-quiz';
+  | 'speed-round';
 
 export interface GameConfig {
   level: string;
@@ -153,3 +162,15 @@ export const LEVEL_BG: Record<string, string> = {
   B2: 'bg-purple-900/40 border-purple-700/50',
   C1: 'bg-orange-900/40 border-orange-700/50',
 };
+
+// ── Interactive Exercises ──────────────────────────────────────────────────
+export interface InteractiveQuestion {
+  id: string;
+  type: 'multipleChoice' | 'fillBlank' | 'trueFalse' | 'textInput' | 'ordering';
+  prompt: string;
+  options?: string[];
+  correctAnswer: string | number | boolean;
+  acceptableAnswers?: string[];
+  explanation?: string;
+  audioUrl?: string;
+}

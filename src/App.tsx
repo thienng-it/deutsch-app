@@ -3,10 +3,9 @@ import Layout from './components/Layout/Layout';
 import Dashboard from './pages/Dashboard';
 import VocabularyPage from './pages/Vocabulary';
 import GrammarPage from './pages/Grammar';
-import ListeningPage from './pages/Listening';
-import MaterialsPage from './pages/Materials';
-import ProgressPage from './pages/Progress';
-import LearningPlanPage from './pages/LearningPlan';
+import ReadingPage from './pages/Reading';
+import SpeakingPage from './pages/Speaking';
+import WritingPage from './pages/Writing';
 import PrepositionsPage from './pages/Prepositions';
 
 // Games
@@ -22,13 +21,12 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<LearningPlanPage />} />
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="vocabulary" element={<VocabularyPage />} />
+        <Route index element={<Dashboard />} />
+        <Route path="reading" element={<ReadingPage />} />
+        <Route path="speaking" element={<SpeakingPage />} />
+        <Route path="writing" element={<WritingPage />} />
         <Route path="grammar" element={<GrammarPage />} />
-        <Route path="listening" element={<ListeningPage />} />
-        <Route path="materials" element={<MaterialsPage />} />
-        <Route path="progress" element={<ProgressPage />} />
+        <Route path="vocabulary" element={<VocabularyPage />} />
         <Route path="prepositions" element={<PrepositionsPage />} />
 
         {/* Games */}

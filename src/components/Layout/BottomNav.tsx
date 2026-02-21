@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
 
 const navItems = [
-    { to: '/', icon: '📅', label: 'Plan', end: true },
+    { to: '/', icon: '🏠', label: 'Home', end: true },
     { to: '/vocabulary', icon: '📖', label: 'Vocab' },
+    { to: '/grammar', icon: '✏️', label: 'Grammar' },
     { to: '/games', icon: '🎮', label: 'Games' },
-    { to: '/listening', icon: '🎧', label: 'Listen' },
-    { to: '/progress', icon: '📈', label: 'Progress' },
+    { to: '/reading', icon: '📚', label: 'Reading' },
 ];
 
 export default function BottomNav() {

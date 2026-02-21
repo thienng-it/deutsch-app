@@ -1,15 +1,16 @@
-import jwt from 'jsonwebtoken';
-
+/**
+ * Authentication middleware.
+ *
+ * Currently bypassed — every request is treated as a single default user.
+ * To enable real auth, uncomment the JWT verification below and remove
+ * the static user assignment.
+ */
 export function authenticateToken(req, res, next) {
-  // Authentication was removed on the frontend.
-  // We'll temporarily assign a static user (ID 1) to all requests
-  // so that the backend can still function without requiring a JWT token.
   req.user = {
     id: 1,
     username: 'student',
     displayName: 'Learner',
-    currentLevel: 'A1'
+    currentLevel: 'A1',
   };
-
   next();
 }

@@ -1,15 +1,7 @@
 import { useEffect, useState } from 'react';
 import { contentApi } from '../api/content';
 import { LEVELS, LEVEL_COLORS, LEVEL_BG } from '../types';
-
-export interface Preposition {
-    id: number;
-    word: string;
-    case_type: string;
-    meaning: string;
-    example: string;
-    level: string;
-}
+import type { Preposition } from '../types';
 
 export default function PrepositionsPage() {
     const [prepositions, setPrepositions] = useState<Preposition[]>([]);
