@@ -73,7 +73,7 @@ const A1_CH1: ChapterDef = {
             num: 1, title: 'Vocabulary: Begrüßung', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
@@ -105,7 +105,7 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
             num: 2, title: 'Grammar: Länder & Herkunft', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
@@ -137,7 +137,7 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
             num: 3, title: 'Speaking: Das Alphabet', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
@@ -169,7 +169,7 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
             num: 4, title: 'Writing: Introductions', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
@@ -201,7 +201,7 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
             num: 5, title: 'Chapter 1 Review', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 1, 1.mp3'
                 },
@@ -242,7 +242,7 @@ Verbkonjugation: ich komme, du kommst, Sie kommen, er kommt.`,
             num: 1, title: 'Vocabulary: Berufe', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
@@ -274,7 +274,7 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
             num: 2, title: 'Grammar: Familienstand', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
@@ -306,7 +306,7 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
             num: 3, title: 'Speaking: Zahlen 1-100', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
@@ -338,7 +338,7 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
             num: 4, title: 'Asking Questions', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
@@ -370,7 +370,7 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
             num: 5, title: 'Chapter 2 Review', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 2, 1.mp3'
                 },
@@ -411,7 +411,7 @@ Zahlen 1 bis 100. Verben: arbeiten, haben, sein (ich bin, du bist).`,
             num: 1, title: 'Vocabulary: Die Familie', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
@@ -443,7 +443,7 @@ Possessivartikel: mein, dein, meine, deine.`,
             num: 2, title: 'Grammar: Possessivartikel', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
@@ -475,7 +475,7 @@ Possessivartikel: mein, dein, meine, deine.`,
             num: 3, title: 'Speaking: Sprachen', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
@@ -507,7 +507,7 @@ Possessivartikel: mein, dein, meine, deine.`,
             num: 4, title: 'Describing People', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
@@ -539,7 +539,7 @@ Possessivartikel: mein, dein, meine, deine.`,
             num: 5, title: 'Chapter 3 Review', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 3, 1.mp3'
                 },
@@ -580,7 +580,7 @@ Possessivartikel: mein, dein, meine, deine.`,
             num: 1, title: 'Vocabulary: Möbel', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
@@ -612,7 +612,7 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
             num: 2, title: 'Grammar: Bestimmter Artikel', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
@@ -644,7 +644,7 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
             num: 3, title: 'Speaking: Adjektive & Preise', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
@@ -676,7 +676,7 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
             num: 4, title: 'Writing: Room Descriptions', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
@@ -708,7 +708,7 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
             num: 5, title: 'Chapter 4 Review', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 4, 1.mp3'
                 },
@@ -749,7 +749,7 @@ Bestimmter Artikel: der, das, die. Personalpronomen er, es, sie.`,
             num: 1, title: 'Vocabulary: Gegenstände', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
@@ -781,7 +781,7 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
             num: 2, title: 'Grammar: Unbestimmter Artikel', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
@@ -813,7 +813,7 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
             num: 3, title: 'Speaking: Farben & Materialien', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
@@ -845,7 +845,7 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
             num: 4, title: 'Describing Objects', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
@@ -877,7 +877,7 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
             num: 5, title: 'Chapter 5 Review', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 5, 2.mp3'
                 },
@@ -918,7 +918,7 @@ Unbestimmter Artikel: ein, eine. Negativartikel: kein, keine.`,
             num: 1, title: 'Vocabulary: Büro & Technik', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
@@ -950,7 +950,7 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
             num: 2, title: 'Grammar: Akkusativ', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
@@ -982,7 +982,7 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
             num: 3, title: 'Speaking: Pluralformen', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
@@ -1014,7 +1014,7 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
             num: 4, title: 'Writing: Emails', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
@@ -1046,7 +1046,7 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
             num: 5, title: 'Chapter 6 Review', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
                     audioPath: 'German/Menschen/A1/Menschen_A1_1_KB_Audio/Lektion 6, 2.mp3'
                 },
@@ -1087,7 +1087,7 @@ Akkusativ. Singluar und Pluralformen der Nomen (der Tisch -> die Tische).`,
             num: 1, title: 'Vocabulary: Hobbys', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What hobbies do you hear?',
                     answer: 'Listen again — the speakers mention singing, cooking, and playing chess.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1134,7 +1134,7 @@ Exercise 2: Write "I like to cook" in German.`,
             num: 2, title: 'Grammar: können', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **8**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: Can the person play the guitar well?',
                     answer: 'Yes, they can play the guitar very well.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 8 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1321,7 +1321,7 @@ const A1_CH8: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1356,7 +1356,7 @@ const A1_CH8: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1389,7 +1389,7 @@ const A1_CH8: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1422,7 +1422,7 @@ const A1_CH8: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 10**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 10 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1455,7 +1455,7 @@ const A1_CH8: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1497,7 +1497,7 @@ const A1_CH9: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1530,7 +1530,7 @@ const A1_CH9: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1563,7 +1563,7 @@ const A1_CH9: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1675,7 +1675,7 @@ const A1_CH10: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1718,7 +1718,7 @@ const A1_CH10: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1751,7 +1751,7 @@ const A1_CH10: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1784,7 +1784,7 @@ const A1_CH10: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 10**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 10 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1817,7 +1817,7 @@ const A1_CH10: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 1 und 2 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 1 und 2 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1859,7 +1859,7 @@ const A1_CH11: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -1892,7 +1892,7 @@ const A1_CH11: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2039,7 +2039,7 @@ const A1_CH12: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2077,7 +2077,7 @@ const A1_CH12: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2110,7 +2110,7 @@ const A1_CH12: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2143,7 +2143,7 @@ const A1_CH12: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 2a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 2a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2176,7 +2176,7 @@ const A1_CH12: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 2b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 2b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2218,7 +2218,7 @@ const A1_CH13: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2254,7 +2254,7 @@ const A1_CH13: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2287,7 +2287,7 @@ const A1_CH13: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2320,7 +2320,7 @@ const A1_CH13: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2353,7 +2353,7 @@ const A1_CH13: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **HoÌˆren, 1 und 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise HoÌˆren, 1 und 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2395,7 +2395,7 @@ const A1_CH14: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2428,7 +2428,7 @@ const A1_CH14: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2461,7 +2461,7 @@ const A1_CH14: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 11 und 12**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 11 und 12 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2573,7 +2573,7 @@ const A1_CH15: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2609,7 +2609,7 @@ const A1_CH15: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2642,7 +2642,7 @@ const A1_CH15: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2675,7 +2675,7 @@ const A1_CH15: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 1 a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 1 a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2708,7 +2708,7 @@ const A1_CH15: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 5**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 5 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2750,7 +2750,7 @@ const A1_CH16: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2783,7 +2783,7 @@ const A1_CH16: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2816,7 +2816,7 @@ const A1_CH16: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 10**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 10 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -2928,7 +2928,7 @@ const A1_CH17: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3110,7 +3110,7 @@ const A1_CH18: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3143,7 +3143,7 @@ const A1_CH18: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3176,7 +3176,7 @@ const A1_CH18: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3209,7 +3209,7 @@ const A1_CH18: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **HoÌˆren, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise HoÌˆren, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3286,7 +3286,7 @@ const A1_CH19: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3319,7 +3319,7 @@ const A1_CH19: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 4 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 4 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3352,7 +3352,7 @@ const A1_CH19: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 4**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 4 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3385,7 +3385,7 @@ const A1_CH19: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3418,7 +3418,7 @@ const A1_CH19: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **8a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 8a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3460,7 +3460,7 @@ const A1_CH20: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3493,7 +3493,7 @@ const A1_CH20: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3526,7 +3526,7 @@ const A1_CH20: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3559,7 +3559,7 @@ const A1_CH20: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3636,7 +3636,7 @@ const A1_CH21: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3669,7 +3669,7 @@ const A1_CH21: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3702,7 +3702,7 @@ const A1_CH21: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3735,7 +3735,7 @@ const A1_CH21: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 11 und 12**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 11 und 12 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3768,7 +3768,7 @@ const A1_CH21: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3810,7 +3810,7 @@ const A1_CH22: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3843,7 +3843,7 @@ const A1_CH22: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3876,7 +3876,7 @@ const A1_CH22: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3909,7 +3909,7 @@ const A1_CH22: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3942,7 +3942,7 @@ const A1_CH22: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **8a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 8a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -3984,7 +3984,7 @@ const A1_CH23: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4026,7 +4026,7 @@ const A1_CH23: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4059,7 +4059,7 @@ const A1_CH23: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 6**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 6 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4092,7 +4092,7 @@ const A1_CH23: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **HoÌˆren, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise HoÌˆren, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4125,7 +4125,7 @@ const A1_CH23: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4167,7 +4167,7 @@ const A1_CH24: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4205,7 +4205,7 @@ const A1_CH24: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4238,7 +4238,7 @@ const A1_CH24: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 4**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 4 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4271,7 +4271,7 @@ const A1_CH24: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 5a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 5a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4304,7 +4304,7 @@ const A1_CH24: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 5b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 5b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4345,7 +4345,7 @@ const A2_CH1: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4382,7 +4382,7 @@ const A2_CH1: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4415,7 +4415,7 @@ const A2_CH1: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4448,7 +4448,7 @@ const A2_CH1: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4481,7 +4481,7 @@ const A2_CH1: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4522,7 +4522,7 @@ const A2_CH2: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4555,7 +4555,7 @@ const A2_CH2: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4588,7 +4588,7 @@ const A2_CH2: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4621,7 +4621,7 @@ const A2_CH2: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4697,7 +4697,7 @@ const A2_CH3: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4730,7 +4730,7 @@ const A2_CH3: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4876,7 +4876,7 @@ const A2_CH4: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4915,7 +4915,7 @@ const A2_CH4: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4948,7 +4948,7 @@ const A2_CH4: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -4981,7 +4981,7 @@ const A2_CH4: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5014,7 +5014,7 @@ const A2_CH4: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5055,7 +5055,7 @@ const A2_CH5: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5088,7 +5088,7 @@ const A2_CH5: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5234,7 +5234,7 @@ const A2_CH6: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5269,7 +5269,7 @@ const A2_CH6: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5302,7 +5302,7 @@ const A2_CH6: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5335,7 +5335,7 @@ const A2_CH6: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5368,7 +5368,7 @@ const A2_CH6: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5409,7 +5409,7 @@ const A2_CH7: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5442,7 +5442,7 @@ const A2_CH7: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5475,7 +5475,7 @@ const A2_CH7: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5508,7 +5508,7 @@ const A2_CH7: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5584,7 +5584,7 @@ const A2_CH8: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5617,7 +5617,7 @@ const A2_CH8: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5763,7 +5763,7 @@ const A2_CH9: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5796,7 +5796,7 @@ const A2_CH9: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5942,7 +5942,7 @@ const A2_CH10: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -5979,7 +5979,7 @@ const A2_CH10: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6012,7 +6012,7 @@ const A2_CH10: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6045,7 +6045,7 @@ const A2_CH10: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6078,7 +6078,7 @@ const A2_CH10: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6119,7 +6119,7 @@ const A2_CH11: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6152,7 +6152,7 @@ const A2_CH11: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6298,7 +6298,7 @@ const A2_CH12: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6337,7 +6337,7 @@ const A2_CH12: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6370,7 +6370,7 @@ const A2_CH12: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6403,7 +6403,7 @@ const A2_CH12: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6436,7 +6436,7 @@ const A2_CH12: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **the exercise**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise the exercise in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6477,7 +6477,7 @@ const A2_CH13: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6510,7 +6510,7 @@ const A2_CH13: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6543,7 +6543,7 @@ const A2_CH13: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6576,7 +6576,7 @@ const A2_CH13: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6652,7 +6652,7 @@ const A2_CH14: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 10**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 10 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6685,7 +6685,7 @@ const A2_CH14: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6718,7 +6718,7 @@ const A2_CH14: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6829,7 +6829,7 @@ const A2_CH15: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6862,7 +6862,7 @@ const A2_CH15: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -6895,7 +6895,7 @@ const A2_CH15: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7006,7 +7006,7 @@ const A2_CH16: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7039,7 +7039,7 @@ const A2_CH16: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7185,7 +7185,7 @@ const A2_CH17: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7218,7 +7218,7 @@ const A2_CH17: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7364,7 +7364,7 @@ const A2_CH18: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 2a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 2a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7400,7 +7400,7 @@ const A2_CH18: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 2b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 2b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7433,7 +7433,7 @@ const A2_CH18: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 2c**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 2c in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7466,7 +7466,7 @@ const A2_CH18: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 2d**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 2d in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7499,7 +7499,7 @@ const A2_CH18: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7540,7 +7540,7 @@ const A2_CH19: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 10**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 10 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7573,7 +7573,7 @@ const A2_CH19: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7606,7 +7606,7 @@ const A2_CH19: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7639,7 +7639,7 @@ const A2_CH19: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7898,7 +7898,7 @@ const A2_CH21: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 12a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 12a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7931,7 +7931,7 @@ const A2_CH21: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 12b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 12b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7964,7 +7964,7 @@ const A2_CH21: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -7997,7 +7997,7 @@ const A2_CH21: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8030,7 +8030,7 @@ const A2_CH21: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8071,7 +8071,7 @@ const A2_CH22: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8107,7 +8107,7 @@ const A2_CH22: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 1b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 1b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8140,7 +8140,7 @@ const A2_CH22: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 1c**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 1c in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8173,7 +8173,7 @@ const A2_CH22: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 1d**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 1d in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8206,7 +8206,7 @@ const A2_CH22: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8247,7 +8247,7 @@ const A2_CH23: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8280,7 +8280,7 @@ const A2_CH23: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8313,7 +8313,7 @@ const A2_CH23: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8424,7 +8424,7 @@ const A2_CH24: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 10**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 10 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8457,7 +8457,7 @@ const A2_CH24: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1 und 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 und 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8490,7 +8490,7 @@ const A2_CH24: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8601,7 +8601,7 @@ const B1_CH1: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8634,7 +8634,7 @@ const B1_CH1: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8667,7 +8667,7 @@ const B1_CH1: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8778,7 +8778,7 @@ const B1_CH2: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 8a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 8a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8811,7 +8811,7 @@ const B1_CH2: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 8b und c**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 8b und c in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8844,7 +8844,7 @@ const B1_CH2: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8877,7 +8877,7 @@ const B1_CH2: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8910,7 +8910,7 @@ const B1_CH2: ChapterDef = {
             num: 5, title: 'Day 5 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8951,7 +8951,7 @@ const B1_CH3: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -8984,7 +8984,7 @@ const B1_CH3: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9130,7 +9130,7 @@ const B1_CH4: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9163,7 +9163,7 @@ const B1_CH4: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a und b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a und b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9309,7 +9309,7 @@ const B1_CH5: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9342,7 +9342,7 @@ const B1_CH5: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9488,7 +9488,7 @@ const B1_CH6: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9521,7 +9521,7 @@ const B1_CH6: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9667,7 +9667,7 @@ const B1_CH7: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 8**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 8 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9700,7 +9700,7 @@ const B1_CH7: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1a**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1a in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9733,7 +9733,7 @@ const B1_CH7: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1b**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1b in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9844,7 +9844,7 @@ const B1_CH8: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Basistraining, 10**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Basistraining, 10 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -9877,7 +9877,7 @@ const B1_CH8: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10023,7 +10023,7 @@ const B1_CH9: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10056,7 +10056,7 @@ const B1_CH9: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10202,7 +10202,7 @@ const B1_CH10: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10235,7 +10235,7 @@ const B1_CH10: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10268,7 +10268,7 @@ const B1_CH10: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10379,7 +10379,7 @@ const B1_CH11: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10412,7 +10412,7 @@ const B1_CH11: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Hoeren, 2 und 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Hoeren, 2 und 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10445,7 +10445,7 @@ const B1_CH11: ChapterDef = {
             num: 3, title: 'Day 3 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10478,7 +10478,7 @@ const B1_CH11: ChapterDef = {
             num: 4, title: 'Day 4 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 3**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 3 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10554,7 +10554,7 @@ const B1_CH12: ChapterDef = {
             num: 1, title: 'Day 1 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 1**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 1 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
@@ -10587,7 +10587,7 @@ const B1_CH12: ChapterDef = {
             num: 2, title: 'Day 2 Section', skills: {
                 listening: {
                     instruction: 'Listen and follow along in the Textbook Reference above.',
-                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **${trackId}**. Listen to the audio and complete the exercise as written in the book.`,
+                    content: `🎧 Topic: Menschen Kursbuch / Arbeitsbuch Exercise\nPlease look at the Textbook Reference images above and locate Exercise: **Aussprache, 2**. Listen to the audio and complete the exercise as written in the book.`,
                     question: 'Q1: What is the main idea of this recording?\nQ2: What specific details are mentioned?',
                     answer: 'Listen again to find the details. This is an auto-generated placeholder.',
                     exercises: [{ type: 'trueFalse', prompt: 'Did you complete Exercise Aussprache, 2 in the textbook image?', options: ['Yes, completed', 'No, not yet'], correctAnswer: 0 }],
