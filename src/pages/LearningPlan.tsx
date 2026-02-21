@@ -5,6 +5,8 @@ import {
   type ChapterDef, type SkillKey, type DayProgress,
 } from '../data/curriculum';
 import InteractiveExercise from '../components/InteractiveExercise';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 // ─── Day Lesson View ────────────────────────────────────
 function DayLesson({ chapter, dayNum, onBack }: {
@@ -75,16 +77,16 @@ function DayLesson({ chapter, dayNum, onBack }: {
           </div>
           <div className="flex gap-4 overflow-x-auto pb-2 snap-x hide-scrollbar">
             {chapter.imagePaths.map((src, i) => (
-              <img
-                key={i}
-                src={`/materials/${src.replace(/'/g, '')}`}
-                className="h-64 sm:h-96 object-contain rounded border border-gray-700/50 bg-white snap-center shrink-0 shadow-lg cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => window.open(`/materials/${src.replace(/'/g, '')}`, '_blank')}
-                alt={`Page ${i + 1}`}
-              />
+              <Zoom key={i}>
+                <img
+                  src={`/materials/${src.replace(/'/g, '')}`}
+                  className="h-64 sm:h-96 object-contain rounded border border-gray-700/50 bg-white snap-center shrink-0 shadow-lg hover:scale-[1.02] transition-transform cursor-zoom-in"
+                  alt={`Page ${i + 1}`}
+                />
+              </Zoom>
             ))}
           </div>
-          <p className="text-xs text-gray-500 italic text-center pt-1">Click a page to view full size</p>
+          <p className="text-xs text-gray-500 italic text-center pt-1">Click a page to zoom in full size</p>
         </div>
       )}
 
