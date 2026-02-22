@@ -1,172 +1,153 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { contentApi } from '../api/content';
-import { progressApi } from '../api/progress';
-import type { VocabItem } from '../types';
-import { LEVELS, LEVEL_COLORS, LEVEL_BG } from '../types';
 
 export default function VocabularyPage() {
-  const [items, setItems] = useState<VocabItem[]>([]);
-  const [total, setTotal] = useState(0);
-  const [level, setLevel] = useState('');
-  const [category, setCategory] = useState('');
+  const [categories, setCategories] = useState<{ category: string; count: number }[]>([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
-  const [categories, setCategories] = useState<string[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [offset, setOffset] = useState(0);
-  const [showAdd, setShowAdd] = useState(false);
-  const LIMIT = 30;
+  const navigate = useNavigate();
 
-  const load = (currentOffset: number, isLoadMore = false) => {
+  useEffect(() => {
     setLoading(true);
-    contentApi.getVocabulary({ level: level || undefined, category: category || undefined, search: search || undefined, limit: LIMIT, offset: currentOffset })
-      .then(d => {
-        setItems(isLoadMore ? prev => {
-          // Deduplicate just in case
-          const existingIds = new Set(prev.map(p => p.id));
-          const newItems = d.items.filter(item => !existingIds.has(item.id));
-          return [...prev, ...newItems];
-        } : d.items);
-        setTotal(d.total);
-      })
-      .catch(() => { if (!isLoadMore) { setItems([]); setTotal(0); } })
+    contentApi.getCategoriesWithCounts()
+      .then(setCategories)
+      .catch(() => setCategories([]))
       .finally(() => setLoading(false));
-  };
+  }, []);
 
-  useEffect(() => {
-    setOffset(0);
-    load(0, false);
-  }, [level, category, search]);
-
-  useEffect(() => {
-    contentApi.getCategories(level || undefined).then(setCategories).catch(() => setCategories([]));
-  }, [level]);
-
-  const markMastered = async (item: VocabItem) => {
-    await progressApi.updateProgress({ contentType: 'vocabulary', contentId: item.id, level: item.level, score: 100, completed: true });
-  };
-
-  const [newWord, setNewWord] = useState({ german: '', english: '', level: 'A1', category: '', exampleSentence: '' });
-  const [addError, setAddError] = useState('');
-
-  const handleAdd = async (e: React.FormEvent) => {
+  const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    setAddError('');
-    try {
-      await contentApi.addVocabulary(newWord);
-      setNewWord({ german: '', english: '', level: 'A1', category: '', exampleSentence: '' });
-      setShowAdd(false);
-      setOffset(0);
-      load(0, false);
-    } catch {
-      setAddError('Failed to add word');
+    if (search.trim()) {
+      navigate(`/vocabulary/all?q=${encodeURIComponent(search.trim())}`);
     }
   };
 
+  const getTopicStyle = (category: string) => {
+    const c = category.toLowerCase();
+    if (c.includes('family')) return { icon: '👨‍👩‍👧‍👦', gradient: 'from-rose-500 to-pink-600' };
+    if (c.includes('kitchen') || c.includes('food')) return { icon: '🍳', gradient: 'from-orange-500 to-amber-600' };
+    if (c.includes('restaurant')) return { icon: '🍽️', gradient: 'from-amber-500 to-yellow-600' };
+    if (c.includes('travel')) return { icon: '✈️', gradient: 'from-sky-500 to-cyan-600' };
+    if (c.includes('housing')) return { icon: '🏠', gradient: 'from-teal-500 to-emerald-600' };
+    if (c.includes('work') || c.includes('career')) return { icon: '💼', gradient: 'from-indigo-500 to-violet-600' };
+    if (c.includes('emotion')) return { icon: '🤔', gradient: 'from-purple-500 to-fuchsia-600' };
+    if (c.includes('environment')) return { icon: '🌍', gradient: 'from-emerald-500 to-green-600' };
+    if (c.includes('society')) return { icon: '🤝', gradient: 'from-blue-500 to-indigo-600' };
+    if (c.includes('formal') || c.includes('academic')) return { icon: '🎓', gradient: 'from-slate-500 to-gray-600' };
+    if (c.includes('verb')) return { icon: '🏃', gradient: 'from-fuchsia-500 to-pink-600' };
+    if (c.includes('health') || c.includes('body')) return { icon: '🏥', gradient: 'from-red-500 to-rose-600' };
+    if (c.includes('sport')) return { icon: '⚽', gradient: 'from-lime-500 to-green-600' };
+    if (c.includes('tech') || c.includes('computer')) return { icon: '💻', gradient: 'from-cyan-500 to-blue-600' };
+    if (c.includes('nature') || c.includes('animal')) return { icon: '🌿', gradient: 'from-green-500 to-teal-600' };
+    if (c.includes('city') || c.includes('place')) return { icon: '🏙️', gradient: 'from-violet-500 to-purple-600' };
+    if (c.includes('time') || c.includes('date')) return { icon: '🕐', gradient: 'from-amber-500 to-orange-600' };
+    if (c.includes('money') || c.includes('finance')) return { icon: '💰', gradient: 'from-yellow-500 to-amber-600' };
+    if (c.includes('school') || c.includes('education')) return { icon: '📖', gradient: 'from-blue-500 to-sky-600' };
+    if (c.includes('basic') || c.includes('greeting') || c.includes('number') || c.includes('color')) return { icon: '⭐', gradient: 'from-yellow-400 to-orange-500' };
+    return { icon: '📚', gradient: 'from-slate-500 to-slate-600' };
+  };
+
+  const totalWords = categories.reduce((a, b) => a + b.count, 0);
+
   return (
-    <div className="space-y-6 animate-fade-in">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-white">📖 Vocabulary</h1>
-          <p className="text-gray-400 text-sm mt-1">{total.toLocaleString()} words in your library</p>
-        </div>
-        <button onClick={() => setShowAdd(true)} className="btn-primary btn-sm">+ Add Word</button>
-      </div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
 
-      {/* Filters */}
-      <div className="flex flex-wrap gap-3">
-        <input
-          className="input max-w-xs"
-          placeholder="🔍 Search German or English..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
-        <select className="input w-auto" value={level} onChange={e => setLevel(e.target.value)}>
-          <option value="">All Levels</option>
-          {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
-        </select>
-        <select className="input w-auto" value={category} onChange={e => setCategory(e.target.value)}>
-          <option value="">All Categories</option>
-          {categories.map(c => <option key={c} value={c}>{c}</option>)}
-        </select>
-      </div>
+      {/* Hero */}
+      <div className="text-center mb-10">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight">
+          Wortschatz
+        </h1>
+        <p className="text-lg text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-6">
+          {totalWords > 0
+            ? `${totalWords.toLocaleString()} words across ${categories.length} topics`
+            : 'Build your German vocabulary, one topic at a time.'}
+        </p>
 
-      {/* Add word modal */}
-      {showAdd && (
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
-          <div className="card w-full max-w-md animate-bounce-in">
-            <h2 className="text-lg font-bold text-white mb-4">Add New Word</h2>
-            <form onSubmit={handleAdd} className="space-y-3">
-              <input required className="input" placeholder="German word" value={newWord.german} onChange={e => setNewWord(p => ({ ...p, german: e.target.value }))} />
-              <input required className="input" placeholder="English translation" value={newWord.english} onChange={e => setNewWord(p => ({ ...p, english: e.target.value }))} />
-              <div className="flex gap-2">
-                <select className="input" value={newWord.level} onChange={e => setNewWord(p => ({ ...p, level: e.target.value }))}>
-                  {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
-                </select>
-                <input className="input" placeholder="Category (optional)" value={newWord.category} onChange={e => setNewWord(p => ({ ...p, category: e.target.value }))} />
-              </div>
-              <input className="input" placeholder="Example sentence (optional)" value={newWord.exampleSentence} onChange={e => setNewWord(p => ({ ...p, exampleSentence: e.target.value }))} />
-              {addError && <p className="text-red-400 text-sm">{addError}</p>}
-              <div className="flex gap-2 pt-2">
-                <button type="submit" className="btn-primary flex-1">Add Word</button>
-                <button type="button" onClick={() => setShowAdd(false)} className="btn-secondary flex-1">Cancel</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-
-      {/* Level tabs */}
-      <div className="flex gap-2 flex-wrap">
-        <button onClick={() => setLevel('')} className={`badge cursor-pointer ${!level ? 'bg-gray-700 text-white border-gray-600' : 'bg-gray-800/50 text-gray-500 border-gray-700 hover:text-gray-300'}`}>
-          All
-        </button>
-        {LEVELS.map(l => (
-          <button key={l} onClick={() => setLevel(l)} className={`badge cursor-pointer badge-${l.toLowerCase()} ${level !== l && 'opacity-50 hover:opacity-100'}`}>
-            {l}
-          </button>
-        ))}
-      </div>
-
-      {/* Word grid */}
-      {loading && items.length === 0 ? (
-        <div className="text-center py-16 text-gray-500">Loading vocabulary…</div>
-      ) : (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-          {items.map(item => (
-            <div key={item.id} className={`card border ${LEVEL_BG[item.level]} group relative`}>
-              <div className="flex items-start justify-between mb-1">
-                <span className={`text-xs font-bold ${LEVEL_COLORS[item.level]}`}>{item.level}</span>
-                {item.category && <span className="text-xs text-gray-600 bg-gray-800 px-1.5 py-0.5 rounded">{item.category}</span>}
-              </div>
-              <p className="text-xl font-bold text-white mt-1">{item.german}</p>
-              <p className="text-gray-300 mt-0.5">{item.english}</p>
-              {item.example_sentence && (
-                <p className="text-xs text-gray-500 mt-2 italic border-t border-gray-800 pt-2 leading-relaxed">
-                  "{item.example_sentence}"
-                </p>
-              )}
-              <button
-                onClick={() => markMastered(item)}
-                className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity text-xs btn-ghost py-1 px-2"
-                title="Mark as mastered"
-              >
-                ✓
-              </button>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Load more */}
-      {items.length < total && (
-        <div className="text-center">
+        {/* Quick Search */}
+        <form onSubmit={handleSearch} className="max-w-lg mx-auto relative">
+          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-lg pointer-events-none">🔍</span>
+          <input
+            className="input w-full pl-12 pr-28 py-3.5 text-base rounded-2xl bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 shadow-sm focus:shadow-md transition-shadow"
+            placeholder="Search any word..."
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+          />
           <button
-            onClick={() => { const newOff = offset + LIMIT; setOffset(newOff); load(newOff, true); }}
-            className="btn-secondary"
-            disabled={loading}
+            type="submit"
+            className="absolute right-2 top-1/2 -translate-y-1/2 px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold transition-colors shadow-sm"
           >
-            {loading ? 'Loading…' : `Load More (${total - items.length} remaining)`}
+            Search
           </button>
+        </form>
+      </div>
+
+      {/* Browse All Banner */}
+      <div className="mb-8">
+        <Link
+          to="/vocabulary/all"
+          className="group flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-0.5"
+        >
+          <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+            🔠
+          </div>
+          <div className="flex-1 min-w-0">
+            <h2 className="text-lg font-bold">Browse All Words</h2>
+            <p className="text-blue-100 text-sm">Search, filter, and explore the entire dictionary</p>
+          </div>
+          <svg className="w-5 h-5 text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </div>
+
+      {/* Section Divider */}
+      <div className="flex items-center gap-3 mb-6">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">Topics</h2>
+        <div className="flex-1 h-px bg-slate-200 dark:bg-slate-800" />
+      </div>
+
+      {/* Topics Grid */}
+      {loading ? (
+        <div className="py-20 flex flex-col items-center justify-center space-y-4">
+          <div className="w-10 h-10 border-4 border-slate-200 dark:border-slate-700 border-t-blue-500 rounded-full animate-spin" />
+          <p className="text-slate-500 font-medium animate-pulse">Loading topics...</p>
+        </div>
+      ) : (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {categories.map(({ category: cat, count }) => {
+            const style = getTopicStyle(cat);
+            return (
+              <Link
+                key={cat}
+                to={`/vocabulary/${encodeURIComponent(cat)}`}
+                className="group flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
+              >
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${style.gradient} flex items-center justify-center text-2xl shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300`}>
+                  {style.icon}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-slate-900 dark:text-white text-base truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {cat}
+                  </h3>
+                  <p className="text-sm text-slate-400 dark:text-slate-500">
+                    {count > 0 ? `${count} words` : 'Explore →'}
+                  </p>
+                </div>
+                <svg className="w-4 h-4 text-slate-300 dark:text-slate-600 group-hover:text-blue-500 group-hover:translate-x-1 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            );
+          })}
+
+          {categories.length === 0 && (
+            <div className="col-span-full py-16 text-center text-slate-500 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border-2 border-slate-200 dark:border-slate-800 border-dashed">
+              <span className="text-4xl mb-3 block">📭</span>
+              <p className="font-medium text-lg text-slate-600 dark:text-slate-300">No topics found yet.</p>
+              <p className="text-sm text-slate-400 mt-1">Start adding vocabulary to see topics appear.</p>
+            </div>
+          )}
         </div>
       )}
     </div>

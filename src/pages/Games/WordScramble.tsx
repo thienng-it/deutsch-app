@@ -121,21 +121,21 @@ export default function WordScramble() {
     <div className="animate-fade-in max-w-xl mx-auto">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">🔀 Word Scramble</h1>
-          <p className="text-gray-400 text-sm">{idx + 1} / {questions.length}</p>
+          <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">🔀 Word Scramble</h1>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">{idx + 1} / {questions.length}</p>
         </div>
-        <span className="text-yellow-400 font-bold">⭐ {score}</span>
+        <span className="text-amber-600 dark:text-amber-400 font-bold">⭐ {score}</span>
       </div>
 
       <div className="progress-bar mb-8">
-        <div className="progress-fill bg-gradient-to-r from-orange-600 to-red-500" style={{ width: `${(idx / questions.length) * 100}%` }} />
+        <div className="progress-fill bg-gradient-to-r from-orange-500 to-red-500" style={{ width: `${(idx / questions.length) * 100}%` }} />
       </div>
 
       {/* Hint */}
       <div className="card text-center mb-6">
-        <p className="text-xs text-gray-500 mb-1">English meaning</p>
-        <p className="text-2xl font-bold text-yellow-400">{q.item.english}</p>
-        {q.item.category && <p className="text-xs text-gray-500 mt-1">{q.item.category} · {q.item.level}</p>}
+        <p className="text-xs text-slate-400 dark:text-slate-500 mb-1">English meaning</p>
+        <p className="text-2xl font-extrabold text-amber-600 dark:text-amber-400">{q.item.english}</p>
+        {q.item.category && <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">{q.item.category} · {q.item.level}</p>}
       </div>
 
       {/* Answer slots */}
@@ -146,9 +146,9 @@ export default function WordScramble() {
             onClick={() => q.selected[i] && deselect(q.selected[i], i)}
             className={`
               w-11 h-11 rounded-lg border-2 text-base font-bold transition-colors
-              ${q.solved ? 'bg-green-800 border-green-500 text-green-300'
-                : q.selected[i] ? 'bg-gray-700 border-gray-500 text-white cursor-pointer hover:border-red-500'
-                  : 'bg-gray-800/50 border-dashed border-gray-600 text-transparent'}
+              ${q.solved ? 'bg-green-100 dark:bg-green-800 border-green-400 dark:border-green-500 text-green-700 dark:text-green-300'
+                : q.selected[i] ? 'bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-500 text-slate-900 dark:text-white cursor-pointer hover:border-red-400 dark:hover:border-red-500'
+                  : 'bg-slate-50 dark:bg-slate-800/50 border-dashed border-slate-300 dark:border-slate-600 text-transparent'}
             `}
           >
             {q.selected[i] ?? '_'}
@@ -162,7 +162,7 @@ export default function WordScramble() {
           <button
             key={`${letter}-${i}`}
             onClick={() => selectLetter(letter, i)}
-            className="w-11 h-11 rounded-lg bg-gray-700 border border-gray-600 text-white font-bold hover:bg-gray-600 hover:border-yellow-500 transition-colors active:scale-95"
+            className="w-11 h-11 rounded-lg bg-slate-100 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-900 dark:text-white font-bold hover:bg-slate-200 dark:hover:bg-slate-600 hover:border-amber-400 dark:hover:border-amber-500 transition-colors active:scale-95"
           >
             {letter}
           </button>

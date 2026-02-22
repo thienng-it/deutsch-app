@@ -85,15 +85,15 @@ export default function FlipCards() {
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">🃏 Flip Cards</h1>
-          <p className="text-gray-400 text-sm">{idx + 1} / {cards.length}</p>
+          <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">🃏 Flip Cards</h1>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">{idx + 1} / {cards.length}</p>
         </div>
-        <div className="text-yellow-400 font-bold">⭐ {score}</div>
+        <div className="text-amber-600 dark:text-amber-400 font-bold">⭐ {score}</div>
       </div>
 
       {/* Progress */}
       <div className="progress-bar mb-6">
-        <div className="progress-fill bg-gradient-to-r from-red-600 to-yellow-500" style={{ width: `${((idx + 1) / cards.length) * 100}%` }} />
+        <div className="progress-fill bg-gradient-to-r from-red-500 to-amber-500" style={{ width: `${((idx + 1) / cards.length) * 100}%` }} />
       </div>
 
       {/* Card */}
@@ -101,16 +101,16 @@ export default function FlipCards() {
         <div className={`flip-card w-full h-full ${flipped ? 'flipped' : ''}`}>
           {/* Front */}
           <div className="flip-front card flex flex-col items-center justify-center text-center p-8 h-full">
-            <p className="text-xs text-gray-500 mb-2">{card.level} · {card.category ?? 'General'}</p>
-            <p className="text-4xl font-bold text-white mb-4">{card.german}</p>
-            <p className="text-gray-500 text-sm mt-4">Click to reveal →</p>
+            <p className="text-xs text-slate-400 dark:text-slate-500 mb-2">{card.level} · {card.category ?? 'General'}</p>
+            <p className="text-4xl font-extrabold text-slate-900 dark:text-white mb-4">{card.german}</p>
+            <p className="text-slate-400 dark:text-slate-500 text-sm mt-4">Click to reveal →</p>
           </div>
           {/* Back */}
-          <div className="flip-back card flex flex-col items-center justify-center text-center p-8 h-full bg-gradient-to-br from-gray-900 to-gray-800 border-yellow-600/30">
-            <p className="text-3xl font-bold text-yellow-400 mb-2">{card.english}</p>
-            <p className="text-2xl text-white">{card.german}</p>
+          <div className="flip-back card flex flex-col items-center justify-center text-center p-8 h-full bg-gradient-to-br from-amber-50 to-amber-100 dark:from-slate-800 dark:to-slate-900 border-amber-400/30 dark:border-amber-600/30">
+            <p className="text-3xl font-extrabold text-amber-600 dark:text-amber-400 mb-2">{card.english}</p>
+            <p className="text-2xl text-slate-900 dark:text-white">{card.german}</p>
             {card.example_sentence && (
-              <p className="text-gray-400 text-sm mt-4 italic">"{card.example_sentence}"</p>
+              <p className="text-slate-500 dark:text-slate-400 text-sm mt-4 italic">"{card.example_sentence}"</p>
             )}
           </div>
         </div>
@@ -119,20 +119,20 @@ export default function FlipCards() {
       {/* Rating buttons - only after flip */}
       {flipped && (
         <div className="flex gap-3 mt-6 animate-fade-in">
-          <button onClick={() => rate('hard')} className="flex-1 btn bg-red-900/50 hover:bg-red-800 text-red-300 border border-red-700/50">
+          <button onClick={() => rate('hard')} className="flex-1 btn bg-red-100 dark:bg-red-900/40 hover:bg-red-200 dark:hover:bg-red-800/50 text-red-700 dark:text-red-300 border border-red-300 dark:border-red-700/50">
             😓 Hard
           </button>
-          <button onClick={() => rate('medium')} className="flex-1 btn bg-yellow-900/50 hover:bg-yellow-800 text-yellow-300 border border-yellow-700/50">
+          <button onClick={() => rate('medium')} className="flex-1 btn bg-amber-100 dark:bg-yellow-900/40 hover:bg-amber-200 dark:hover:bg-yellow-800/50 text-amber-700 dark:text-yellow-300 border border-amber-300 dark:border-yellow-700/50">
             😐 Medium
           </button>
-          <button onClick={() => rate('easy')} className="flex-1 btn bg-green-900/50 hover:bg-green-800 text-green-300 border border-green-700/50">
+          <button onClick={() => rate('easy')} className="flex-1 btn bg-green-100 dark:bg-green-900/40 hover:bg-green-200 dark:hover:bg-green-800/50 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-700/50">
             😊 Easy
           </button>
         </div>
       )}
 
       {!flipped && (
-        <p className="text-center text-gray-600 text-sm mt-6">Click the card to flip it</p>
+        <p className="text-center text-slate-400 dark:text-slate-500 text-sm mt-6">Click the card to flip it</p>
       )}
     </div>
   );

@@ -20,17 +20,19 @@ export default function GameSetup({ title, desc, onStart, maxCount = 20, hideCou
   return (
     <div className="animate-fade-in max-w-md mx-auto">
       <div className="mb-6">
-        <Link to="/games" className="text-gray-500 hover:text-gray-300 text-sm">← Back to Games</Link>
+        <Link to="/games" className="text-sm text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors">
+          ← Back to Games
+        </Link>
       </div>
       <div className="card space-y-6">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-white">{title}</h1>
-          <p className="text-gray-400 text-sm mt-2">{desc}</p>
+          <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">{title}</h1>
+          <p className="text-slate-500 dark:text-slate-400 text-sm mt-2">{desc}</p>
         </div>
 
         {/* Level */}
         <div>
-          <label className="block text-sm font-medium text-gray-300 mb-2">Level</label>
+          <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Level</label>
           <div className="flex gap-2 flex-wrap">
             {LEVELS.map(l => (
               <button
@@ -47,8 +49,8 @@ export default function GameSetup({ title, desc, onStart, maxCount = 20, hideCou
         {/* Count */}
         {!hideCount && (
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-2">
-              Number of items: <span className="text-yellow-400 font-bold">{count}</span>
+            <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+              Number of items: <span className="text-red-600 dark:text-red-400 font-bold">{count}</span>
             </label>
             <input
               type="range"
@@ -59,7 +61,7 @@ export default function GameSetup({ title, desc, onStart, maxCount = 20, hideCou
               onChange={e => setCount(parseInt(e.target.value))}
               className="w-full accent-red-500"
             />
-            <div className="flex justify-between text-xs text-gray-600 mt-1">
+            <div className="flex justify-between text-xs text-slate-400 dark:text-slate-500 mt-1">
               <span>5</span><span>{maxCount}</span>
             </div>
           </div>

@@ -106,11 +106,11 @@ export default function SpeedRound() {
       }`}>
       {/* Timer */}
       <div className="flex items-center justify-between mb-4">
-        <h1 className="text-2xl font-bold text-white">⚡ Speed Round</h1>
+        <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">⚡ Speed Round</h1>
         <div className="flex gap-4 text-sm">
-          <span className="text-green-400">✅ {correct}</span>
-          <span className="text-red-400">❌ {wrong}</span>
-          <span className="text-yellow-400 font-bold">⭐ {score}</span>
+          <span className="text-green-600 dark:text-green-400">✅ {correct}</span>
+          <span className="text-red-600 dark:text-red-400">❌ {wrong}</span>
+          <span className="text-amber-600 dark:text-amber-400 font-bold">⭐ {score}</span>
         </div>
       </div>
 
@@ -121,15 +121,15 @@ export default function SpeedRound() {
           style={{ width: `${timerPct}%` }}
         />
       </div>
-      <div className={`text-right text-lg font-bold mb-6 ${timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-gray-300'}`}>
+      <div className={`text-right text-lg font-bold mb-6 ${timeLeft <= 10 ? 'text-red-600 dark:text-red-400 animate-pulse' : 'text-slate-600 dark:text-slate-300'}`}>
         ⏱ {timeLeft}s
       </div>
 
       {/* Question */}
-      <div className={`card text-center mb-6 transition-colors ${flash === 'green' ? 'border-green-500 bg-green-900/20' : flash === 'red' ? 'border-red-600 bg-red-900/20' : ''
+      <div className={`card text-center mb-6 transition-colors ${flash === 'green' ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : flash === 'red' ? 'border-red-500 bg-red-50 dark:bg-red-900/20' : ''
         }`}>
-        <p className="text-xs text-gray-500 mb-1">Translate to English</p>
-        <p className="text-4xl font-bold text-white">{q.item.german}</p>
+        <p className="text-xs text-slate-400 dark:text-slate-500 mb-1">Translate to English</p>
+        <p className="text-4xl font-extrabold text-slate-900 dark:text-white">{q.item.german}</p>
       </div>
 
       {/* Choices */}

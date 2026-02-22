@@ -35,6 +35,17 @@ router.get('/vocabulary/categories', (req, res) => {
   res.json(categories.map(c => c.category));
 });
 
+// Get vocabulary categories with counts
+router.get('/vocabulary/categories-with-counts', (req, res) => {
+  const { level } = req.query;
+  let query = 'SELECT category, COUNT(*) as count FROM vocabulary WHERE category IS NOT NULL';
+  const params = [];
+  if (level) { query += ' AND level = ?'; params.push(level); }
+  query += ' GROUP BY category ORDER BY category';
+  const rows = db.prepare(query).all(...params);
+  res.json(rows);
+});
+
 // Get a single vocabulary item
 router.get('/vocabulary/:id', (req, res) => {
   const item = db.prepare('SELECT * FROM vocabulary WHERE id = ?').get(req.params.id);
@@ -44,16 +55,25 @@ router.get('/vocabulary/:id', (req, res) => {
 
 // Add vocabulary item
 router.post('/vocabulary', (req, res) => {
-  const { german, english, level, category, exampleSentence } = req.body;
+  const { german, phonetic, english, level, category, exampleSentence, partOfSpeech, gender, plural, conjugation, synonyms, antonyms, relatedWords, grammarNotes } = req.body;
+
   if (!german || !english || !level) {
     return res.status(400).json({ error: 'german, english, and level are required' });
   }
-  const result = db.prepare(`
-    INSERT INTO vocabulary (german, english, level, category, example_sentence)
-    VALUES (?, ?, ?, ?, ?)
-  `).run(german, english, level, category || null, exampleSentence || null);
 
-  res.status(201).json({ id: result.lastInsertRowid, german, english, level, category, exampleSentence });
+  const result = db.prepare(`
+    INSERT INTO vocabulary (
+      german, phonetic, english, level, category, example_sentence,
+      part_of_speech, gender, plural, conjugation, synonyms, antonyms, related_words, grammar_notes
+    )
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `).run(
+    german, phonetic || null, english, level, category || null, exampleSentence || null,
+    partOfSpeech || null, gender || null, plural || null, conjugation || null,
+    synonyms || null, antonyms || null, relatedWords || null, grammarNotes || null
+  );
+
+  res.status(201).json({ id: result.lastInsertRowid, german, phonetic, english, level, category, exampleSentence, partOfSpeech, gender, plural, conjugation, synonyms, antonyms, relatedWords, grammarNotes });
 });
 
 // ── Prepositions ──────────────────────────────────────────────────────────────

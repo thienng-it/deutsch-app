@@ -18,6 +18,11 @@ export const contentApi = {
     return res.data;
   },
 
+  async getCategoriesWithCounts(level?: string): Promise<{ category: string; count: number }[]> {
+    const res = await api.get('/content/vocabulary/categories-with-counts', { params: { level } });
+    return res.data;
+  },
+
   async addVocabulary(data: Partial<VocabItem>) {
     const res = await api.post('/content/vocabulary', data);
     return res.data;

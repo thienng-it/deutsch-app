@@ -166,50 +166,93 @@ function insertSampleVocabulary() {
   `);
 
   const vocab = [
-    // A1 Level - Basics
-    ['Hallo', 'Hello', 'A1', 'Greetings', 'Hallo, wie geht es dir?'],
-    ['Tschüss', 'Goodbye', 'A1', 'Greetings', 'Tschüss, bis morgen!'],
-    ['Danke', 'Thank you', 'A1', 'Greetings', 'Danke schön!'],
-    ['Bitte', 'Please/You\'re welcome', 'A1', 'Greetings', 'Bitte sehr!'],
-    ['Ja', 'Yes', 'A1', 'Basic', 'Ja, das stimmt.'],
-    ['Nein', 'No', 'A1', 'Basic', 'Nein, das ist falsch.'],
+    // ================= A1 LEVEL =================
+    // Family
+    ['die Mutter', 'Mother', 'A1', 'Family', 'Meine Mutter heißt Maria.'],
+    ['der Vater', 'Father', 'A1', 'Family', 'Mein Vater arbeitet viel.'],
+    ['die Schwester', 'Sister', 'A1', 'Family', 'Ich habe eine Schwester.'],
+    ['der Bruder', 'Brother', 'A1', 'Family', 'Mein Bruder ist älter als ich.'],
+    ['die Oma', 'Grandma', 'A1', 'Family', 'Meine Oma backt einen Kuchen.'],
+    ['der Opa', 'Grandpa', 'A1', 'Family', 'Mein Opa liest die Zeitung.'],
 
-    // A1 Level - Numbers
-    ['eins', 'one', 'A1', 'Numbers', 'Ich habe eins.'],
-    ['zwei', 'two', 'A1', 'Numbers', 'Das sind zwei Äpfel.'],
-    ['drei', 'three', 'A1', 'Numbers', 'Ich bin drei Jahre alt.'],
+    // Kitchen & Food
+    ['der Apfel', 'Apple', 'A1', 'Kitchen', 'Der Apfel ist rot und süß.'],
+    ['das Brot', 'Bread', 'A1', 'Kitchen', 'Ich esse Brot zum Frühstück.'],
+    ['das Wasser', 'Water', 'A1', 'Kitchen', 'Ich trinke Wasser.'],
+    ['der Kaffee', 'Coffee', 'A1', 'Kitchen', 'Morgens trinke ich Kaffee.'],
+    ['der Tisch', 'Table', 'A1', 'Kitchen', 'Der Teller steht auf dem Tisch.'],
+    ['der Stuhl', 'Chair', 'A1', 'Kitchen', 'Bitte setz dich auf den Stuhl.'],
 
-    // A1 Level - Family
-    ['Mutter', 'Mother', 'A1', 'Family', 'Meine Mutter ist nett.'],
-    ['Vater', 'Father', 'A1', 'Family', 'Mein Vater arbeitet.'],
-    ['Bruder', 'Brother', 'A1', 'Family', 'Ich habe einen Bruder.'],
-    ['Schwester', 'Sister', 'A1', 'Family', 'Meine Schwester ist klein.'],
+    // Basic Verbs
+    ['machen', 'to make / to do', 'A1', 'Basics', 'Was machst du heute?'],
+    ['gehen', 'to go', 'A1', 'Basics', 'Ich gehe nach Hause.'],
+    ['essen', 'to eat', 'A1', 'Basics', 'Wir essen Pizza.'],
+    ['trinken', 'to drink', 'A1', 'Basics', 'Trinkst du Tee?'],
 
-    // A1 Level - Common Objects
-    ['Haus', 'House', 'A1', 'Objects', 'Das ist mein Haus.'],
-    ['Auto', 'Car', 'A1', 'Objects', 'Ich fahre Auto.'],
-    ['Buch', 'Book', 'A1', 'Objects', 'Ich lese ein Buch.'],
-    ['Tisch', 'Table', 'A1', 'Objects', 'Der Tisch ist groß.'],
-    ['Stuhl', 'Chair', 'A1', 'Objects', 'Der Stuhl ist bequem.'],
+    // ================= A2 LEVEL =================
+    // Restaurant & Dining
+    ['die Speisekarte', 'Menu', 'A2', 'Restaurant', 'Könnte ich bitte die Speisekarte haben?'],
+    ['die Rechnung', 'Bill / Check', 'A2', 'Restaurant', 'Die Rechnung bitte!'],
+    ['das Trinkgeld', 'Tip', 'A2', 'Restaurant', 'Das Trinkgeld ist für den Kellner.'],
+    ['bestellen', 'to order', 'A2', 'Restaurant', 'Wir möchten gerne bestellen.'],
+    ['lecker', 'delicious', 'A2', 'Restaurant', 'Das Essen ist sehr lecker.'],
 
-    // A1 Level - Colors
-    ['rot', 'red', 'A1', 'Colors', 'Die Rose ist rot.'],
-    ['blau', 'blue', 'A1', 'Colors', 'Der Himmel ist blau.'],
-    ['grün', 'green', 'A1', 'Colors', 'Das Gras ist grün.'],
-    ['gelb', 'yellow', 'A1', 'Colors', 'Die Sonne ist gelb.'],
+    // Travel
+    ['der Bahnhof', 'Train Station', 'A2', 'Travel', 'Wo ist der Bahnhof?'],
+    ['der Zug', 'Train', 'A2', 'Travel', 'Der Zug fährt um 8 Uhr ab.'],
+    ['das Gepäck', 'Luggage', 'A2', 'Travel', 'Ich habe viel Gepäck.'],
+    ['der Urlaub', 'Vacation', 'A2', 'Travel', 'Ich mache Urlaub in Italien.'],
+    ['der Flughafen', 'Airport', 'A2', 'Travel', 'Wir müssen zum Flughafen fahren.'],
 
-    // A2 Level
-    ['arbeiten', 'to work', 'A2', 'Verbs', 'Ich arbeite jeden Tag.'],
-    ['lernen', 'to learn', 'A2', 'Verbs', 'Ich lerne Deutsch.'],
-    ['sprechen', 'to speak', 'A2', 'Verbs', 'Ich spreche Deutsch.'],
-    ['verstehen', 'to understand', 'A2', 'Verbs', 'Ich verstehe das nicht.'],
-    ['wohnen', 'to live', 'A2', 'Verbs', 'Ich wohne in Berlin.'],
+    // Housing
+    ['die Wohnung', 'Apartment', 'A2', 'Housing', 'Meine Wohnung ist groß.'],
+    ['das Schlafzimmer', 'Bedroom', 'A2', 'Housing', 'Das Schlafzimmer hat ein großes Bett.'],
+    ['der Schlüssel', 'Key', 'A2', 'Housing', 'Wo ist mein Schlüssel?'],
 
-    // B1 Level
-    ['Gesellschaft', 'Society', 'B1', 'Abstract', 'Die Gesellschaft verändert sich.'],
-    ['Umwelt', 'Environment', 'B1', 'Abstract', 'Wir müssen die Umwelt schützen.'],
-    ['Entwicklung', 'Development', 'B1', 'Abstract', 'Die Entwicklung ist wichtig.'],
-    ['Erfahrung', 'Experience', 'B1', 'Abstract', 'Ich habe viel Erfahrung.'],
+    // ================= B1 LEVEL =================
+    // Work & Careers
+    ['die Bewerbung', 'Job Application', 'B1', 'Work', 'Ich schreibe eine Bewerbung für die Stelle.'],
+    ['der Vertrag', 'Contract', 'B1', 'Work', 'Der Vertrag muss noch unterschrieben werden.'],
+    ['die Erfahrung', 'Experience', 'B1', 'Work', 'Sie hat viel Erfahrung in diesem Beruf.'],
+    ['das Gehalt', 'Salary', 'B1', 'Work', 'Das Gehalt wird am Monatsende überwiesen.'],
+    ['die Besprechung', 'Meeting', 'B1', 'Work', 'Wir haben heute Nachmittag eine Besprechung.'],
+
+    // Emotions & Opinions
+    ['enttäuscht', 'disappointed', 'B1', 'Emotions', 'Ich bin sehr enttäuscht von diesem Film.'],
+    ['begeistert', 'enthusiastic / thrilled', 'B1', 'Emotions', 'Wir sind begeistert von der Idee!'],
+    ['die Meinung', 'Opinion', 'B1', 'Emotions', 'Meiner Meinung nach ist das eine gute Idee.'],
+    ['stolz', 'proud', 'B1', 'Emotions', 'Die Eltern sind stolz auf ihr Kind.'],
+
+    // Environment
+    ['die Umwelt', 'Environment', 'B1', 'Environment', 'Wir müssen die Umwelt schützen.'],
+    ['der Müll', 'Trash / Garbage', 'B1', 'Environment', 'Bitte trennen Sie den Müll.'],
+
+    // ================= B2 LEVEL =================
+    // Economy & Society
+    ['die Wirtschaft', 'Economy', 'B2', 'Society', 'Die Wirtschaft wächst in diesem Jahr.'],
+    ['die Gesellschaft', 'Society', 'B2', 'Society', 'Unsere Gesellschaft verändert sich schnell.'],
+    ['der Kompromiss', 'Compromise', 'B2', 'Society', 'Wir müssen einen Kompromiss finden.'],
+    ['die Herausforderung', 'Challenge', 'B2', 'Society', 'Das ist eine große Herausforderung für uns.'],
+    ['der Einfluss', 'Influence', 'B2', 'Society', 'Das Internet hat einen großen Einfluss auf uns.'],
+
+    // Abstract Verbs
+    ['entwickeln', 'to develop', 'B2', 'Verbs', 'Das Unternehmen entwickelt neue Produkte.'],
+    ['verursachen', 'to cause', 'B2', 'Verbs', 'Der Sturm hat große Schäden verursacht.'],
+    ['entscheiden', 'to decide', 'B2', 'Verbs', 'Er hat sich noch nicht entschieden.'],
+    ['unterstützen', 'to support', 'B2', 'Verbs', 'Wir unterstützen das neue Projekt.'],
+
+    // ================= C1 LEVEL =================
+    // Advanced Academic & Formal
+    ['die Maßnahme', 'Measure / Action', 'C1', 'Formal', 'Die Regierung hat neue Maßnahmen beschlossen.'],
+    ['das Bedürfnis', 'Need / Requirement', 'C1', 'Formal', 'Das menschliche Bedürfnis nach Sicherheit ist groß.'],
+    ['die Voraussetzung', 'Prerequisite / Condition', 'C1', 'Formal', 'Ein Abschluss ist die Voraussetzung für den Job.'],
+    ['der Fortschritt', 'Progress', 'C1', 'Formal', 'Wir haben große Fortschritte gemacht.'],
+    ['die Auswirkung', 'Impact / Effect', 'C1', 'Formal', 'Die Auswirkungen der Klimakrise sind sichtbar.'],
+
+    // C1 Verbs
+    ['gewährleisten', 'to guarantee / to ensure', 'C1', 'Verbs', 'Die Sicherheit muss gewährleistet werden.'],
+    ['vermeiden', 'to avoid', 'C1', 'Verbs', 'Fehler sollten in Zukunft vermieden werden.'],
+    ['berücksichtigen', 'to take into consideration', 'C1', 'Verbs', 'Wir müssen alle Faktoren berücksichtigen.']
   ];
 
   db.exec('BEGIN');
@@ -598,39 +641,39 @@ function insertSamplePrepositions() {
 
   const preps = [
     // A1 — basic prepositions
-    ['in',     'Dativ/Akkusativ', 'in, into',          'Ich bin in der Schule.',              'A1'],
-    ['aus',    'Dativ',           'from, out of',       'Ich komme aus Vietnam.',              'A1'],
-    ['mit',    'Dativ',           'with',               'Ich fahre mit dem Bus.',              'A1'],
-    ['von',    'Dativ',           'from, of',           'Das Buch ist von meinem Lehrer.',     'A1'],
-    ['zu',     'Dativ',           'to',                 'Ich gehe zu meinem Freund.',          'A1'],
-    ['nach',   'Dativ',           'to, after',          'Ich fahre nach Berlin.',              'A1'],
-    ['bei',    'Dativ',           'at, near',           'Ich wohne bei meinen Eltern.',        'A1'],
-    ['für',    'Akkusativ',       'for',                'Das Geschenk ist für dich.',          'A1'],
+    ['in', 'Dativ/Akkusativ', 'in, into', 'Ich bin in der Schule.', 'A1'],
+    ['aus', 'Dativ', 'from, out of', 'Ich komme aus Vietnam.', 'A1'],
+    ['mit', 'Dativ', 'with', 'Ich fahre mit dem Bus.', 'A1'],
+    ['von', 'Dativ', 'from, of', 'Das Buch ist von meinem Lehrer.', 'A1'],
+    ['zu', 'Dativ', 'to', 'Ich gehe zu meinem Freund.', 'A1'],
+    ['nach', 'Dativ', 'to, after', 'Ich fahre nach Berlin.', 'A1'],
+    ['bei', 'Dativ', 'at, near', 'Ich wohne bei meinen Eltern.', 'A1'],
+    ['für', 'Akkusativ', 'for', 'Das Geschenk ist für dich.', 'A1'],
 
     // A2 — two-way & accusative prepositions
-    ['auf',    'Dativ/Akkusativ', 'on, onto',           'Das Buch liegt auf dem Tisch.',       'A2'],
-    ['an',     'Dativ/Akkusativ', 'at, on (vertical)',  'Das Bild hängt an der Wand.',         'A2'],
-    ['über',   'Dativ/Akkusativ', 'over, above, about', 'Die Lampe hängt über dem Tisch.',     'A2'],
-    ['unter',  'Dativ/Akkusativ', 'under',              'Die Katze sitzt unter dem Stuhl.',    'A2'],
-    ['neben',  'Dativ/Akkusativ', 'next to',            'Ich sitze neben meiner Freundin.',    'A2'],
-    ['vor',    'Dativ/Akkusativ', 'in front of, before','Wir treffen uns vor dem Kino.',       'A2'],
-    ['hinter', 'Dativ/Akkusativ', 'behind',             'Der Garten ist hinter dem Haus.',     'A2'],
-    ['zwischen','Dativ/Akkusativ','between',             'Der Park liegt zwischen zwei Straßen.','A2'],
-    ['durch',  'Akkusativ',       'through',            'Wir gehen durch den Park.',           'A2'],
-    ['ohne',   'Akkusativ',       'without',            'Ich gehe ohne meinen Bruder.',        'A2'],
-    ['gegen',  'Akkusativ',       'against',            'Er fährt gegen die Wand.',            'A2'],
-    ['um',     'Akkusativ',       'around, at (time)',  'Wir sitzen um den Tisch.',            'A2'],
-    ['seit',   'Dativ',           'since, for',         'Ich lerne seit zwei Jahren Deutsch.',  'A2'],
+    ['auf', 'Dativ/Akkusativ', 'on, onto', 'Das Buch liegt auf dem Tisch.', 'A2'],
+    ['an', 'Dativ/Akkusativ', 'at, on (vertical)', 'Das Bild hängt an der Wand.', 'A2'],
+    ['über', 'Dativ/Akkusativ', 'over, above, about', 'Die Lampe hängt über dem Tisch.', 'A2'],
+    ['unter', 'Dativ/Akkusativ', 'under', 'Die Katze sitzt unter dem Stuhl.', 'A2'],
+    ['neben', 'Dativ/Akkusativ', 'next to', 'Ich sitze neben meiner Freundin.', 'A2'],
+    ['vor', 'Dativ/Akkusativ', 'in front of, before', 'Wir treffen uns vor dem Kino.', 'A2'],
+    ['hinter', 'Dativ/Akkusativ', 'behind', 'Der Garten ist hinter dem Haus.', 'A2'],
+    ['zwischen', 'Dativ/Akkusativ', 'between', 'Der Park liegt zwischen zwei Straßen.', 'A2'],
+    ['durch', 'Akkusativ', 'through', 'Wir gehen durch den Park.', 'A2'],
+    ['ohne', 'Akkusativ', 'without', 'Ich gehe ohne meinen Bruder.', 'A2'],
+    ['gegen', 'Akkusativ', 'against', 'Er fährt gegen die Wand.', 'A2'],
+    ['um', 'Akkusativ', 'around, at (time)', 'Wir sitzen um den Tisch.', 'A2'],
+    ['seit', 'Dativ', 'since, for', 'Ich lerne seit zwei Jahren Deutsch.', 'A2'],
 
     // B1 — genitive & advanced
-    ['trotz',     'Genitiv',  'despite',            'Trotz des Regens gehen wir spazieren.',      'B1'],
-    ['wegen',     'Genitiv',  'because of',         'Wegen des Wetters bleiben wir zu Hause.',    'B1'],
-    ['während',   'Genitiv',  'during',             'Während des Unterrichts muss man leise sein.','B1'],
-    ['statt',     'Genitiv',  'instead of',         'Statt eines Autos kaufe ich ein Fahrrad.',   'B1'],
-    ['innerhalb', 'Genitiv',  'within',             'Innerhalb der Stadt gibt es viele Parks.',    'B1'],
-    ['außerhalb', 'Genitiv',  'outside of',         'Außerhalb der Stadt ist es ruhiger.',         'B1'],
-    ['gegenüber', 'Dativ',    'opposite, across',   'Die Apotheke ist gegenüber dem Bahnhof.',    'B1'],
-    ['entlang',   'Akkusativ','along',              'Wir gehen den Fluss entlang.',               'B1'],
+    ['trotz', 'Genitiv', 'despite', 'Trotz des Regens gehen wir spazieren.', 'B1'],
+    ['wegen', 'Genitiv', 'because of', 'Wegen des Wetters bleiben wir zu Hause.', 'B1'],
+    ['während', 'Genitiv', 'during', 'Während des Unterrichts muss man leise sein.', 'B1'],
+    ['statt', 'Genitiv', 'instead of', 'Statt eines Autos kaufe ich ein Fahrrad.', 'B1'],
+    ['innerhalb', 'Genitiv', 'within', 'Innerhalb der Stadt gibt es viele Parks.', 'B1'],
+    ['außerhalb', 'Genitiv', 'outside of', 'Außerhalb der Stadt ist es ruhiger.', 'B1'],
+    ['gegenüber', 'Dativ', 'opposite, across', 'Die Apotheke ist gegenüber dem Bahnhof.', 'B1'],
+    ['entlang', 'Akkusativ', 'along', 'Wir gehen den Fluss entlang.', 'B1'],
   ];
 
   db.exec('BEGIN');

@@ -2,11 +2,14 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Dashboard from './pages/Dashboard';
 import VocabularyPage from './pages/Vocabulary';
+import VocabularyTopicPage from './pages/VocabularyTopic';
 import GrammarPage from './pages/Grammar';
 import ReadingPage from './pages/Reading';
 import SpeakingPage from './pages/Speaking';
 import WritingPage from './pages/Writing';
 import PrepositionsPage from './pages/Prepositions';
+import AlphabetPage from './pages/Alphabet';
+import NumbersPage from './pages/Numbers';
 
 // Games
 import FlipCards from './pages/Games/FlipCards';
@@ -27,7 +30,10 @@ export default function App() {
         <Route path="writing" element={<WritingPage />} />
         <Route path="grammar" element={<GrammarPage />} />
         <Route path="vocabulary" element={<VocabularyPage />} />
+        <Route path="vocabulary/:topic" element={<VocabularyTopicPage />} />
         <Route path="prepositions" element={<PrepositionsPage />} />
+        <Route path="alphabet" element={<AlphabetPage />} />
+        <Route path="numbers" element={<NumbersPage />} />
 
         {/* Games */}
         <Route path="games" element={<GamesHub />} />

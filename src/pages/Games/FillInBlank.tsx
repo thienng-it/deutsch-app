@@ -101,34 +101,34 @@ export default function FillInBlank() {
     <div className="animate-fade-in max-w-xl mx-auto">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">✍️ Fill in the Blank</h1>
-          <p className="text-gray-400 text-sm">{idx + 1} / {questions.length}</p>
+          <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">✍️ Fill in the Blank</h1>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">{idx + 1} / {questions.length}</p>
         </div>
-        <span className="text-yellow-400 font-bold">⭐ {score}</span>
+        <span className="text-amber-600 dark:text-amber-400 font-bold">⭐ {score}</span>
       </div>
 
       <div className="progress-bar mb-8">
-        <div className="progress-fill bg-gradient-to-r from-green-600 to-teal-500" style={{ width: `${(idx / questions.length) * 100}%` }} />
+        <div className="progress-fill bg-gradient-to-r from-green-500 to-teal-500" style={{ width: `${(idx / questions.length) * 100}%` }} />
       </div>
 
       {/* Hint */}
       <div className="card mb-4 text-center">
-        <p className="text-xs text-gray-500 mb-1">English: {q.item.english}</p>
-        <p className="text-sm text-gray-400">{q.item.category} · {q.item.level}</p>
+        <p className="text-xs text-slate-400 dark:text-slate-500 mb-1">English: {q.item.english}</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{q.item.category} · {q.item.level}</p>
       </div>
 
       {/* Sentence */}
       <div className="card mb-6 text-center">
-        <p className="text-lg text-gray-200 leading-relaxed">
+        <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
           {q.sentence.split('___').map((part, i, arr) => (
             <span key={i}>
               {part}
               {i < arr.length - 1 && (
                 <span className={`
                   inline-block border-b-2 mx-1 min-w-[80px] font-bold
-                  ${q.result === 'correct' ? 'text-green-400 border-green-400'
-                    : q.result === 'wrong' ? 'text-red-400 border-red-400'
-                      : 'text-yellow-400 border-yellow-500'}
+                  ${q.result === 'correct' ? 'text-green-600 dark:text-green-400 border-green-500'
+                    : q.result === 'wrong' ? 'text-red-600 dark:text-red-400 border-red-500'
+                      : 'text-amber-600 dark:text-amber-400 border-amber-500'}
                 `}>
                   {q.result === 'wrong' ? q.answer : q.userInput || '___'}
                 </span>
@@ -137,7 +137,7 @@ export default function FillInBlank() {
           ))}
         </p>
         {q.result === 'wrong' && (
-          <p className="text-xs text-red-400 mt-2">Correct answer: <strong>{q.answer}</strong></p>
+          <p className="text-xs text-red-600 dark:text-red-400 mt-2">Correct answer: <strong>{q.answer}</strong></p>
         )}
       </div>
 

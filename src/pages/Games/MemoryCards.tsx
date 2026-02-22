@@ -121,16 +121,16 @@ export default function MemoryCards() {
   return (
     <div className="animate-fade-in max-w-2xl mx-auto">
       <div className="flex items-center justify-between mb-4">
-        <h1 className="text-2xl font-bold text-white">🧠 Memory Cards</h1>
+        <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">🧠 Memory Cards</h1>
         <div className="flex gap-4 text-sm">
-          <span className="text-gray-400">🔄 Moves: <span className="text-white font-bold">{moves}</span></span>
-          <span className="text-gray-400">✅ Pairs: <span className="text-green-400 font-bold">{matches}/{total}</span></span>
-          <span className="text-yellow-400 font-bold">⭐ {score}</span>
+          <span className="text-slate-500 dark:text-slate-400">🔄 Moves: <span className="text-slate-900 dark:text-white font-bold">{moves}</span></span>
+          <span className="text-slate-500 dark:text-slate-400">✅ Pairs: <span className="text-green-600 dark:text-green-400 font-bold">{matches}/{total}</span></span>
+          <span className="text-amber-600 dark:text-amber-400 font-bold">⭐ {score}</span>
         </div>
       </div>
 
       <div className="progress-bar mb-6">
-        <div className="progress-fill bg-gradient-to-r from-purple-600 to-pink-500" style={{ width: `${(matches / total) * 100}%` }} />
+        <div className="progress-fill bg-gradient-to-r from-purple-500 to-pink-500" style={{ width: `${(matches / total) * 100}%` }} />
       </div>
 
       <div className="grid grid-cols-4 gap-2">
@@ -142,15 +142,15 @@ export default function MemoryCards() {
             className={`
               h-20 rounded-xl text-sm font-semibold transition-all duration-300 border
               ${card.matched
-                ? 'bg-green-900/40 border-green-600/50 text-green-300'
+                ? 'bg-green-100 dark:bg-green-900/40 border-green-400 dark:border-green-600/50 text-green-700 dark:text-green-300'
                 : card.flipped
-                  ? 'bg-gray-700 border-gray-500 text-white'
-                  : 'bg-gray-800 border-gray-700 text-gray-700 hover:border-gray-500 hover:bg-gray-750'
+                  ? 'bg-white dark:bg-slate-700 border-slate-300 dark:border-slate-500 text-slate-900 dark:text-white'
+                  : 'bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-transparent hover:border-slate-300 dark:hover:border-slate-500 hover:bg-slate-200 dark:hover:bg-slate-750'
               }
             `}
           >
             {(card.flipped || card.matched)
-              ? <span className={card.type === 'german' ? 'text-red-300' : 'text-blue-300'}>{card.text}</span>
+              ? <span className={card.type === 'german' ? 'text-red-600 dark:text-red-300' : 'text-blue-600 dark:text-blue-300'}>{card.text}</span>
               : <span className="text-2xl">🇩🇪</span>
             }
           </button>

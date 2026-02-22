@@ -78,7 +78,7 @@ export default function MultipleChoice() {
   if (phase === 'setup') return (
     <div className="max-w-lg mx-auto space-y-4">
       <div className="card">
-        <h2 className="text-sm font-semibold text-gray-300 mb-3">Direction</h2>
+        <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Direction</h2>
         <div className="flex gap-2">
           {(['de-en', 'en-de'] as const).map(d => (
             <button key={d} onClick={() => setDirection(d)}
@@ -113,23 +113,23 @@ export default function MultipleChoice() {
     <div className="animate-fade-in max-w-xl mx-auto">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">☑️ Multiple Choice</h1>
-          <p className="text-gray-400 text-sm">{idx + 1} / {questions.length}</p>
+          <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white">☑️ Multiple Choice</h1>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">{idx + 1} / {questions.length}</p>
         </div>
-        <div className="text-yellow-400 font-bold">⭐ {score}</div>
+        <div className="text-amber-600 dark:text-amber-400 font-bold">⭐ {score}</div>
       </div>
 
       <div className="progress-bar mb-8">
-        <div className="progress-fill bg-gradient-to-r from-blue-600 to-cyan-500" style={{ width: `${((idx) / questions.length) * 100}%` }} />
+        <div className="progress-fill bg-gradient-to-r from-blue-500 to-cyan-500" style={{ width: `${((idx) / questions.length) * 100}%` }} />
       </div>
 
       {/* Question */}
       <div className="card text-center mb-6">
-        <p className="text-xs text-gray-500 mb-2">{direction === 'de-en' ? 'Translate to English' : 'Translate to German'}</p>
-        <p className="text-4xl font-bold text-white">
+        <p className="text-xs text-slate-400 dark:text-slate-500 mb-2">{direction === 'de-en' ? 'Translate to English' : 'Translate to German'}</p>
+        <p className="text-4xl font-extrabold text-slate-900 dark:text-white">
           {direction === 'de-en' ? q.item.german : q.item.english}
         </p>
-        {q.item.category && <p className="text-xs text-gray-500 mt-2">{q.item.category} · {q.item.level}</p>}
+        {q.item.category && <p className="text-xs text-slate-400 dark:text-slate-500 mt-2">{q.item.category} · {q.item.level}</p>}
       </div>
 
       {/* Choices */}

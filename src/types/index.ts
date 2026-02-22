@@ -16,10 +16,19 @@ export interface AuthState {
 export interface VocabItem {
   id: number;
   german: string;
+  phonetic: string | null;
   english: string;
   level: string;
   category: string | null;
   example_sentence: string | null;
+  part_of_speech: string | null;
+  gender: string | null;
+  plural: string | null;
+  conjugation: string | null;
+  synonyms: string | null;
+  antonyms: string | null;
+  related_words: string | null;
+  grammar_notes: string | null;
   audio_path: string | null;
   image_path: string | null;
 }
