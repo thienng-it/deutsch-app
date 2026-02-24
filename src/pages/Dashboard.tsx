@@ -31,6 +31,9 @@ export default function Dashboard() {
     ? gameStats.reduce((prev, curr) => curr.avg_score < prev.avg_score ? curr : prev)
     : null;
 
+  const recentSessions = summary?.recentSessions || [];
+  const totalScore = summary?.totalScore || 0;
+
   const totalVocab = vocabLevels.reduce((s, v) => s + v.total, 0);
   const totalMaster = vocabLevels.reduce((s, v) => s + v.mastered, 0);
   const pct = totalVocab > 0 ? Math.round((totalMaster / totalVocab) * 100) : 0;
@@ -85,8 +88,8 @@ export default function Dashboard() {
         {[
           { icon: '📚', label: 'Words Studied', value: totalVocab, accent: 'text-blue-600 dark:text-blue-400' },
           { icon: '✅', label: 'Mastered', value: totalMaster, accent: 'text-green-600 dark:text-green-400' },
-          { icon: '🎮', label: 'Sessions', value: summary?.recentSessions.length ?? 0, accent: 'text-amber-600 dark:text-amber-400' },
-          { icon: '🏆', label: 'Total Score', value: summary?.totalScore ?? 0, accent: 'text-red-600 dark:text-red-400' },
+          { icon: '🎮', label: 'Sessions', value: recentSessions.length, accent: 'text-amber-600 dark:text-amber-400' },
+          { icon: '🏆', label: 'Total Score', value: totalScore, accent: 'text-red-600 dark:text-red-400' },
         ].map(s => (
           <div key={s.label} className="card text-center py-4">
             <div className="text-2xl mb-1">{s.icon}</div>
@@ -111,11 +114,11 @@ export default function Dashboard() {
       </section>
 
       {/* ── Vocab by Level ─────────────────────────────────── */}
-      {summary && summary.vocabByLevel.length > 0 && (
+      {vocabLevels.length > 0 && (
         <section className="card">
           <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-4">📊 Vocabulary by Level</h2>
           <div className="space-y-3">
-            {summary.vocabByLevel.map(({ level, total, mastered }) => {
+            {vocabLevels.map(({ level, total, mastered }) => {
               const p = total > 0 ? Math.round((mastered / total) * 100) : 0;
               return (
                 <div key={level} className="flex items-center gap-3">
@@ -195,11 +198,11 @@ export default function Dashboard() {
       </div>
 
       {/* ── Recent Activity ────────────────────────────────── */}
-      {summary && summary.recentSessions.length > 0 && (
+      {recentSessions.length > 0 && (
         <section className="card">
           <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-4">🕐 Recent Activity</h2>
           <div className="divide-y divide-slate-100 dark:divide-slate-800/60">
-            {summary.recentSessions.slice(0, 5).map(s => (
+            {recentSessions.slice(0, 5).map(s => (
               <div key={s.id} className="flex items-center gap-3 text-sm py-2.5 first:pt-0 last:pb-0">
                 <span className="text-slate-400 dark:text-slate-500 text-xs w-28 shrink-0 tabular-nums">
                   {new Date(s.started_at).toLocaleDateString()}
