@@ -2497,6 +2497,395 @@ Umweltschutz ist in Deutschland mehr als ein politisches Thema - es ist Teil der
       'Geschäftliche Begegnungen B2 - Corporate Social Responsibility',
     ],
   },
+  // ==================== NEW PASSAGES ====================
+  // A1: Meine Familie und meine Hobbys
+  {
+    id: 'a1-5',
+    level: 'A1',
+    title: 'Meine Haustiere und meine Hobbys',
+    category: 'daily-life',
+    difficulty: 'beginner',
+    estimatedTime: 10,
+    text: `Hallo, ich bin Julia. Ich bin 20 Jahre alt und komme aus Österreich. Ich wohne in Wien mit meiner Familie. 
+
+Wir haben zwei Haustiere: einen Hund und eine Katze. Der Hund heißt Max und ist sehr groß. Er ist drei Jahre alt. Er spielt gern im Park. Die Katze heißt Mimi. Sie ist klein und schläft viel. Sie ist schon zehn Jahre alt.
+
+In meiner Freizeit habe ich viele Hobbys. Ich lese gern Bücher, besonders Romane. Am Wochenende fahre ich oft Fahrrad. Wenn das Wetter schön ist, fahre ich mit dem Fahrrad in den Park. Dort treffe ich meine Freunde. Wir spielen Fußball oder trinken einen Kaffee.
+
+Manchmal koche ich auch für meine Familie. Mein Lieblingsessen ist Pizza. Ich backe die Pizza selbst. Das macht Spaß! Was sind deine Hobbys?`,
+    vocabulary: [
+      { word: 'das Haustier', translation: 'pet', context: 'Wir haben zwei Haustiere' },
+      { word: 'schlafen', translation: 'to sleep', context: 'Sie schläft viel' },
+      { word: 'die Freizeit', translation: 'free time', context: 'In meiner Freizeit' },
+      { word: 'das Fahrrad', translation: 'bicycle', context: 'Am Wochenende fahre ich oft Fahrrad' },
+      { word: 'treffen', translation: 'to meet', context: 'Dort treffe ich meine Freunde' },
+      { word: 'das Lieblingsessen', translation: 'favorite food', context: 'Mein Lieblingsessen ist Pizza' },
+    ],
+    comprehensionQuestions: [
+      {
+        question: 'Woher kommt Julia?',
+        options: ['Aus Deutschland', 'Aus Österreich', 'Aus der Schweiz', 'Aus Italien'],
+        correctAnswer: 1,
+        explanation: 'Julia sagt: "Ich komme aus Österreich."',
+      },
+      {
+        question: 'Wie alt ist die Katze Mimi?',
+        options: ['Drei Jahre', 'Fünf Jahre', 'Zehn Jahre', 'Zwanzig Jahre'],
+        correctAnswer: 2,
+        explanation: 'Der Text sagt über Mimi: "Sie ist schon zehn Jahre alt."',
+      },
+      {
+        question: 'Was macht Julia am Wochenende oft?',
+        options: ['Sie schläft viel', 'Sie liest ein Buch', 'Sie kocht Pizza', 'Sie fährt Fahrrad'],
+        correctAnswer: 3,
+        explanation: 'Julia sagt: "Am Wochenende fahre ich oft Fahrrad."',
+      },
+      {
+        question: 'Was ist Julias Lieblingsessen?',
+        options: ['Schokolade', 'Pizza', 'Kaffee', 'Gemüse'],
+        correctAnswer: 1,
+        explanation: 'Julia sagt: "Mein Lieblingsessen ist Pizza."',
+      },
+    ],
+    grammarFocus: [
+      'Gern / gerne benutzen (Ich spiele gern...)',
+      'Plural der Nomen (Bücher, Freunde)',
+      'Possessivpronomen (meine, mein)',
+      'Verben mit Vokalwechsel (schlafen -> schläft, treffen -> treffe)',
+    ],
+    examTips: [
+      'Stellen Sie sich vor: Name, Alter, Herkunft',
+      'Berichten Sie von Ihren Hobbys',
+      'Benutzen Sie einfache Konnektoren wie "und", "oder", "aber".',
+    ],
+    practicalTips: [
+      'Deutsche mögen Hunde sehr. Es gibt viele Parks für Hunde.',
+      'Radfahren ist in Städten sehr populär und gut ausgebaut.',
+      'Am Sonntag bleiben die meisten Geschäfte geschlossen.',
+    ],
+    culturalNotes: [
+      'Viele Deutsche, Österreicher und Schweizer lieben Haustiere.',
+      'In Deutschland und Österreich gibt es viele Radwege.',
+      'Kaffee und Kuchen am Nachmittag ist eine beliebte Tradition am Wochenende.',
+    ],
+    relatedMaterials: [
+      'Menschen A1 - Lektion 4: Freizeit',
+      'Studio 21 A1 - Einheit 6: Freunde',
+    ],
+  },
+
+  // A2: Einkaufen auf dem Markt
+  {
+    id: 'a2-4',
+    level: 'A2',
+    title: 'Einkaufen im Supermarkt und auf dem Markt',
+    category: 'daily-life',
+    difficulty: 'intermediate',
+    estimatedTime: 15,
+    text: `Am Samstagmorgen gehe ich oft auf den Wochenmarkt. Der Markt ist in der Fußgängerzone im Zentrum. Dort gibt es viele kleine Stände mit frischem Obst, Gemüse, Fleisch und Käse.
+
+Ich mag den Markt sehr. Die Atmosphäre ist schön und die Verkäufer sind oft sehr nett. Man kann die Produkte probieren und Fragen stellen. Letzte Woche habe ich Erdbeeren probiert, sie waren sehr süß. Auf dem Markt kaufe ich meistens regionales und saisonales Gemüse. Das ist gesund und gut für die Umwelt.
+
+Aber der Markt ist meistens teurer als der Supermarkt. Deshalb kaufe ich im Supermarkt die anderen Dinge, die ich für die Woche brauche: Milch, Nudeln, Reis, Toilettenpapier und Getränke. Im Supermarkt ist die Auswahl sehr groß. 
+
+Ein Nachteil vom Markt: Er findet nur zweimal in der Woche statt, meistens am Mittwoch und am Samstag. Der Supermarkt hat jeden Tag von Montag bis Samstag geöffnet, oft bis 20 Uhr oder 22 Uhr. Was mögen Sie lieber? Markt oder Supermarkt?`,
+    vocabulary: [
+      { word: 'der Wochenmarkt', translation: 'weekly market', context: 'gehe ich oft auf den Wochenmarkt' },
+      { word: 'die Fußgängerzone', translation: 'pedestrian zone', context: 'Der Markt ist in der Fußgängerzone' },
+      { word: 'der Stand', translation: 'stall, stand', context: 'viele kleine Stände' },
+      { word: 'probieren', translation: 'to taste, to try', context: 'Man kann die Produkte probieren' },
+      { word: 'saisonal', translation: 'seasonal', context: 'regionales und saisonales Gemüse' },
+      { word: 'der Nachteil', translation: 'disadvantage', context: 'Ein Nachteil vom Markt' },
+    ],
+    comprehensionQuestions: [
+      {
+        question: 'Wo ist der Wochenmarkt?',
+        options: ['Im Supermarkt', 'Am Bahnhof', 'In der Fußgängerzone', 'In der Schule'],
+        correctAnswer: 2,
+        explanation: 'Der Text sagt: "Der Markt ist in der Fußgängerzone im Zentrum."',
+      },
+      {
+        question: 'Was findet die Person auf dem Markt gut?',
+        options: ['Er ist sehr billig', 'Man kann probieren', 'Er hat jeden Tag geöffnet', 'Er hat viel Toilettenpapier'],
+        correctAnswer: 1,
+        explanation: 'Der Text sagt: "Man kann die Produkte probieren und Fragen stellen."',
+      },
+      {
+        question: 'Warum kauft die Person nicht alles auf dem Markt?',
+        options: ['Weil er teurer ist', 'Weil die Verkäufer unfreundlich sind', 'Weil es kein Obst gibt', 'Weil er zu weit weg ist'],
+        correctAnswer: 0,
+        explanation: 'Der Text sagt: "Aber der Markt ist meistens teurer als der Supermarkt."',
+      },
+      {
+        question: 'Wann hat der Supermarkt normalerweise geöffnet?',
+        options: ['Nur am Wochenende', 'Nur am Mittwoch und Samstag', 'Jeden Tag von Montag bis Samstag', 'Auch am Sonntag'],
+        correctAnswer: 2,
+        explanation: 'Der Text sagt: "Der Supermarkt hat jeden Tag von Montag bis Samstag geöffnet."',
+      },
+    ],
+    grammarFocus: [
+      'Komparativ (teurer, lieber)',
+      'Wechselpräpositionen mit Dativ (auf dem Markt, in der Fußgängerzone)',
+      'Konjunktionen (deshalb, weil)',
+      'Perfekt (habe probiert)',
+    ],
+    examTips: [
+      'Lernen Sie die Vor- und Nachteile von Orten zu beschreiben',
+      'Üben Sie Vergleiche: billiger, frischer, besser',
+      'Benutzen Sie Konnektoren wie "deshalb" oder "darum" für Schlussfolgerungen',
+    ],
+    practicalTips: [
+      'Auf dem Markt bezahlt man meistens bar. Nehmen Sie Bargeld mit!',
+      'Bringen Sie Ihren eigenen Korb oder Taschen mit.',
+      'Kurz vor Marktende gibt es oft Rabatte auf Obst und Gemüse.',
+    ],
+    culturalNotes: [
+      'In Deutschland schätzt man regionales ("aus der Region") und Bio-Gemüse sehr.',
+      'Sonntagsruhe: Alle normalen Geschäfte und Supermärkte haben am Sonntag geschlossen.',
+      'Der Wochenmarkt ist oft auch ein sozialer Treffpunkt.',
+    ],
+    relatedMaterials: [
+      'Menschen A2 - Modul 8: Einkaufen',
+      'Netzwerk A2 - Kapitel 4: Konsum',
+    ],
+  },
+
+  // B1: Umweltschutz im Alltag
+  {
+    id: 'b1-4',
+    level: 'B1',
+    title: 'Umweltschutz im Alltag',
+    category: 'culture',
+    difficulty: 'intermediate',
+    estimatedTime: 25,
+    text: `Der Klimawandel ist eine der größten Herausforderungen unserer Zeit. Viele Menschen in Deutschland fragen sich: Was kann ich persönlich im Alltag tun, um die Umwelt zu schützen? Die Antwort ist komplex, aber auch Kleinigkeiten können einen großen Unterschied machen.
+
+Erstens spielt die Mobilität eine wichtige Rolle. Statt für jede kurze Strecke das Auto zu nehmen, steigen viele Menschen auf das Fahrrad oder den öffentlichen Nahverkehr um. Die Einführung des 49-Euro-Tickets hat viele dazu motiviert, mehr mit Bus und Bahn zu fahren. Wer auf das Auto nicht verzichten kann, versucht oft, Fahrgemeinschaften zu bilden.
+
+Zweitens ist der Konsum entscheidend. Die Produktion von Fleisch verbraucht extrem viele Ressourcen wie Wasser und Land. Wenn man nur einmal pro Woche Fleisch isst oder sich vegetarisch ernährt, sinkt der persönliche CO2-Fußabdruck enorm. Auch beim Einkaufen kann man auf regionale und saisonale Produkte achten. Erdbeeren im Winter aus Spanien müssen nicht sein, wenn man stattdessen heimische Äpfel isst.
+
+Ein drittes großes Thema ist Plastik. Deutschland produziert sehr viel Verpackungsmüll. Es ist sinnvoll, eigene Taschen zum Einkaufen mitzubringen und Gemüsenetze statt Plastiktüten zu verwenden. In vielen Städten gibt es mittlerweile "Unverpackt-Läden", in denen man Reis, Nudeln oder Shampoo in eigene Behälter füllen kann.
+
+Zusätzlich sollte man auf Energie sparen achten. Das bedeutet zum Beispiel: Die Heizung ein paar Grad niedriger stellen, wenn man nicht im Zimmer ist, das Licht ausschalten und elektronische Geräte nicht im Stand-by-Modus lassen.
+
+Wenn wir alle an einem Strang ziehen und kleine Veränderungen in unserem Leben akzeptieren, können wir gemeinsam einen positiven Einfluss auf den Planeten haben.`,
+    vocabulary: [
+      { word: 'der Klimawandel', translation: 'climate change', context: 'Der Klimawandel ist eine der größten Herausforderungen' },
+      { word: 'die Kleinigkeit', translation: 'trifle, minor detail', context: 'auch Kleinigkeiten können einen großen Unterschied machen' },
+      { word: 'verzichten auf', translation: 'to do without', context: 'Wer auf das Auto nicht verzichten kann' },
+      { word: 'die Fahrgemeinschaft', translation: 'carpool', context: 'Fahrgemeinschaften zu bilden' },
+      { word: 'der CO2-Fußabdruck', translation: 'carbon footprint', context: 'sinkt der persönliche CO2-Fußabdruck' },
+      { word: 'an einem Strang ziehen', translation: 'to pull together, cooperate', context: 'Wenn wir alle an einem Strang ziehen' },
+    ],
+    comprehensionQuestions: [
+      {
+        question: 'Was ist eine Möglichkeit, die Umwelt beim Verkehr zu schonen?',
+        options: ['Fahrgemeinschaften bilden', 'Mehr alleine mit dem Auto fahren', 'Mehr fliegen', 'Jeden Tag das Auto waschen'],
+        correctAnswer: 0,
+        explanation: 'Der Text sagt: "Wer auf das Auto nicht verzichten kann, versucht oft, Fahrgemeinschaften zu bilden."',
+      },
+      {
+        question: 'Wie hilft eine vegetarische Ernährung der Umwelt?',
+        options: ['Sie spart Verpackungen', 'Die Produktion von Fleisch verbraucht sehr viele Ressourcen', 'Gemüse wächst schneller im Winter', 'Es gibt keine Unverpackt-Läden für Fleisch'],
+        correctAnswer: 1,
+        explanation: 'Der Text sagt: "Die Produktion von Fleisch verbraucht extrem viele Ressourcen"',
+      },
+      {
+        question: 'Was kann man in "Unverpackt-Läden" tun?',
+        options: ['Nur Gemüse kaufen', 'Kostenlos einkaufen', 'Lebensmittel in eigene Behälter füllen', 'Nur Dinge ohne Plastik zurückgeben'],
+        correctAnswer: 2,
+        explanation: 'Der Text sagt: "in denen man Reis, Nudeln oder Shampoo in eigene Behälter füllen kann."',
+      },
+      {
+        question: 'Welcher Tipp zum Energiesparen wird im Text genannt?',
+        options: ['Öfter warm baden', 'Geräte im Stand-by-Modus lassen', 'Licht immer brennen lassen', 'Heizung niedriger stellen, wenn man nicht da ist'],
+        correctAnswer: 3,
+        explanation: 'Der Text sagt: "Die Heizung ein paar Grad niedriger stellen, wenn man nicht im Zimmer ist"',
+      },
+    ],
+    grammarFocus: [
+      'Nebensätze mit "wenn", "um ... zu" und "dass"',
+      'Relativsätze (Läden, in denen man...)',
+      'Passiversatzformen (sich ernährt)',
+      'Adjektivdeklinationen (kleine Veränderungen, einen großen Unterschied)',
+    ],
+    examTips: [
+      'Umweltschutz ist ein Dauerbrenner in B1- und B2-Mündlich-Prüfungen.',
+      'Üben Sie, Ratschläge zu geben: "Man sollte...", "Es wäre besser, wenn..."',
+      'Prägen Sie sich feste Redewendungen ein (z.B. "an einem Strang ziehen").',
+    ],
+    practicalTips: [
+      'In Deutschland ist der Gelbe Sack für Plastikverpackungen obligatorisch.',
+      'Sammeln Sie Ihre Pfandflaschen extra und geben Sie diese im Supermarkt ab.',
+      'Vermeiden Sie Coffee-to-go Becher, nutzen Sie Thermobecher.',
+    ],
+    culturalNotes: [
+      'Das deutsche Pfandsystem ist weltweit eines der erfolgreichsten.',
+      'Die grüne Politik (z.B. die Partei "Die Grünen") hat in Deutschland eine lange Tradition.',
+      'Second-Hand-Kleidung (wie Vinted) ist sehr populär geworden.',
+    ],
+    relatedMaterials: [
+      'Menschen B1 - Lektion 14: Umwelt',
+      'Aspekte Neu B1+ - Kapitel 3',
+    ],
+  },
+
+  // B2: Zukunft der Arbeit
+  {
+    id: 'b2-4',
+    level: 'B2',
+    title: 'Die Zukunft der Arbeit: Digitalisierung und Homeoffice',
+    category: 'business',
+    difficulty: 'advanced',
+    estimatedTime: 35,
+    text: `Die Arbeitswelt befindet sich in einem radikalen Umbruch. Seit der Pandemie hat das Homeoffice einen beispiellosen Siegeszug angetreten. Das traditionelle Konzept "Präsenzarbeit von 9 bis 17 Uhr" wird zunehmend hinterfragt, während die Digitalisierung neue Formen der Zusammenarbeit ermöglicht.
+
+Ein zentraler Aspekt dieser Entwicklung ist die Flexibilisierung. Viele Unternehmen bieten mittlerweile hybride Modelle an, bei denen Mitarbeiter nur noch zwei bis drei Tage pro Woche ins Büro kommen. Die Vorteile liegen auf der Hand: Beschäftigte sparen sich die Pendelzeit, haben oft eine bessere Work-Life-Balance und können familiäre Pflichten leichter mit dem Beruf vereinbaren. Auf der Unternehmensseite können teure Büroflächen reduziert werden.
+
+Doch es gibt auch Kehrseiten. Der Übergang zur virtuellen Arbeit führt bei manchen Menschen zur Entgrenzung von Arbeit und Freizeit. Wenn der Esstisch permanent zum Schreibtisch wird, fällt es schwerer, abends "abzuschalten". Zudem berichten viele Arbeitnehmer von einem Mangel an informellem Austausch. Die zufälligen Begegnungen an der Kaffeemaschine – oft eine Quelle für kreative Ideen und Teambindung – entfallen in der digitalen Welt fast vollständig.
+
+Parallel zum Homeoffice verändert die Künstliche Intelligenz (KI) die Tätigkeitsfelder rasant. Routineaufgaben, sei es bei der Datenverarbeitung oder im Kundenservice, werden zunehmend automatisiert. Das weckt einerseits Ängste vor Arbeitsplatzverlusten, andererseits entstehen völlig neue Berufsbilder, wie beispielsweise "Prompt Engineers" oder KI-Ethikbeauftragte. 
+
+Arbeitnehmer stehen folglich unter dem Druck des "lebenslangen Lernens". Um auf dem dynamischen Arbeitsmarkt wettbewerbsfähig zu bleiben, ist es unumgänglich, sich stetig fortzubilden. Soft Skills, wie emotionale Intelligenz, interkulturelle Kommunikation und Anpassungsfähigkeit, gewinnen im Vergleich zu reinem Faktenwissen enorm an Bedeutung. 
+
+Die Zukunft der Arbeit wird demzufolge nicht mehr davon bestimmt sein, *wo* wir arbeiten, sondern *wie* wir mit neuen Technologien umgehen und ob wir fähig sind, in sich ständig wandelnden, dezentralen Teams effektiv zu kollaborieren.`,
+    vocabulary: [
+      { word: 'der Umbruch', translation: 'upheaval, radical change', context: 'befindet sich in einem radikalen Umbruch' },
+      { word: 'beispiellos', translation: 'unprecedented', context: 'einen beispiellosen Siegeszug angetreten' },
+      { word: 'die Entgrenzung', translation: 'dissolving of boundaries', context: 'zur Entgrenzung von Arbeit und Freizeit' },
+      { word: 'der Mangel', translation: 'lack, shortage', context: 'von einem Mangel an informellem Austausch' },
+      { word: 'unumgänglich', translation: 'inevitable, essential', context: 'ist es unumgänglich, sich stetig fortzubilden' },
+      { word: 'die Anpassungsfähigkeit', translation: 'adaptability', context: 'Anpassungsfähigkeit gewinnen enorm an Bedeutung' },
+    ],
+    comprehensionQuestions: [
+      {
+        question: 'Was ist ein Hauptvorteil von hybriden Arbeitsmodellen für Arbeitnehmer?',
+        options: ['Sie müssen mehr arbeiten', 'Sie sparen Pendelzeit und haben eine bessere Work-Life-Balance', 'Sie bekommen mehr Gehalt', 'Sie sehen ihre Kollegen häufiger'],
+        correctAnswer: 1,
+        explanation: 'Der Text sagt: "Beschäftigte sparen sich die Pendelzeit, haben oft eine bessere Work-Life-Balance"',
+      },
+      {
+        question: 'Was kritisieren manche Arbeitnehmer am Homeoffice?',
+        options: ['Es ist zu teuer', 'Man kann die Arbeit schlechter von der Freizeit trennen (Entgrenzung)', 'Die Technik funktioniert nie', 'Man trinkt zu viel Kaffee'],
+        correctAnswer: 1,
+        explanation: 'Der Text sagt: "Der Übergang zur virtuellen Arbeit führt bei manchen Menschen zur Entgrenzung von Arbeit und Freizeit."',
+      },
+      {
+        question: 'Was wird im Text über Routineaufgaben gesagt?',
+        options: ['Sie werden seltener automatisiert', 'Sie werden zunehmend durch Künstliche Intelligenz automatisiert', 'Sie werden an Praktikanten abgegeben', 'Sie sind nicht mehr wichtig'],
+        correctAnswer: 1,
+        explanation: 'Der Text sagt: "Routineaufgaben... werden zunehmend automatisiert."',
+      },
+      {
+        question: 'Welche Fähigkeiten werden in der Zukunft immer wichtiger?',
+        options: ['Routineaufgaben', 'Reines Faktenwissen', 'Handwerkliche Fähigkeiten', 'Soft Skills wie emotionale Intelligenz'],
+        correctAnswer: 3,
+        explanation: 'Der Text sagt: "Soft Skills, wie emotionale Intelligenz... gewinnen im Vergleich zu reinem Faktenwissen enorm an Bedeutung."',
+      },
+    ],
+    grammarFocus: [
+      'Verweiswörter / Pronomen (bei denen, dies, das weckt)',
+      'Passiv mit Modalverben (können reduziert werden, werden automatisiert)',
+      'Nomen-Verb-Verbindungen (einen Siegeszug antreten, Bedeutung gewinnen)',
+      'Infinitivkonstruktionen (um... zu bleiben, sich fortzubilden)',
+    ],
+    examTips: [
+      'Die Arbeitswelt ist ein Kernthema auf dem C1 und B2 Level.',
+      'Verwenden Sie stilvolle Nomen-Verb-Verbindungen (z.B. "Druck ausüben", "Rücksicht nehmen").',
+      'Strukturieren Sie Ihre Argumentation klar: Einleitung, Pro, Contra, Synthese.',
+    ],
+    practicalTips: [
+      'Recht auf Homeoffice: Dieses Gesetz wird in Deutschland oft diskutiert.',
+      'Informieren Sie sich über Arbeitszeitgesetze (Ruhezeit mindestens 11 Stunden in Deutschland!).',
+      'Netzwerke (wie LinkedIn oder XING) sind extrem wichtig für die Berufswelt.',
+    ],
+    culturalNotes: [
+      'In Deutschland gibt es starre Gesetze im Home-Office bezüglich Datenschutz und Arbeitsschutz (Ergonomie des Schreibtischs!).',
+      'Das Trennen von Beruf und Privatleben galt früher in DE als heilig.',
+    ],
+    relatedMaterials: [
+      'Aspekte Neu B2 - Kapitel 4: Arbeitswelt',
+      'Erkundungen B2 - Arbeit und Beruf',
+    ],
+  },
+
+  // C1: Demografischer Wandel
+  {
+    id: 'c1-2',
+    level: 'C1',
+    title: 'Der demografische Wandel in Deutschland und seine ökonomischen Auswirkungen',
+    category: 'culture',
+    difficulty: 'advanced',
+    estimatedTime: 50,
+    text: `Die Bundesrepublik Deutschland sieht sich mit einer tiefgreifenden demografischen Transformation konfrontiert, deren sozioökonomische Tragweite in der öffentlichen Debatte oft unterschätzt wird. Der viel zitierte „demografische Wandel“ stützt sich im Kern auf zwei wesentliche Säulen: eine anhaltend niedrige Geburtenrate (Fertilität) von durchschnittlich 1,5 Kindern pro Frau und eine kontinuierlich steigende Lebenserwartung (Mortalitätsrückgang). Die Verschmelzung dieser beiden Faktoren führt unweigerlich zu einer Überalterung der Gesellschaft.
+    
+Aus ökonomischer Perspektive birgt diese Entwicklung weitreichende Konsequenzen. An vorderster Front steht der drohende und in zahlreichen Branchen bereits akute Fachkräftemangel. Wenn ab etwa 2025 die geburtenstarken Jahrgänge, die sogenannten „Babyboomer“, massenhaft in den vorzeitigen oder regulären Ruhestand eintreten, schrumpft das Erwerbspersonenpotenzial drastisch. Dies drosselt nicht nur das Wirtschaftswachstum, da das Arbeitsvolumen abnimmt, sondern verschiebt auch das Kräfteverhältnis auf dem Arbeitsmarkt zugunsten der Arbeitnehmer. Unternehmen müssen zunehmend attraktive Rahmenbedingungen schaffen, um Talente anzwerben ("War for Talents").
+
+Eng verknüpft mit dem Fachkräftemangel ist die Belastungsprobe für das umlagefinanzierte Sozialversicherungssystem. Der Generationenvertrag, bei dem die aktiv arbeitende Bevölkerung durch ihre Beiträge die Renten der aktuellen Pensionäre finanziert, stößt an seine mathematischen Grenzen. Wurden früher die Rentenbeiträge auf viele Schultern verteilt, stehen künftig immer weniger Beitragszahler einer stetig wachsenden Zahl von Leistungsempfängern gegenüber. Um einen Kollaps der Alterssicherungsobjektive abzuwenden, bleiben prinzipiell nur drei unpopuläre politische Stellschrauben: die Erhöhung des Renteneintrittsalters, die Kürzung des Rentenniveaus oder die Steigerung der Beitragssätze. Alternativ drängen Experten auf eine stärkere Kapitaldeckung, etwa durch die Implementierung eines verpflichtenden, aktiengestützten Staatsfonds.
+
+Darüber hinaus verändert die Überalterung die Struktur der gesamtwirtschaftlichen Nachfrage ("Silver Economy"). Sektoren wie das Gesundheitswesen, die Pflege, barrierefreies Wohnen oder der Senioren-Tourismus verzeichnen enorme Zuwachsraten. Doch gerade im Pflegesektor offenbart sich eine fatale Wechselwirkung: Das wachsende Bedürfnis nach Pflegekräften trifft auf den bereits erwähnten generellen Nachwuchsmangel.
+
+Um die gravierendsten wirtschaftlichen Spätfolgen abzufedern, bedarf es eines Bündels an Makro-Strategien. Als zentrales Element gilt die gezielte Migration von qualifizierten Fachkräften aus dem Ausland. Dies erfordert jedoch nicht nur eine Beschleunigung bürokratischer Visaprozesse, sondern auch den Aufbau einer authentischen Willkommenskultur und die reibungslose Integration der Zuwanderer in den Arbeitsmarkt. Des Weiteren muss die Erwerbsquote von Frauen – etwa durch flächendeckende Ganztagsbetreuung – sowie von Älteren weiter gesteigert werden. Letztlich ruht die Hoffnung auch auf Digitalisierung und Automatisierung (KI), die durch signifikante Produktivitätssteigerungen den Rückgang des Arbeitsvolumens partiell kompensieren könnten.`,
+    vocabulary: [
+      { word: 'tiefgreifend', translation: 'profound, radical', context: 'mit einer tiefgreifenden demografischen Transformation' },
+      { word: 'unweigerlich', translation: 'inevitably', context: 'führt unweigerlich zu einer Überalterung' },
+      { word: 'die Tragweite', translation: 'implication, far-reaching importance', context: 'deren sozioökonomische Tragweite' },
+      { word: 'drosseln', translation: 'to curtail, to throttle, to slow down', context: 'Dies drosselt nicht nur das Wirtschaftswachstum' },
+      { word: 'abwenden', translation: 'to avert', context: 'Um einen Kollaps ... abzuwenden' },
+      { word: 'abfedern', translation: 'to cushion, mitigate', context: 'Um die gravierendsten wirtschaftlichen Spätfolgen abzufedern' },
+      { word: 'die Stellschraube', translation: 'adjusting screw (fig. policy lever)', context: 'drei unpopuläre politische Stellschrauben' },
+    ],
+    comprehensionQuestions: [
+      {
+        question: 'Was sind die zwei Hauptfaktoren, die den demografischen Wandel verursachen?',
+        options: ['Niedrige Geburtenrate und steigende Lebenserwartung', 'Hohe Arbeitslosigkeit und Inflation', 'Viel Migration und KI', 'Viele Geburten und weniger Krankheiten'],
+        correctAnswer: 0,
+        explanation: 'Der Text erwähnt "zwei wesentliche Säulen: eine anhaltend niedrige Geburtenrate [...] und eine kontinuierlich steigende Lebenserwartung".',
+      },
+      {
+        question: 'Warum steht das Rentensystem unter Druck?',
+        options: ['Weil die Aktienkurse fallen', 'Weil das Rentenalter zu niedrig ist', 'Weil immer weniger Beitragszahler eine wachsende Zahl von Rentnern finanzieren müssen', 'Weil der Staat das Geld für Subventionen ausgibt'],
+        correctAnswer: 2,
+        explanation: 'Der Text sagt: "stehen künftig immer weniger Beitragszahler einer stetig wachsenden Zahl von Leistungsempfängern gegenüber."',
+      },
+      {
+        question: 'Was ist eine mögliche kurz- bis mittelfristige Lösung für den Fachkräftemangel?',
+        options: ['Alle Universitäten schließen', 'Die gezielte Migration von qualifizierten Fachkräften aus dem Ausland', 'Das Rentensystem abschaffen', 'Die Arbeitszeit drastisch reduzieren'],
+        correctAnswer: 1,
+        explanation: 'Der Text nennt als eine Lösung: "Als zentrales Element gilt die gezielte Migration von qualifizierten Fachkräften aus dem Ausland."',
+      },
+      {
+        question: 'Was versteht man im Text unter der "Silver Economy"?',
+        options: ['Eine Wirtschaft ohne Inflation', 'Der Handel mit Silber', 'Branchen, die durch Senioren wachsen (z.B. Gesundheitswesen)', 'Eine Form der Kapitaldeckung'],
+        correctAnswer: 2,
+        explanation: 'Der Text benennt die wachsende Nachfrage bei Senioren als Silver Economy: Sektoren wie das Gesundheitswesen, die Pflege, barrierefreies Wohnen...',
+      },
+    ],
+    grammarFocus: [
+      'Erweiterte Partizipialattribute (die in zahlreichen Branchen bereits akute Situation)',
+      'Konjunktiv II als hypothetische Bedingung oder Vorschlag',
+      'Funktionsverbgefüge (unter Druck stehen, an seine Grenzen stoßen)',
+      'Präpositionen mit Genitiv (zugunsten, hinsichtlich, bedarf es eines Bündels)',
+    ],
+    examTips: [
+      'C1-Prüfungen verlangen akademisches Vokabular und den Umgang mit komplexem Satzbau.',
+      'Lernen Sie Synonyme für alltägliche Wörter ("Drosselung" statt "Verkürzung", "abfedern" statt "schützen").',
+      'Können Sie die demografischen Probleme und deren Gegenmaßnahmen (Migration, KI, längeres Arbeiten) stichhaltig diskutieren?',
+    ],
+    practicalTips: [
+      'In Deutschland wird viel über Zuwanderung diskutiert, gerade wegen des massiven Personalmangels (z.B. in der IT oder in Krankenhäusern).',
+      'Das sogenannte "Fachkräfteeinwanderungsgesetz" wurde kürzlich gelockert.',
+      'Unternehmen investieren aktiv in "Employer Branding", um Fachkräfte anzuziehen.',
+    ],
+    culturalNotes: [
+      'Die Generation der Babyboomer (geboren zwischen ca. 1955 und 1969) prägt die deutsche Arbeits- und Rentenpolitik extrem.',
+      'Senioren in DE sind heutzutage oft sehr aktiv ("Silver Surfer") und finanzstark.',
+    ],
+    relatedMaterials: [
+      'Aspekte Neu C1 - Kapitel Wirtschaft',
+      'Erkundungen C1 - Demografie und Gesellschaft',
+    ],
+  },
 ];
 
 // Transform the data to match the Reading component's expected structure
@@ -2505,10 +2894,10 @@ export const READING_PASSAGES = readingMaterials.map(material => ({
   level: material.level,
   title: material.title,
   category: material.category === 'daily-life' ? 'Working & Living' :
-            material.category === 'work' ? 'Working & Living' :
-            material.category === 'business' ? 'Working & Living' :
-            material.category === 'practical-documents' ? 'Working & Living' :
-            'Exam Practice',
+    material.category === 'work' ? 'Working & Living' :
+      material.category === 'business' ? 'Working & Living' :
+        material.category === 'practical-documents' ? 'Working & Living' :
+          'Exam Practice',
   content: material.text,
   readingTimeMin: material.estimatedTime,
   questions: material.comprehensionQuestions.map((q, index) => ({
