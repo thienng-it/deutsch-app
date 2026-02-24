@@ -31,8 +31,8 @@ export default function Dashboard() {
     ? gameStats.reduce((prev, curr) => curr.avg_score < prev.avg_score ? curr : prev)
     : null;
 
-  const totalVocab = summary?.vocabByLevel.reduce((s, v) => s + v.total, 0) ?? 0;
-  const totalMaster = summary?.vocabByLevel.reduce((s, v) => s + v.mastered, 0) ?? 0;
+  const totalVocab = vocabLevels.reduce((s, v) => s + v.total, 0);
+  const totalMaster = vocabLevels.reduce((s, v) => s + v.mastered, 0);
   const pct = totalVocab > 0 ? Math.round((totalMaster / totalVocab) * 100) : 0;
 
   const gameCards = [
